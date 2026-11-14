@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="56 playable recipes for Tessera: lo-fi, techno, trance, ambient, grooves, and generative experiments.">
+  <title>Tessera Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const theme = localStorage.getItem("tessera-theme"); if (theme) document.documentElement.dataset.theme = theme; } catch (_) {}
+  </script>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Tessera Recipes home">
+        <span class="mini-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span>Tessera <b>Recipes</b></span>
+      </a>
+      <div class="nav-actions">
+        <button id="wake" class="text-button optional" type="button" title="Keep the screen awake while following a recipe">Awake</button>
+        <button id="theme" class="text-button" type="button" aria-label="Switch light or dark theme"></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="kicker">A companion cookbook</span>
+          <h1>Find a loop.<br>Follow it deeper.</h1>
+          <p>56 starting points for Tessera—dusty lo-fi beats, ’90s-inspired club patches, slow ambient systems, crooked grooves, and generative experiments.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#library">Browse recipes</a>
+            <button class="button" id="random" type="button">Surprise me</button>
+          </div>
+        </div>
+        <div class="screen-demo" aria-label="Decorative Tessera-style sequencer display">
+          <div class="screen-label"><span>GEN</span><span>LO-FI TIDE</span></div>
+          <div class="sequence" aria-hidden="true">
+            <i style="--h:42%"></i><i style="--h:72%"></i><i style="--h:54%"></i><i style="--h:86%"></i>
+            <i style="--h:34%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:76%"></i>
+          </div>
+          <div class="screen-knobs"><span>ROLL<br><b>27</b></span><span>EVOLVE<br><b>18</b></span><span>GRAVITY<br><b>65</b></span><span>HUMAN<br><b>12</b></span></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="library" id="library">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="kicker">Patch library</span><h2>Choose a direction</h2></div>
+          <span id="count" class="count" aria-live="polite">Loading…</span>
+        </div>
+        <div class="quick-pick" aria-label="Quick recipe picker">
+          <label><span>Type</span><select id="type-select">
+            <option value="all">All types</option>
+            <option value="lofi">Lo-fi</option>
+            <option value="rave">Techno / trance / rave</option>
+            <option value="ambient">Ambient</option>
+            <option value="grooves">Grooves</option>
+            <option value="experiments">Experiments</option>
+          </select></label>
+          <label><span>Recipe</span><select id="recipe-select" aria-label="Recipe"></select></label>
+          <button class="button primary" id="open-selected" type="button">Open</button>
+          <button class="button" id="random-picker" type="button">Random</button>
+        </div>
+        <label class="search">
+          <span>Search</span>
+          <input id="search" type="search" placeholder="Try “chord”, “rain”, “techno”…" autocomplete="off">
+        </label>
+        <div class="filters" id="filters" aria-label="Recipe categories">
+          <button class="filter active" data-category="all" type="button">All <span>56</span></button>
+          <button class="filter" data-category="lofi" type="button">Lo-fi <span>20</span></button>
+          <button class="filter" data-category="rave" type="button">Techno / rave <span>12</span></button>
+          <button class="filter" data-category="ambient" type="button">Ambient <span>8</span></button>
+          <button class="filter" data-category="grooves" type="button">Grooves <span>8</span></button>
+          <button class="filter" data-category="experiments" type="button">Experiments <span>8</span></button>
+        </div>
+        <div id="recipes" class="recipe-grid" aria-live="polite"></div>
+        <p id="empty" class="empty" hidden>No recipes match that search. Try a sound, generator, or mood.</p>
+      </div>
+    </section>
+  </main>
+
+  <aside id="detail" class="detail" aria-hidden="true" aria-label="Recipe">
+    <div class="detail-bar">
+      <button id="close" class="back" type="button">← Library</button>
+      <span id="progress-label">0 / 0</span>
+    </div>
+    <article id="detail-content" class="detail-content"></article>
+  </aside>
+
+  <footer>
+    <div class="wrap">
+      <div class="track-bar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <p>Unofficial companion recipes for <a href="https://github.com/Rastapopolix/tessera">Tessera</a>. Read the <a href="https://github.com/Rastapopolix/tessera/blob/main/MANUAL.md">manual</a> or edit this cookbook on <a href="https://github.com/default-fluid/tessera-recipes">GitHub</a>.</p>
+    </div>
+  </footer>
+
+  <noscript><p class="noscript">This recipe browser needs JavaScript. The same recipes are available as Markdown in the GitHub repository.</p></noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
