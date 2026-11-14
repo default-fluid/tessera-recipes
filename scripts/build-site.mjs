@@ -8,6 +8,10 @@ const collections = [
   ["ambient", "Ambient", "recipes/ambient.md"],
   ["grooves", "Grooves", "recipes/grooves.md"],
   ["experiments", "Experiments", "recipes/experiments.md"],
+  ["chord-jams", "Chord jams", "recipes/chord-jams.md"],
+  ["chiptune", "Chiptune", "recipes/chiptune.md"],
+  ["anime", "Anime / cyberpunk", "recipes/anime.md"],
+  ["shinobi-flute", "Shinobi flute", "recipes/shinobi-flute.md"],
 ];
 
 const slugify = (value) => value
@@ -25,6 +29,8 @@ function parseCollection(source, category, categoryLabel) {
     if (!current || current.steps.length === 0) return;
     current.description = current.description.join(" ").trim();
     current.note = current.note.join(" ").trim();
+    const recipeText = [current.description, ...current.steps, current.note].join(" ");
+    current.minVersion = /\*\*3\.5\+\*\*|\bSTRUM\b|\bMOD DEPTH\b|\bDIR (?:BACK|PEND|FOLD|RAND|DRUNK)\b/i.test(recipeText) ? "3.5" : "3.4.1";
     recipes.push(current);
   }
 
@@ -69,8 +75,8 @@ const duplicateIds = recipes.filter((recipe, index) =>
 if (duplicateIds.length) {
   throw new Error(`Duplicate recipe IDs: ${duplicateIds.map((item) => item.id).join(", ")}`);
 }
-if (recipes.length !== 56) {
-  throw new Error(`Expected 56 recipes, parsed ${recipes.length}`);
+if (recipes.length !== 90) {
+  throw new Error(`Expected 90 recipes, parsed ${recipes.length}`);
 }
 
 await writeFile(

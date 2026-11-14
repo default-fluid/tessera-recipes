@@ -14,7 +14,8 @@
         "**T4:** choose **808 KIT**, GEN **ATLAS**, **DENS 42**. Hold **OCT-** on GEN and thin **HAT** to about 25. Add TWEAK **HUMAN 18**.",
         "Put **ECHO** on T1 with a low mix. Route a slow **TIDE** to T2 cutoff, about +20%. Let it play for two minutes before touching anything."
       ],
-      "note": "**Play it:** mute T1 for eight bars, hold **FILL** for the last bar, then bring the hook back."
+      "note": "**Play it:** mute T1 for eight bars, hold **FILL** for the last bar, then bring the hook back.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "dust-on-the-needle",
@@ -29,7 +30,8 @@
         "**T4:** ATLAS at **DENS 35**. Keep kick full, hats near 20, and set a rim as the fourth part at about 15.",
         "Route a very slow **DRIFT** to T1 pan with a small amount and to FX send with an even smaller amount."
       ],
-      "note": "**Change it:** move CONSTL **Y** by a few clicks when a new eight-bar section begins."
+      "note": "**Change it:** move CONSTL **Y** by a few clicks when a new eight-bar section begins.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "cassette-walk-home",
@@ -44,7 +46,8 @@
         "**T2:** GLASS PAD, CHORD **PROG WALK**, **BARS 2**, **HIT HOLD**. Use QNT **CHRD** on T1 so the line follows the pad.",
         "**T4:** ATLAS, DENS about 45, TWEAK **HUMAN 24** and TIMING **SPLIT 12**, **HOW PUSH**."
       ],
-      "note": "**Play it:** slowly raise T1 echo send during the walk, then cut it on the downbeat."
+      "note": "**Play it:** slowly raise T1 echo send during the walk, then cut it on the downbeat.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "sleepy-bus-ride",
@@ -59,7 +62,8 @@
         "**T2:** CHORD **PROG DRONE**, **HIT HOLD**, open voicing, one octave down; keep it very quiet.",
         "**T4:** ATLAS at DENS 28, with sparse kick and rim, no busy hats."
       ],
-      "note": "**Change it:** LENGTH **HIT** on T1 makes each falling note smear into the next."
+      "note": "**Change it:** LENGTH **HIT** on T1 makes each falling note smear into the next.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "bent-photograph",
@@ -74,7 +78,8 @@
         "**T2:** FOLLOW T1, **SHIFT +2**, **DROP 55** for an incomplete upper harmony.",
         "Pan the two voices apart and give only T2 a short echo."
       ],
-      "note": "**Change it:** FORM **AABA**, CONTR 20 turns the memory into four repeating scenes."
+      "note": "**Change it:** FORM **AABA**, CONTR 20 turns the memory into four repeating scenes.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "coffee-shop-closing-time",
@@ -89,7 +94,8 @@
         "**T3:** FOLLOW T1 with HOW **BASS**, RHYTHM **SOURCE**, then DROP about 35.",
         "**T4:** ATLAS around DENS 40; use FORM **ABAC**, CONTR 15, with EVOLVE EVERY 4."
       ],
-      "note": "**Play it:** mute drums for the first pass of section C and unmute on its second chord."
+      "note": "**Play it:** mute drums for the first pass of section C and unmute on its second chord.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "vhs-sunset",
@@ -104,7 +110,8 @@
         "Route **TIDE 2** to the filter cutoff (+30%) and **SWARM 2** to pan (+12%).",
         "**T3:** SERIES, LOOP 4, INTV 3, DIV 1/4, QNT CHRD; keep its level just above silence."
       ],
-      "note": "**Change it:** set PIECE to 8 minutes, **SHAPE FALL**, END LOOP for an endlessly fading sunset."
+      "note": "**Change it:** set PIECE to 8 minutes, **SHAPE FALL**, END LOOP for an endlessly fading sunset.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "wobbly-piano-loop",
@@ -119,7 +126,8 @@
         "Route another slow source to T1 pan at 8–12%.",
         "**T4:** a dry ATLAS beat at DENS 38; the contrast makes the keys feel more unstable."
       ],
-      "note": "**Change it:** print the phrase by holding REC, then nudge two notes late on their step sheets."
+      "note": "**Change it:** print the phrase by holding REC, then nudge two notes late on their step sheets.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "rooftop-homework",
@@ -134,7 +142,8 @@
         "**T3:** a bass following T2 with HOW BASS; restrict it to beats 1 and 3.",
         "**T4:** ATLAS DENS 52, hats 35, fourth part RIM 20. Add a last-bar fill with COND 4:4."
       ],
-      "note": "**Play it:** use the four MIXER levels like a tiny desk—bring each part in over four bars."
+      "note": "**Play it:** use the four MIXER levels like a tiny desk—bring each part in over four bars.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "library-after-dark",
@@ -149,7 +158,8 @@
         "**T3:** BOUNCE/FALL at SPEED 8, WIND slightly low; set DROP 50.",
         "Skip drums. Route a tiny amount of SWARM to each track's pan, using different SWARM speeds."
       ],
-      "note": "**Change it:** add one isolated kick on every fourth bar; the silence around it is the groove."
+      "note": "**Change it:** add one isolated kick on every fourth bar; the silence around it is the groove.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "cracked-sidewalk-cypher",
@@ -164,7 +174,8 @@
         "**T1:** TURING bass, PROB 6, DIV 1/8, narrow range and short fixed notes.",
         "**T2:** a sparse MARKOV stab at DENS 22, LEAP 10, with echo."
       ],
-      "note": "**Play it:** hold FILL at the end of every eight bars, but sometimes deliberately miss it."
+      "note": "**Play it:** hold FILL at the end of every eight bars, but sometimes deliberately miss it.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "sunday-morning-tape",
@@ -179,7 +190,8 @@
         "Set T1 QNT CHRD. Add an LFO to its FX send so only some phrases bloom into echo.",
         "**T4:** ATLAS DENS 32, kick full, snare soft, hats sparse."
       ],
-      "note": "**Change it:** FORM AABA on T1 with low contrast; leave the chords unchanged."
+      "note": "**Change it:** FORM AABA on T1 with low contrast; leave the chords unchanged.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "laundromat-fluorescence",
@@ -194,7 +206,8 @@
         "**T4:** ATLAS DENS 46. Route a 4BAR triangle LFO to AT X and a 2BAR triangle from another track to AT Y.",
         "Keep FORM off: the interlocking cycles create the repeating machine pattern."
       ],
-      "note": "**Change it:** raise SPAN to 2 when you want the melody to escape the room."
+      "note": "**Change it:** raise SPAN to 2 when you want the melody to escape the room.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "polaroid-summer",
@@ -209,7 +222,8 @@
         "**T4:** ATLAS DENS 48 with clap as its fourth part.",
         "Put a modest echo on T1 and route TIDE to the echo mix, not the melody pitch."
       ],
-      "note": "**Play it:** mute the chords for two bars and let the melody imply them."
+      "note": "**Play it:** mute the chords for two bars and let the melody imply them.",
+      "minVersion": "3.5"
     },
     {
       "id": "apartment-heater-groove",
@@ -224,7 +238,8 @@
         "**T1:** TURING bass with a five-step pattern against the drums, PROB 0.",
         "**T2:** a single CHORD DRONE with TIDE on cutoff, almost inaudible."
       ],
-      "note": "**Change it:** the five-step bass slipping against the four-bar drum form supplies all the arrangement you need."
+      "note": "**Change it:** the five-step bass slipping against the four-bar drum form supplies all the arrangement you need.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "last-train-sketchbook",
@@ -239,7 +254,8 @@
         "**T3:** FOLLOW T1, HOW **CANON2**, RHYTHM SOURCE, DROP 60; pan it opposite T1.",
         "**T4:** sparse ATLAS at DENS 30 with HUMAN 25."
       ],
-      "note": "**Change it:** use CHAIN ABAC, PHRASE 8; the endless SERIES line still gains recognizable chapters."
+      "note": "**Change it:** use CHAIN ABAC, PHRASE 8; the endless SERIES line still gains recognizable chapters.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "notebook-margin-doodles",
@@ -254,7 +270,8 @@
         "**T2:** FOLLOW T1 at SHIFT +4, DROP 70, so only occasional doodles gain an answer.",
         "**T4:** ATLAS DENS 44, fourth part CLAP, hats low."
       ],
-      "note": "**Change it:** print the generator, then use STEP EVOLVE with AMOUNT 20 and GRAVITY high."
+      "note": "**Change it:** print the generator, then use STEP EVOLVE with AMOUNT 20 and GRAVITY high.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "fogged-cafe-glass",
@@ -269,7 +286,8 @@
         "Route TIDE 2 to pad cutoff and TIDE 3 to melody FX send.",
         "**T4:** only a low kick and rim: ATLAS DENS about 20, hats at zero or near zero."
       ],
-      "note": "**Play it:** turn the filter cutoff by hand once per minute; small movements feel enormous."
+      "note": "**Play it:** turn the filter cutoff by hand once per minute; small movements feel enormous.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "unsent-voicemail",
@@ -284,7 +302,8 @@
         "On T1 use STEP EVOLVE EVERY 8, AMOUNT 15, HOW DRIFT; keep the original pattern recoverable.",
         "No drums at first. Later add a kick only on beats 1 and 3."
       ],
-      "note": "**Change it:** mute T1; in 3.5+, the delayed follower continues and sounds like a message without its speaker."
+      "note": "**Change it:** mute T1; in 3.5+, the delayed follower continues and sounds like a message without its speaker.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "dawn-through-blinds",
@@ -299,7 +318,8 @@
         "**T3:** bass follower, HOW BASS, RHYTHM SOURCE, DROP 25.",
         "**T4:** ATLAS DENS 36. On PIECE choose 6 minutes, SHAPE RISE, END STOP."
       ],
-      "note": "**Play it:** assign a PERF macro to pad cutoff, drum density, and echo send; raise it as the light arrives."
+      "note": "**Play it:** assign a PERF macro to pad cutoff, drum density, and echo send; raise it as the light arrives.",
+      "minVersion": "3.5"
     },
     {
       "id": "midnight-warehouse",
@@ -314,7 +334,8 @@
         "**T2:** a bright chord sound, GEN **CHORD**, PROG DRONE, BARS 1, HIT BEAT, with short LENGTH. Use a minor chord and offbeat rhythm.",
         "Put FORM AB on drums, EVERY 8, CONTR 12. Keep section A dry; during B raise hats and echo send by hand."
       ],
-      "note": "**Drop:** mute T1 and T4 for one bar, let the chord echo hang, then unmute both on beat one."
+      "note": "**Drop:** mute T1 and T4 for one bar, let the chord echo hang, then unmute both on beat one.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "sandstorm-runner",
@@ -330,7 +351,8 @@
         "**T4:** four-on-the-floor kick, clap on 2 and 4, closed hats on offbeats. STEP is easiest; ATLAS is livelier.",
         "Route a slow rising source or PERF macro to T1 cutoff, T1 FX send, and drum density. Use MOD DEPTH as the build brake (**3.5+**)."
       ],
-      "note": "**Build:** over 16 bars open the lead, increase note density, hold FILL in bar 16, then snap the macro back on the drop."
+      "note": "**Build:** over 16 bars open the lead, increase note density, hold FILL in bar 16, then snap the macro back on the drop.",
+      "minVersion": "3.5"
     },
     {
       "id": "neon-tunnel-trance",
@@ -345,7 +367,8 @@
         "**T3:** FOLLOW T2, HOW BASS, RHYTHM OWN; use a repeating offbeat pattern.",
         "**T4:** solid kick each beat, clap on 2 and 4, open hat between beats."
       ],
-      "note": "**Change it:** CHAIN AABA, PHRASE 8. In B, shift the lead up one octave and thin the kick for four bars."
+      "note": "**Change it:** CHAIN AABA, PHRASE 8. In B, shift the lead up one octave and thin the kick for four bars.",
+      "minVersion": "3.5"
     },
     {
       "id": "acid-tile",
@@ -360,7 +383,8 @@
         "Route a 1BAR triangle LFO to FILTER cutoff and a slower TIDE to resonance with conservative amounts.",
         "**T4:** dry four-on-the-floor drums. Add a clap fill with condition 4:4."
       ],
-      "note": "**Play it:** move the base cutoff by hand while modulation keeps the phrase alive."
+      "note": "**Play it:** move the base cutoff by hand while modulation keeps the phrase alive.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "piano-rave-sunrise",
@@ -375,7 +399,8 @@
         "**T3:** bass follower using HOW BASS, notes on the offbeats.",
         "**T4:** kick every beat, clap on 2/4, bright open hat offbeat. Add HUMAN only to clap and hats, not the kick."
       ],
-      "note": "**Breakdown:** mute T3/T4, change chords to HIT HOLD, then restore HIT BEAT with the drums."
+      "note": "**Breakdown:** mute T3/T4, change chords to HIT HOLD, then restore HIT BEAT with the drums.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "detroit-night-drive",
@@ -390,7 +415,8 @@
         "**T3:** SERIES bass, INTV 1, LOOP 4, DIV 1/8.",
         "**T4:** minimal kick, clap, and shuffled hat pattern. Use TIMING SPLIT at 10–15 rather than heavy HUMAN."
       ],
-      "note": "**Change it:** route a 4BAR LFO to T1 pan and an 8BAR LFO to its FX send."
+      "note": "**Change it:** route a 4BAR LFO to T1 pan and an 8BAR LFO to its FX send.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "breakbeat-basement",
@@ -405,7 +431,8 @@
         "**T1:** TURING bass, PROB 4, pattern LEN 5, DIV 1/8.",
         "**T2:** short MARKOV stabs, DENS 25, LEAP 30, echo send high."
       ],
-      "note": "**Fill:** duplicate the drum pattern, rearrange the last four steps, and switch patterns for the final bar of a phrase."
+      "note": "**Fill:** duplicate the drum pattern, rearrange the last four steps, and switch patterns for the final bar of a phrase.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "hypnotic-concrete",
@@ -420,7 +447,8 @@
         "**T4:** four-on-the-floor ATLAS, DENS 60. Route a 4BAR triangle LFO to AT Y.",
         "Use a PERF macro for FILTER cutoff, hat density, and FX send; never turn it past about two-thirds."
       ],
-      "note": "**Rule:** do not add a new part for five minutes. Arrange timbre and silence instead."
+      "note": "**Rule:** do not add a new part for five minutes. Arrange timbre and silence instead.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "eurodance-balcony",
@@ -435,7 +463,8 @@
         "**T3:** bass follower, HOW BASS, RHYTHM OWN, offbeat pattern.",
         "**T4:** kick each beat, clap on 2/4, open hats offbeat. Keep everything unapologetically bright."
       ],
-      "note": "**Change it:** shift T1 up an octave in section B and use ANSWER on a second lead for call-and-response."
+      "note": "**Change it:** shift T1 up an octave in section B and use ANSWER on a second lead for call-and-response.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "strobe-polyrhythm",
@@ -450,7 +479,8 @@
         "**T4:** straight four-on-the-floor kick anchors the conflicting cycles.",
         "Route a square 2BAR LFO to T1 FX send, creating alternating dry/wet flashes."
       ],
-      "note": "**Change it:** Mute T1 for four bars. When it returns, the ear hears a new downbeat even though nothing moved."
+      "note": "**Change it:** Mute T1 for four bars. When it returns, the ear hears a new downbeat even though nothing moved.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "goa-constellation",
@@ -465,7 +495,8 @@
         "**T2:** a low TURING line, PROB 5, DIV 1/16.",
         "**T4:** driving kick and rolling hats. Use PIECE 8 min, SHAPE ARCH, END STOP."
       ],
-      "note": "**Build:** raise CONSTL SIZE and FILTER cutoff together; reduce both immediately before the peak kick returns."
+      "note": "**Build:** raise CONSTL SIZE and FILTER cutoff together; reduce both immediately before the peak kick returns.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "afterhours-dub-techno",
@@ -480,7 +511,8 @@
         "**T1:** bass on beats 1 and 3, following the chord with HOW BASS.",
         "**T4:** deep kick each beat, rim on occasional offbeats, almost no hats."
       ],
-      "note": "**Play it:** mute the chord itself while leaving its echo tail; bring in a new stab only after the old tail clears."
+      "note": "**Play it:** mute the chord itself while leaving its echo tail; bring in a new stab only after the old tail clears.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "tidal-glass",
@@ -495,7 +527,8 @@
         "**T3:** BOUNCE in FALL mode, SPEED 8, WIND centered, LENGTH HIT.",
         "Set PIECE to 12 minutes, SHAPE ARCH, END LOOP."
       ],
-      "note": "**Listen for:** the point where the falling notes briefly imply a new chord over the unmoving drone."
+      "note": "**Listen for:** the point where the falling notes briefly imply a new chord over the unmoving drone.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "paper-lanterns",
@@ -510,7 +543,8 @@
         "Give both voices long LENGTH HIT notes and pan them apart.",
         "Route different SWARM sources to their FX sends so their echoes rarely bloom together."
       ],
-      "note": "**Change it:** move CONSTL Y one click every few minutes."
+      "note": "**Change it:** move CONSTL Y one click every few minutes.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "moss-radio",
@@ -525,7 +559,8 @@
         "**T2:** a quiet CHORD DRONE one octave down; route TIDE to cutoff.",
         "Add FILTER and ECHO to T1, both mostly dry."
       ],
-      "note": "**Rule:** if a modulation is immediately obvious, halve its amount."
+      "note": "**Rule:** if a modulation is immediately obvious, halve its amount.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "cloud-atlas",
@@ -540,7 +575,8 @@
         "**T3:** SERIES, INTV 1, LOOP OFF, DIV 1/2, QNT CHRD.",
         "Use ENTRIES around 35 so voices arrive and leave over long spans."
       ],
-      "note": "**Change it:** PIECE 20 minutes, SHAPE RISE, END LOOP makes each cycle return to open sky."
+      "note": "**Change it:** PIECE 20 minutes, SHAPE RISE, END LOOP makes each cycle return to open sky.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "frozen-lake-canon",
@@ -555,7 +591,8 @@
         "**T3:** FOLLOW T1, HOW CANON8, RHYTHM SOURCE, SHIFT -7.",
         "Pan T2/T3 apart and use progressively more echo on each delay."
       ],
-      "note": "**Play it:** mute T1 after one pass and let only its reflections remain."
+      "note": "**Play it:** mute T1 after one pass and let only its reflections remain.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "breathing-stone",
@@ -570,7 +607,8 @@
         "Route one slow LFO upward to T1 cutoff and the inverted direction to T2 level.",
         "Add SWARM to pan on both at less than 10%."
       ],
-      "note": "**Change it:** use a PERF macro as a manual breath, raising one layer while lowering the other."
+      "note": "**Change it:** use a PERF macro as a manual breath, raising one layer while lowering the other.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "distant-weather",
@@ -585,7 +623,8 @@
         "**T3:** CHORD DRONE, HIT HOLD, almost silent.",
         "Route TIDE 2 to global-feeling FX sends and let the dry gaps remain long."
       ],
-      "note": "**Listen for:** accidental clusters. Do not fix the first dissonance; wait for its release."
+      "note": "**Listen for:** accidental clusters. Do not fix the first dissonance; wait for its release.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "hour-hand",
@@ -600,7 +639,8 @@
         "**T3:** CHORD WALK, BARS 8, HIT HOLD.",
         "Set PIECE to 60 minutes, SHAPE USER, with eight gently alternating energy points; END STOP."
       ],
-      "note": "**Rule:** save it, press PLAY, and leave the controls alone for the first ten minutes."
+      "note": "**Rule:** save it, press PLAY, and leave the controls alone for the first ten minutes.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "crooked-pocket",
@@ -615,7 +655,8 @@
         "**T1:** TURING bass, DIV 1/8, LEN 5, PROB 3.",
         "**T2:** short chord stab only on condition 2:4 and 4:4."
       ],
-      "note": "**Change it:** remove one kick rather than adding more percussion."
+      "note": "**Change it:** remove one kick rather than adding more percussion.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "dub-courtyard",
@@ -630,7 +671,8 @@
         "**T2:** CHORD DRONE with short HIT length; send selected stabs into ECHO.",
         "Route a slow LFO to echo time with a small amount and perform FX send by hand."
       ],
-      "note": "**Play it:** the echo is an instrument—send one stab, then leave room for its answer."
+      "note": "**Play it:** the echo is an instrument—send one stab, then leave room for its answer.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "five-against-four",
@@ -645,7 +687,8 @@
         "**T4:** a conventional four-beat drum pattern.",
         "FORM AB on drums only, EVERY 4, CONTR 12."
       ],
-      "note": "**Listen for:** where the bass appears to change even though its five steps never do."
+      "note": "**Listen for:** where the bass appears to change even though its five steps never do.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "broken-robot",
@@ -660,7 +703,8 @@
         "**T1:** AWAKE with a rigid short sound; DIV 1/16.",
         "**T2:** FOLLOW T1 at SHIFT +2, DROP 75, for occasional sparks."
       ],
-      "note": "**Change it:** DIR PEND on one melodic pattern makes the robot retrace its steps."
+      "note": "**Change it:** DIR PEND on one melodic pattern makes the robot retrace its steps.",
+      "minVersion": "3.5"
     },
     {
       "id": "atlas-cartographer",
@@ -675,7 +719,8 @@
         "Use another track's 2BAR LFO routed to AT Y at 18%.",
         "Set FORM AABA, EVERY 4, CONTR 20, LOCK 90."
       ],
-      "note": "**Listen for:** the repeating LFO route drawing a recognizable path across each different section."
+      "note": "**Listen for:** the repeating LFO route drawing a recognizable path across each different section.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "rim-and-air",
@@ -690,7 +735,8 @@
         "**T1:** one low note on a five-step STEP pattern.",
         "**T2:** one chord every fourth bar with a long echo."
       ],
-      "note": "**Rule:** add no more than one event per listening pass."
+      "note": "**Rule:** add no more than one event per listening pass.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "interlocking-koto",
@@ -705,7 +751,8 @@
         "Use RANGE 1 OCT in the GEN sheet.",
         "**T4:** simple kick and shaker pattern to reveal the shifting accents."
       ],
-      "note": "**Change it:** LINK the faster QUAD row, then set DIR PEND on the slower one."
+      "note": "**Change it:** LINK the faster QUAD row, then set DIR PEND on the slower one.",
+      "minVersion": "3.5"
     },
     {
       "id": "one-knob-block-party",
@@ -720,7 +767,8 @@
         "Add a modest positive route to MOD DEPTH (**3.5+**).",
         "Keep every amount small enough that MACRO 1 at maximum remains musical."
       ],
-      "note": "**Play it:** spend an entire arrangement using only MACRO 1 and the four mute keys."
+      "note": "**Play it:** spend an entire arrangement using only MACRO 1 and the four mute keys.",
+      "minVersion": "3.5"
     },
     {
       "id": "mosaic-telephone",
@@ -735,7 +783,8 @@
         "Use RANGE 1 OCT so the traveling notes remain related.",
         "Leave T4 silent and listen to the voices exchange fragments."
       ],
-      "note": "**Change it:** add a kick only after the note traffic has established its own pulse."
+      "note": "**Change it:** add a kick only after the note traffic has established its own pulse.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "gravity-well",
@@ -750,7 +799,8 @@
         "FORM ABAC, EVERY 4, CONTR 45, DEVELOP 30.",
         "Route a slow SWARM to EVOLVE amount."
       ],
-      "note": "**Listen for:** identity surviving heavy mutation, then disappearing."
+      "note": "**Listen for:** identity surviving heavy mutation, then disappearing.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "conditional-orchestra",
@@ -765,7 +815,8 @@
         "Turn FORM AABA on all tracks but vary CONTR by track.",
         "Use CHAIN FOLLOW so the orchestra changes section together."
       ],
-      "note": "**Change it:** replace one condition with !FIRST and hear the form lose symmetry."
+      "note": "**Change it:** replace one condition with !FIRST and hear the form lose symmetry.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "pendulum-canon",
@@ -780,7 +831,8 @@
         "Give each track a different note length.",
         "Slowly pan the canon voices with independent LFOs."
       ],
-      "note": "**Listen for:** the moment forward and backward passes overlap into a third melody."
+      "note": "**Listen for:** the moment forward and backward passes overlap into a third melody.",
+      "minVersion": "3.5"
     },
     {
       "id": "clockwork-garden",
@@ -795,7 +847,8 @@
         "**T4:** POLY /3, /5, /7 on percussive sounds rather than a drum kit.",
         "Set PIECE 15 minutes, SHAPE ARCH, and ENTRIES 65."
       ],
-      "note": "**Rule:** do not synchronize the organic movement; synchronize only the beginning with PLAY."
+      "note": "**Rule:** do not synchronize the organic movement; synchronize only the beginning with PLAY.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "logic-rain",
@@ -810,7 +863,8 @@
         "Route TIDE to T1 density and a different TIDE to T2 density.",
         "Keep T1/T2 quiet so T3 reveals the changing logical overlap."
       ],
-      "note": "**Change it:** bring the source tracks into the mix one at a time to expose the mechanism."
+      "note": "**Change it:** bring the source tracks into the mix one at a time to expose the mechanism.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "seed-museum",
@@ -825,7 +879,8 @@
         "Note which seeds feel stable, surprising, or unfinished.",
         "At the end, return to the first seed."
       ],
-      "note": "**Purpose:** hear how much composition lives in the seed rather than the controls."
+      "note": "**Purpose:** hear how much composition lives in the seed rather than the controls.",
+      "minVersion": "3.4.1"
     },
     {
       "id": "machine-that-dreams-of-silence",
@@ -840,7 +895,552 @@
         "Set PIECE 10 minutes, SHAPE FALL, END STOP.",
         "Start with the full mix, then let PIECE and ENTRIES dismantle it."
       ],
-      "note": "**Listen for:** the last surviving event. Save a second version where that track has a different role."
+      "note": "**Listen for:** the last surviving event. Save a second version where that track has a different role.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "one-key-whole-sky",
+      "title": "One Key, Whole Sky",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **128 BPM**, root E, major scale.",
+        "**T2:** choose a bright pad or keys sound, GEN **CHORD**, PROG USER. Enter E–A–C♯m–B, BARS 1, HIT BEAT, open voicing.",
+        "Hold OCT- on GEN and set STRUM around 25 ms (**3.5+**).",
+        "**T1:** SERIES, LOOP 8, INTV 1, DIV 1/8, QNT CHRD, with a light pluck.",
+        "**T4:** ATLAS DENS 45 with kick full and hats near 30."
+      ],
+      "note": "**Play it:** mute T1 and jam on the chord track's keys; one key supplies the whole harmony.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "coral-morning",
+      "title": "Coral Morning",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **130 BPM**, A major.",
+        "**T2:** CHORD USER with A–E–F♯m–D, HIT HOLD, BARS 1, STRUM 40 ms.",
+        "**T1:** MARKOV DENS 38, LEAP 12, QNT CHRD.",
+        "**T3:** FOLLOW T2, HOW BASS, RHYTHM OWN, using offbeat notes.",
+        "Keep drums light: kick each beat, clap on 2 and 4, sparse hats."
+      ],
+      "note": "**Change it:** halve the tempo to 65 BPM without changing the pattern for a floating version.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "glass-chord-fountain",
+      "title": "Glass Chord Fountain",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **124 BPM**, E major pentatonic.",
+        "**T1:** GLASS PAD, CHORD PROG POP, BARS 1, HIT BEAT, open voicing.",
+        "Route a 4BAR triangle LFO to cutoff and a slower TIDE to FX send.",
+        "**T2:** FOLLOW T1, HOW CHORD, RHYTHM OWN, using EUCLID with low density.",
+        "Pan T1/T2 apart and give T2 more echo."
+      ],
+      "note": "**Play it:** hold one chord for four bars, then let PROG resume.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "major-key-drift",
+      "title": "Major-Key Drift",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **126 BPM**, A major.",
+        "**T2:** CHORD WALK, BARS 2, HIT HOLD, seventh chords.",
+        "EVOLVE EVERY 8, AMOUNT 20, GRAVITY 70.",
+        "**T1:** CONSTL DENS 35, LEN 8, LOCK 80, QNT CHRD.",
+        "**T4:** ATLAS DENS 36 with HUMAN 12."
+      ],
+      "note": "**Change it:** use PIECE 8 minutes, SHAPE ARCH, END LOOP.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "two-handed-sunburst",
+      "title": "Two-Handed Sunburst",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **132 BPM**, E major.",
+        "**T2:** CHORD USER, four roots, HIT BEAT, STRUM 15 ms.",
+        "**T1:** an ARP at DIV 1/16, ORDER UP/DOWN, QNT CHRD.",
+        "**T3:** bass follower with HOW BASS, RHYTHM SOURCE.",
+        "Map PERF 1 to chord cutoff, arp FX send, and drum density."
+      ],
+      "note": "**Play it:** left hand changes chord keys; right hand moves PERF 1.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "open-voicing-highway",
+      "title": "Open-Voicing Highway",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **120 BPM**, D major.",
+        "**T2:** CHORD PROG CIRCLE, BARS 2, HIT HOLD, VOIC OPEN.",
+        "**T1:** SERIES LOOP OFF, INTV 2, DIV 1/8, QNT CHRD.",
+        "**T3:** FOLLOW T1, HOW CANON2, RHYTHM SOURCE, DROP 60.",
+        "Use a straight, quiet drum pattern with an open hat on offbeats."
+      ],
+      "note": "**Change it:** switch the chord sound from pad to short keys without changing anything else.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "chords-through-rain",
+      "title": "Chords Through Rain",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **64 BPM**, E major.",
+        "**T2:** CHORD USER with E–B–A–B, BARS 2, HIT HOLD.",
+        "**T1:** BOUNCE/FALL, SPEED 10, LENGTH HIT, QNT CHRD.",
+        "Route SWARM to WIND and TIDE to chord cutoff.",
+        "Add only a soft kick on beats 1 and 3."
+      ],
+      "note": "**Listen for:** falling notes that briefly color the held major chords.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "four-chords-many-rooms",
+      "title": "Four Chords, Many Rooms",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **128 BPM**, any major key.",
+        "**T2:** enter a four-chord USER progression, BARS 1.",
+        "FORM AABA, EVERY 4, CONTR 20 on T1 and T4, but leave T2 unchanged.",
+        "**T1:** TURING PROB 3, DIV 1/8, QNT CHRD.",
+        "**T4:** ATLAS DENS 50, with section contrast controlled by FORM."
+      ],
+      "note": "**Change it:** the harmony stays familiar while melody and drums create the rooms.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "bright-hands-slow-echo",
+      "title": "Bright Hands, Slow Echo",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **130 BPM**, A major.",
+        "**T2:** short CHORD stabs on every beat, STRUM 30 ms.",
+        "Add ECHO with a low mix and long-feeling feedback.",
+        "**T1:** MARKOV DENS 25, LEAP 20, QNT CHRD, no echo.",
+        "**T4:** dry kick and clap; keep hats below 25."
+      ],
+      "note": "**Play it:** mute the chord sound after one stab and let the echo carry the progression.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "chord-jam-without-drums",
+      "title": "Chord Jam Without Drums",
+      "category": "chord-jams",
+      "categoryLabel": "Chord jams",
+      "description": "",
+      "steps": [
+        "Set **125 BPM**, E major, but leave T4 silent.",
+        "**T2:** CHORD USER, HIT BEAT, open seventh voicing.",
+        "**T1:** POLY with /3, /4, and /5, SPAN 1, QNT CHRD.",
+        "**T3:** bass follower on beats 1 and 3 only.",
+        "Route a synced LFO to T1 pan and T2 FX send."
+      ],
+      "note": "**Play it:** let the chord attacks define the beat; add drums only if the pulse is unclear.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "pocket-overworld",
+      "title": "Pocket Overworld",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **150 BPM**, C major pentatonic.",
+        "**T1:** choose a bright, simple sound; SERIES LOOP 8, INTV 1, DIV 1/16.",
+        "**T2:** CHORD USER with C–F–Am–G, short HIT length.",
+        "**T3:** FOLLOW T2, HOW BASS, RHYTHM OWN, with short 1/8 notes.",
+        "**T4:** dry STEP drums with a small kick, snare, and rapid hats."
+      ],
+      "note": "**Change it:** use FORM AABA on T1 for a tiny overworld theme.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "one-channel-chords",
+      "title": "One-Channel Chords",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **140 BPM**, A minor.",
+        "**T1:** ARP at DIV 1/16 or faster, ORDER UP, short fixed notes.",
+        "**T2:** CHORD USER with Am–F–C–G, muted in the MIXER but still leading harmony.",
+        "Set T1 QNT CHRD so the fast notes spell each muted chord.",
+        "Add no reverb; keep the illusion dry and direct."
+      ],
+      "note": "**Listen for:** a full chord implied by one rapidly shared voice.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "boss-room-countdown",
+      "title": "Boss Room Countdown",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **165 BPM**, E minor.",
+        "**T1:** TURING, PROB 0, LEN 7, DIV 1/16, narrow range.",
+        "**T2:** POLY with /3 and /4, using a low metallic sound.",
+        "**T4:** kick each beat, snare on 2 and 4, ratcheted hats.",
+        "FORM ABAC, EVERY 4, CONTR 35; use DEVELOP 15."
+      ],
+      "note": "**Drop:** silence everything for the last two steps, then restart with GLO + PLAY.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "save-point-glow",
+      "title": "Save-Point Glow",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **90 BPM**, D major.",
+        "**T1:** CONSTL DENS 20, SIZE 2, LEN 4, LOCK 90.",
+        "**T2:** CHORD DRONE, open voicing, HIT HOLD.",
+        "Use short digital-sounding tones with a small echo.",
+        "Route a slow square LFO to T1 pan for simple left/right motion."
+      ],
+      "note": "**Change it:** shift CONSTL Y upward when the player is fully healed.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "tracker-staircase",
+      "title": "Tracker Staircase",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **145 BPM**, E minor pentatonic.",
+        "Write a four-note STEP pattern and set Accumulate +1 on its first note.",
+        "Set Accum limit 7 and mode PING.",
+        "**T2:** FOLLOW T1, SHIFT -7, DROP 40, with a bass sound.",
+        "**T4:** a rigid four-bar drum loop with no HUMAN."
+      ],
+      "note": "**Listen for:** the melody climbing like a tracker transpose command.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "eight-bit-airship",
+      "title": "Eight-Bit Airship",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **138 BPM**, G major.",
+        "**T1:** SERIES LOOP 8, INTV 3, DIV 1/8.",
+        "**T2:** ARP at DIV 1/16, QNT CHRD, quieter than T1.",
+        "**T3:** CHORD WALK, BARS 2, short notes, open voicing.",
+        "Use POLY percussion instead of a realistic kit."
+      ],
+      "note": "**Change it:** raise T1 one octave in section B.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "dungeon-torch",
+      "title": "Dungeon Torch",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **112 BPM**, C minor.",
+        "**T1:** TURING PROB 2, LEN 5, low octave, DIV 1/8.",
+        "**T2:** CHORD DRONE, minor seventh, HIT HOLD, level low.",
+        "**T3:** BOUNCE/FALL, SPEED 14, narrow scale.",
+        "Use one dry kick every two beats and a rim every fourth bar."
+      ],
+      "note": "**Rule:** keep the note range small; tension comes from repetition.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "final-cartridge",
+      "title": "Final Cartridge",
+      "category": "chiptune",
+      "categoryLabel": "Chiptune",
+      "description": "",
+      "steps": [
+        "Set **172 BPM**, D minor.",
+        "**T1:** CONSTL DENS 75, SPEED 1/16, LEN 8, LOCK 65, FILL ARP.",
+        "**T2:** CHORD USER, one chord per bar, short STRUM.",
+        "**T3:** bass follower with a 1/16 EUCLID rhythm.",
+        "**T4:** maximum-energy STEP drums with conditioned fills every fourth bar."
+      ],
+      "note": "**Play it:** assign PERF 1 to lead octave feel, drum density, and echo send for the final phase.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "red-warning-screen",
+      "title": "Red Warning Screen",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **132 BPM**, E minor.",
+        "**T1:** TURING, LEN 5, PROB 0, DIV 1/16, using a hard short sound.",
+        "**T2:** POLY /3 against /4 with metallic tones.",
+        "**T3:** low CHORD DRONE, minor chord, FILTER cutoff slowly rising.",
+        "**T4:** rigid kick and tom pattern; condition the heaviest toms to 4:4."
+      ],
+      "note": "**Build:** route one PERF macro to cutoff, MOD DEPTH, and drum density.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "concrete-megacity",
+      "title": "Concrete Megacity",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **118 BPM**, C minor.",
+        "**T4:** ATLAS DENS 62, kick full, snare low, fourth part RIM.",
+        "Route a 4BAR LFO to AT X and a 2BAR LFO to AT Y.",
+        "**T1:** SERIES LOOP OFF, INTV 1, DIV 1/8, low metallic sound.",
+        "**T2:** CHORD DRONE through FILTER and ECHO, very quiet."
+      ],
+      "note": "**Listen for:** the drum map shifting like traffic viewed from above.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "empty-train-platform",
+      "title": "Empty Train Platform",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **58 BPM**, A minor pentatonic.",
+        "Record a sparse STEP melody on a piano-like sound.",
+        "**T2:** FOLLOW T1, HOW CANON4, RHYTHM SOURCE, DROP 35.",
+        "**T3:** STRING MACH, CHORD DRONE, HIT HOLD.",
+        "Give T2 more echo than T1 and leave drums out."
+      ],
+      "note": "**Play it:** mute T1 after one pass so only its delayed memory remains.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "bio-mechanical-pulse",
+      "title": "Bio-Mechanical Pulse",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **136 BPM**, D Phrygian-like or minor scale.",
+        "**T1:** AWAKE with alternating A/B states, DIV 1/16.",
+        "**T2:** FOLLOW T1, HOW CONTRA, RHYTHM SOURCE.",
+        "**T4:** STEP drums with kicks on uneven gaps and ratcheted toms.",
+        "FORM ABAC, EVERY 4, CONTR 45 on T1 and drums."
+      ],
+      "note": "**Change it:** MOD DEPTH at zero freezes the machine; raise it slowly.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "rooftop-before-the-storm",
+      "title": "Rooftop Before the Storm",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **72 BPM**, E major.",
+        "**T1:** SERIES LOOP 8, INTV 2, DIV 1/8, light bell sound.",
+        "**T2:** CHORD USER with E–C♯m–A–B, HIT HOLD.",
+        "**T3:** BOUNCE/FALL, SPEED 8, LENGTH HIT, QNT CHRD.",
+        "Route TIDE to pad cutoff and SWARM to the falling line's pan."
+      ],
+      "note": "**Change it:** switch the scale to E minor for the scene after the storm arrives.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "opening-credits-sprint",
+      "title": "Opening Credits Sprint",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **158 BPM**, G major.",
+        "**T1:** SERIES LOOP 8, INTV 3, DIV 1/8.",
+        "**T2:** CHORD USER, G–D–Em–C, HIT BEAT, STRUM 20 ms.",
+        "**T3:** bass follower on fast offbeats.",
+        "**T4:** kick, snare, and open hats with a fill every fourth bar."
+      ],
+      "note": "**Arrange it:** AABA for 16 bars, breakdown for 8, then ABAC with T1 an octave up.",
+      "minVersion": "3.5"
+    },
+    {
+      "id": "psychic-static",
+      "title": "Psychic Static",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **100 BPM**, chromatic-feeling minor scale.",
+        "**T1:** CONSTL DENS 65, SIZE 4, LEN 4, LOCK 25.",
+        "Route SWARM to C Y and DRIFT to FILTER cutoff.",
+        "**T2:** low POLY /5 and /7, long notes.",
+        "**T4:** sparse industrial hits with large empty gaps."
+      ],
+      "note": "**Rule:** keep the bass stable while the upper voice loses its center.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "end-credits-photograph",
+      "title": "End-Credits Photograph",
+      "category": "anime",
+      "categoryLabel": "Anime / cyberpunk",
+      "description": "",
+      "steps": [
+        "Set **66 BPM**, C major pentatonic.",
+        "**T1:** a soft keys sound, TURING PROB 0, DIV 1/8.",
+        "EVOLVE EVERY 8, AMOUNT 15, GRAVITY 85.",
+        "**T2:** CHORD WALK, BARS 4, HIT HOLD, open voicing.",
+        "**T3:** FOLLOW T1, HOW CHORD, RHYTHM SOURCE, DROP 70."
+      ],
+      "note": "**Listen for:** tiny melody changes that feel like different photographs of the same day.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "rain-on-the-headband",
+      "title": "Rain on the Headband",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **62 BPM**, D minor pentatonic.",
+        "**T1:** choose FLUTE, SERIES LOOP 8, INTV 1, DIV 1/4, LENGTH HIT.",
+        "**T2:** STRING MACH, CHORD DRONE, HIT HOLD, level low.",
+        "Route TIDE to T2 cutoff and a small SWARM amount to flute pan.",
+        "Add one soft hand-drum-like hit on beats 1 and 3."
+      ],
+      "note": "**Play it:** leave a full bar of silence after every second flute phrase.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "hidden-leaf-morning",
+      "title": "Hidden Leaf Morning",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **92 BPM**, G major pentatonic.",
+        "**T1:** FLUTE, CONSTL DENS 35, SIZE 2, LEN 8, LOCK 85.",
+        "**T2:** KOTO WARM, CHORD USER with G–C–Em–D, HIT BEAT.",
+        "**T3:** FOLLOW T2, HOW BASS, RHYTHM OWN, sparse notes.",
+        "**T4:** light kick, rim, and shaker pattern with HUMAN 18."
+      ],
+      "note": "**Change it:** raise CONSTL Y for a brighter village variation.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "path-through-cedars",
+      "title": "Path Through Cedars",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **76 BPM**, E KUMOI.",
+        "**T1:** FLUTE, BOUNCE/FALL, SPEED 12, WIND near center.",
+        "**T2:** KOTO WARM, TURING PROB 0, DIV 1/8, narrow range.",
+        "**T3:** CHORD DRONE, open fifth-like voicing, HIT HOLD.",
+        "Route SWARM to flute WIND and TIDE to drone level."
+      ],
+      "note": "**Listen for:** the flute and koto accidentally answering each other.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "training-ground",
+      "title": "Training Ground",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **118 BPM**, A minor pentatonic.",
+        "**T1:** FLUTE, TURING PROB 4, DIV 1/8, short notes.",
+        "**T2:** KOTO WARM, FOLLOW T1, SHIFT +2, DROP 45.",
+        "**T3:** low SERIES LOOP 4, INTV 1.",
+        "**T4:** dry tom and rim groove with a conditioned 4:4 fill."
+      ],
+      "note": "**Change it:** FORM AABA with CONTR 25 turns the exercise into a scene.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "moon-over-the-dojo",
+      "title": "Moon Over the Dojo",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **55 BPM**, A minor.",
+        "**T1:** FLUTE, MARKOV DENS 20, LEAP 12, LENGTH HIT.",
+        "**T2:** CHORD DRONE, minor seventh, open voicing.",
+        "**T3:** FOLLOW T1, HOW CANON4, RHYTHM SOURCE, DROP 55.",
+        "Pan the canon away from the lead and give it a longer echo."
+      ],
+      "note": "**Rule:** never let more than two voices speak at once.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "messenger-hawk",
+      "title": "Messenger Hawk",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **104 BPM**, D major pentatonic.",
+        "**T1:** FLUTE, SERIES LOOP OFF, INTV 3, DIV 1/8.",
+        "**T2:** CHORD WALK, BARS 2, HIT HOLD; set T1 QNT CHRD.",
+        "**T3:** POLY /3 and /5 on short wooden sounds.",
+        "**T4:** sparse kick and shaker, with no heavy snare."
+      ],
+      "note": "**Change it:** shift T1 up an octave when the message reaches its destination.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "names-on-the-memorial-stone",
+      "title": "Names on the Memorial Stone",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **48 BPM**, E minor pentatonic.",
+        "Record a five-note flute phrase into STEP with long gaps.",
+        "**T2:** FOLLOW T1, HOW CANON8, RHYTHM SOURCE, SHIFT -2.",
+        "**T3:** low CHORD DRONE through FILTER, barely audible.",
+        "Use PIECE 6 minutes, SHAPE FALL, END STOP."
+      ],
+      "note": "**Play it:** begin with the follower muted; bring it in only for the final two minutes.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "festival-lantern-run",
+      "title": "Festival Lantern Run",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
+      "description": "",
+      "steps": [
+        "Set **126 BPM**, C major pentatonic.",
+        "**T1:** FLUTE, CONSTL DENS 58, LEN 8, LOCK 75, FILL ARP.",
+        "**T2:** KOTO WARM, CHORD USER with C–F–Am–G, short STRUM.",
+        "**T3:** bass follower with offbeat rhythm.",
+        "**T4:** lively ATLAS groove, fourth part RIM, HUMAN 12."
+      ],
+      "note": "**Play it:** mute drums for four bars, then return with FILL held for the last beat.",
+      "minVersion": "3.5"
     }
   ]
 }
