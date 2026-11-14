@@ -1,4 +1,4 @@
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { dirname, resolve } from "node:path";
 
@@ -7,21 +7,19 @@ const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 
 const data = JSON.parse(await readFile(resolve(root, "site/recipes.json"), "utf8"));
-assert(data.recipes.length === 122, `Expected 122 site recipes, found ${data.recipes.length}`);
+assert(data.recipes.length === 30, `Expected 30 site recipes, found ${data.recipes.length}`);
 assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length, "Recipe IDs are not unique");
-for (let count = 4; count <= 8; count++) assert(data.recipes.some((recipe) => recipe.steps.length === count), `No ${count}-step recipes were generated`);
+for (const tracks of [2, 3, 4]) assert(data.recipes.some((recipe) => recipe.tracks === tracks), `No ${tracks}-track recipes were found`);
 for (const recipe of data.recipes) {
   assert(recipe.title && recipe.category, `Recipe is missing title/category: ${recipe.id || "unknown"}`);
-  assert(recipe.steps.length >= 4 && recipe.steps.length <= 8, `${recipe.title} must have four to eight beginner steps`);
+  assert(recipe.description === "", `${recipe.title} should not have a description`);
+  assert(recipe.category === "recipes", `${recipe.title} has an unexpected type category`);
+  assert([2, 3, 4].includes(recipe.tracks), `${recipe.title} has an invalid active-track count`);
+  assert(recipe.steps.length >= 4 && recipe.steps.length <= 7, `${recipe.title} must have four to seven beginner steps`);
   assert(["3.4.1", "3.5"].includes(recipe.minVersion), `${recipe.title} has an invalid firmware version`);
   const text = recipe.steps.join(" ");
-  for (const required of ["New song", "KNOB 1 ROOT", "KNOB 2 SCALE", "MODE", "ROLL", "PIECE", "END STOP", "Press **PLAY** once"]) {
+  for (const required of ["New song", "ROOT", "SCALE", "**Sounds", "MODE", "ROLL", "PIECE", "END STOP", "PLAY"]) {
     assert(text.includes(required), `${recipe.title} is missing required beginner detail: ${required}`);
-  }
-  if (recipe.steps.length === 4) {
-    for (const required of ["T1 **", "T4 **", "T2/T3 empty", "ENERGY"]) assert(text.includes(required), `${recipe.title} is missing compact-recipe detail: ${required}`);
-  } else {
-    for (const required of ["T1 **", "T2 **", "T3 **", "T4 **", "MODS", "CHAIN", "ENTRIES"]) assert(text.includes(required), `${recipe.title} is missing full-recipe detail: ${required}`);
   }
   assert(!/\*\*(?:Play it|Change it):|\b(?:to taste|low density|warm bass|choose a sound|about \d+|around \d+)\b/i.test(text), `${recipe.title} contains vague or live-performance wording`);
   assert(!/MODE EUCLID[^.]*\bDENS\b/i.test(text), `${recipe.title} incorrectly uses DENS with EUCLID`);
@@ -29,7 +27,9 @@ for (const recipe of data.recipes) {
   assert(!/FORM[^.]*KNOB 4 EVERY/i.test(text), `${recipe.title} assigns FORM's timing to the wrong knob`);
 }
 
-for (const filename of ["README.md", "BEGINNER-GUIDE.md", ...["lofi", "rave", "ambient", "grooves", "experiments", "chord-jams", "chiptune", "anime", "shinobi-flute", "dungeon-synth", "medieval-lofi", "hooky", "funk-rock", "brazilian"].map((name) => `recipes/${name}.md`)]) {
+const recipeFiles = await readdir(resolve(root, "recipes"));
+assert(recipeFiles.length === 1 && recipeFiles[0] === "calm.md", `Only recipes/calm.md should remain; found ${recipeFiles.join(", ")}`);
+for (const filename of ["README.md", "BEGINNER-GUIDE.md", "recipes/calm.md"]) {
   const source = await readFile(resolve(root, filename), "utf8");
   for (const match of source.matchAll(/\[[^\]]+\]\(([^)#]+)(?:#[^)]+)?\)/g)) {
     const target = match[1];
@@ -41,7 +41,8 @@ for (const filename of ["README.md", "BEGINNER-GUIDE.md", ...["lofi", "rave", "a
 
 const html = await readFile(resolve(root, "site/index.html"), "utf8");
 assert(!html.includes('id="ink-select"'), "Ink colors must not use a dropdown");
-assert(html.includes('id="steps-select"'), "The website is missing its step-count selector");
+assert(html.includes('id="tracks-select"'), "The website is missing its active-track selector");
+assert(!/(?:type|version|steps)-select/.test(html), "Track count must be the only recipe selector filter");
 assert((html.match(/class="ink-swatch/g) || []).length === 9, "Expected the nine single-color Tessera inks as square buttons");
 assert(!/data-ink="(?:mosaic|sunset|ocean|neon)"/.test(html), "Multi-color ink themes must not be offered");
 for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
@@ -58,8 +59,12 @@ try {
   failures.push("Tessera submodule is not pinned to an exact release tag");
 }
 
+const allText = data.recipes.flatMap((recipe) => recipe.steps).join(" ");
+for (const feature of ["TURING", "MARKOV", "CONSTL", "SERIES", "BOUNCE", "AWAKE", "POLY", "MORPH", "EUCLID", "CHORD", "TIDE", "SWARM", "DRIFT", "ECHO", "TAPE", "FILTER", "CHORUS", "ROOM", "ENERGY", "FORM", "CHAIN", "ENTRIES"]) {
+  assert(allText.includes(feature), `The recipe set does not exercise ${feature}`);
+}
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
-console.log("Repository checks passed: 122 recipes, links, assets, and release pin are valid.");
+console.log("Repository checks passed: 30 calm recipes, track counts, feature diversity, links, assets, and release pin are valid.");

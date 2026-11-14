@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#111111">
-  <meta name="description" content="122 patches and ideas for playing with Tessera on the M-Vave FM-1.">
+  <meta name="description" content="30 calm, self-playing recipes for Tessera on the M-Vave FM-1.">
   <title>Tessera Recipes</title>
   <link rel="stylesheet" href="styles.css">
   <script>try { const ink = localStorage.getItem("tessera-ink"); document.documentElement.dataset.ink = ["yellow","white","green","blue","red","orange","pink","hot-pink","lilac"].includes(ink) ? ink : "yellow"; } catch (_) {}</script>
@@ -35,60 +35,18 @@
     <section class="library" id="library">
       <div class="wrap">
         <div class="quick-pick" aria-label="Quick recipe picker">
-          <label><span>Type</span><select id="type-select">
-            <option value="all">All types</option>
-            <option value="favorites">Favorites</option>
-            <option value="lofi">Lo-fi</option>
-            <option value="rave">Techno / trance / rave</option>
-            <option value="ambient">Ambient</option>
-            <option value="grooves">Grooves</option>
-            <option value="experiments">Experiments</option>
-            <option value="chord-jams">Chord jams</option>
-            <option value="chiptune">Chiptune</option>
-            <option value="anime">Anime / cyberpunk</option>
-            <option value="shinobi-flute">Shinobi flute</option>
-            <option value="dungeon-synth">Dungeon synth</option>
-            <option value="medieval-lofi">Medieval lo-fi</option>
-            <option value="hooky">Catchy hooks</option>
-            <option value="funk-rock">Funk / alt rock</option>
-            <option value="brazilian">Brazilian</option>
-          </select></label>
           <label><span>Recipe</span><select id="recipe-select" aria-label="Recipe"></select></label>
-          <label><span>Firmware</span><select id="version-select">
-            <option value="all">All versions</option>
-            <option value="3.4.1">3.4.1 compatible</option>
-            <option value="3.5">Uses 3.5+ features</option>
-          </select></label>
-          <label><span>Steps</span><select id="steps-select" aria-label="Number of steps">
-            <option value="all">All steps</option>
-            <option value="4">4 steps</option><option value="5">5 steps</option>
-            <option value="6">6 steps</option><option value="7">7 steps</option><option value="8">8 steps</option>
+          <label><span>Tracks</span><select id="tracks-select" aria-label="Number of active tracks">
+            <option value="all">All tracks</option>
+            <option value="2">2 tracks</option><option value="3">3 tracks</option><option value="4">4 tracks</option>
           </select></label>
           <button class="button primary" id="open-selected" type="button">Open</button>
           <button class="button" id="random-picker" type="button">Random</button>
         </div>
         <label class="search">
           <span>Search</span>
-          <input id="search" type="search" placeholder="Try “chord”, “rain”, “techno”…" autocomplete="off">
+          <input id="search" type="search" placeholder="Try “rain”, “tape”, “harp”…" autocomplete="off">
         </label>
-        <div class="filters" id="filters" aria-label="Recipe categories">
-          <button class="filter active" data-category="all" type="button">All <span>122</span></button>
-          <button class="filter" data-category="favorites" type="button">Favorites <span id="favorite-count">0</span></button>
-          <button class="filter" data-category="lofi" type="button">Lo-fi <span>20</span></button>
-          <button class="filter" data-category="rave" type="button">Techno / rave <span>12</span></button>
-          <button class="filter" data-category="ambient" type="button">Ambient <span>8</span></button>
-          <button class="filter" data-category="grooves" type="button">Grooves <span>8</span></button>
-          <button class="filter" data-category="experiments" type="button">Experiments <span>8</span></button>
-          <button class="filter" data-category="chord-jams" type="button">Chord jams <span>10</span></button>
-          <button class="filter" data-category="chiptune" type="button">Chiptune <span>8</span></button>
-          <button class="filter" data-category="anime" type="button">Anime / cyberpunk <span>8</span></button>
-          <button class="filter" data-category="shinobi-flute" type="button">Shinobi flute <span>8</span></button>
-          <button class="filter" data-category="dungeon-synth" type="button">Dungeon synth <span>6</span></button>
-          <button class="filter" data-category="medieval-lofi" type="button">Medieval lo-fi <span>6</span></button>
-          <button class="filter" data-category="hooky" type="button">Catchy hooks <span>6</span></button>
-          <button class="filter" data-category="funk-rock" type="button">Funk / alt rock <span>6</span></button>
-          <button class="filter" data-category="brazilian" type="button">Brazilian <span>8</span></button>
-        </div>
         <span id="count" class="count" aria-live="polite">Loading…</span>
         <div id="recipes" class="recipe-grid" aria-live="polite"></div>
         <p id="empty" class="empty" hidden>No recipes match that search. Try a sound, generator, or mood.</p>

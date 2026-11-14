@@ -1,28 +1,23 @@
-const state = { recipes: [], category: "all", version: "all", steps: "all", query: "", current: null, favorites: new Set() };
+const state = { recipes: [], tracks: "all", query: "", current: null, favorites: new Set() };
 const $ = (selector) => document.querySelector(selector);
 const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"), search: $("#search"),
-  filters: $("#filters"), detail: $("#detail"), detailContent: $("#detail-content"),
+  detail: $("#detail"), detailContent: $("#detail-content"),
   progress: $("#progress-label"), inkPicker: $("#ink-picker"),
-  typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"), versionSelect: $("#version-select"), stepsSelect: $("#steps-select"),
+  recipeSelect: $("#recipe-select"), tracksSelect: $("#tracks-select"),
 };
 
 const escapeHtml = (value = "") => value.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
 const inline = (value = "") => escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`(.+?)`/g, "<code>$1</code>");
-const plain = (value = "") => value.replace(/\*\*|`/g, "");
 const progressKey = (id) => `tessera-recipe:${id}`;
 const readProgress = (id) => { try { return JSON.parse(localStorage.getItem(progressKey(id)) || "[]"); } catch (_) { return []; } };
 const favoritesKey = "tessera-recipe-favorites";
 try { state.favorites = new Set(JSON.parse(localStorage.getItem(favoritesKey) || "[]")); } catch (_) {}
-const pattern = { lofi:"var(--p1)", rave:"var(--p2)", ambient:"var(--p3)", grooves:"var(--p4)", experiments:"linear-gradient(90deg,var(--p1) 0 25%,var(--p2) 25% 50%,var(--p3) 50% 75%,var(--p4) 75%)", "chord-jams":"var(--p1)", chiptune:"var(--p2)", anime:"var(--p3)", "shinobi-flute":"var(--p4)", "dungeon-synth":"var(--p3)", "medieval-lofi":"var(--p4)", hooky:"var(--p1)", "funk-rock":"var(--p2)", brazilian:"linear-gradient(90deg,var(--p1),var(--p3),var(--p4))" };
 
 function filteredRecipes() {
   const words = state.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
   return state.recipes.filter((recipe) => {
-    if (state.category === "favorites" && !state.favorites.has(recipe.id)) return false;
-    if (state.category !== "all" && state.category !== "favorites" && recipe.category !== state.category) return false;
-    if (state.version !== "all" && recipe.minVersion !== state.version) return false;
-    if (state.steps !== "all" && recipe.steps.length !== Number(state.steps)) return false;
+    if (state.tracks !== "all" && recipe.tracks !== Number(state.tracks)) return false;
     const haystack = [recipe.title, recipe.categoryLabel, recipe.description, ...recipe.steps, recipe.note].join(" ").toLowerCase();
     return words.every((word) => haystack.includes(word));
   });
@@ -33,28 +28,21 @@ function render() {
   elements.count.textContent = `${recipes.length} recipe${recipes.length === 1 ? "" : "s"}`;
   elements.empty.hidden = recipes.length > 0;
   elements.grid.innerHTML = recipes.map((recipe, index) => `
-    <article class="recipe-card" style="--pattern:${pattern[recipe.category]}">
+    <article class="recipe-card" style="--pattern:var(--p1)">
       <button class="card-open" type="button" data-id="${recipe.id}">
         <span class="number">${String(index + 1).padStart(2, "0")}</span>
         <h3>${escapeHtml(recipe.title)}</h3>
-        <p>${escapeHtml(plain(recipe.description || recipe.steps[0]))}</p>
         <span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
-        <span class="meta"><span>${escapeHtml(recipe.categoryLabel)}</span><span>${recipe.steps.length} steps →</span></span>
+        <span class="meta"><span>${recipe.tracks} active tracks</span><span>${recipe.steps.length} steps →</span></span>
       </button>
       <button class="favorite-button ${state.favorites.has(recipe.id) ? "active" : ""}" type="button" data-favorite="${recipe.id}" aria-label="${state.favorites.has(recipe.id) ? "Remove from" : "Add to"} favorites" aria-pressed="${state.favorites.has(recipe.id)}">${state.favorites.has(recipe.id) ? "♥" : "♡"}</button>
     </article>`).join("");
-  const favoriteCount = $("#favorite-count");
-  if (favoriteCount) favoriteCount.textContent = state.favorites.size;
 }
 
 function updatePicker() {
-  const category = elements.typeSelect.value;
-  const version = elements.versionSelect.value;
-  const steps = elements.stepsSelect.value;
+  const tracks = elements.tracksSelect.value;
   const recipes = state.recipes.filter((recipe) =>
-    (category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category)) &&
-    (version === "all" || recipe.minVersion === version) &&
-    (steps === "all" || recipe.steps.length === Number(steps)));
+    tracks === "all" || recipe.tracks === Number(tracks));
   elements.recipeSelect.innerHTML = recipes.map((recipe) => `<option value="${recipe.id}">${escapeHtml(recipe.title)}</option>`).join("");
 }
 
@@ -70,7 +58,7 @@ function openRecipe(id, pushHash = true) {
   state.current = recipe;
   const completed = new Set(readProgress(id));
   elements.detailContent.innerHTML = `
-    <span class="detail-category">${escapeHtml(recipe.categoryLabel)}</span><span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
+    <span class="detail-category">${recipe.tracks} active tracks</span><span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
     <h2>${escapeHtml(recipe.title)}</h2>
     ${recipe.description ? `<p class="detail-lede">${inline(recipe.description)}</p>` : ""}
     <aside class="recipe-setup">
@@ -110,25 +98,13 @@ elements.grid.addEventListener("click", (event) => {
   const card = event.target.closest("[data-id]"); if (card) openRecipe(card.dataset.id);
 });
 elements.search.addEventListener("input", () => { state.query = elements.search.value; render(); });
-elements.filters.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-category]"); if (!button) return;
-  state.category = button.dataset.category;
-  elements.filters.querySelectorAll(".filter").forEach((item) => item.classList.toggle("active", item === button));
-  render();
-});
 $("#close").addEventListener("click", () => closeRecipe());
-elements.typeSelect.addEventListener("change", updatePicker);
-elements.versionSelect.addEventListener("change", () => { state.version = elements.versionSelect.value; render(); updatePicker(); });
-elements.stepsSelect.addEventListener("change", () => { state.steps = elements.stepsSelect.value; render(); updatePicker(); });
+elements.tracksSelect.addEventListener("change", () => { state.tracks = elements.tracksSelect.value; render(); updatePicker(); });
 $("#open-selected").addEventListener("click", () => { if (elements.recipeSelect.value) openRecipe(elements.recipeSelect.value); });
 $("#random-picker").addEventListener("click", () => {
-  const category = elements.typeSelect.value;
-  const version = elements.versionSelect.value;
-  const steps = elements.stepsSelect.value;
+  const tracks = elements.tracksSelect.value;
   const choices = state.recipes.filter((recipe) =>
-    (category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category)) &&
-    (version === "all" || recipe.minVersion === version) &&
-    (steps === "all" || recipe.steps.length === Number(steps)));
+    tracks === "all" || recipe.tracks === Number(tracks));
   if (choices.length) openRecipe(choices[Math.floor(Math.random() * choices.length)].id);
 });
 elements.detailContent.addEventListener("change", (event) => {
