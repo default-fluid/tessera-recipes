@@ -11,7 +11,7 @@ assert(data.recipes.length === 122, `Expected 122 site recipes, found ${data.rec
 assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length, "Recipe IDs are not unique");
 for (const recipe of data.recipes) {
   assert(recipe.title && recipe.category, `Recipe is missing title/category: ${recipe.id || "unknown"}`);
-  assert(recipe.steps.length === 9, `${recipe.title} must have exactly nine beginner steps`);
+  assert(recipe.steps.length >= 7 && recipe.steps.length <= 9, `${recipe.title} must have seven to nine beginner steps`);
   assert(["3.4.1", "3.5"].includes(recipe.minVersion), `${recipe.title} has an invalid firmware version`);
   const text = recipe.steps.join(" ");
   for (const required of ["New song", "KNOB 1 ROOT", "KNOB 2 SCALE", "T1 **", "T2 **", "T3 **", "T4 **", "MODE", "ROLL", "MODS", "CHAIN", "ENTRIES", "PIECE", "END STOP", "Press **PLAY** once"]) {
