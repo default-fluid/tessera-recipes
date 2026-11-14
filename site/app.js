@@ -1,9 +1,9 @@
-const state = { recipes: [], category: "all", version: "all", query: "", current: null, wakeLock: null, favorites: new Set() };
+const state = { recipes: [], category: "all", version: "all", query: "", current: null, favorites: new Set() };
 const $ = (selector) => document.querySelector(selector);
 const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"), search: $("#search"),
   filters: $("#filters"), detail: $("#detail"), detailContent: $("#detail-content"),
-  progress: $("#progress-label"), wake: $("#wake"),
+  progress: $("#progress-label"), inkSelect: $("#ink-select"),
   typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"), versionSelect: $("#version-select"),
 };
 
@@ -14,7 +14,7 @@ const progressKey = (id) => `tessera-recipe:${id}`;
 const readProgress = (id) => { try { return JSON.parse(localStorage.getItem(progressKey(id)) || "[]"); } catch (_) { return []; } };
 const favoritesKey = "tessera-recipe-favorites";
 try { state.favorites = new Set(JSON.parse(localStorage.getItem(favoritesKey) || "[]")); } catch (_) {}
-const pattern = { lofi:"var(--p1)", rave:"var(--p2)", ambient:"var(--p3)", grooves:"var(--p4)", experiments:"linear-gradient(90deg,var(--p1) 0 25%,var(--p2) 25% 50%,var(--p3) 50% 75%,var(--p4) 75%)", "chord-jams":"var(--p1)", chiptune:"var(--p2)", anime:"var(--p3)", "shinobi-flute":"var(--p4)" };
+const pattern = { lofi:"var(--p1)", rave:"var(--p2)", ambient:"var(--p3)", grooves:"var(--p4)", experiments:"linear-gradient(90deg,var(--p1) 0 25%,var(--p2) 25% 50%,var(--p3) 50% 75%,var(--p4) 75%)", "chord-jams":"var(--p1)", chiptune:"var(--p2)", anime:"var(--p3)", "shinobi-flute":"var(--p4)", "dungeon-synth":"var(--p3)", "medieval-lofi":"var(--p4)", hooky:"var(--p1)", "funk-rock":"var(--p2)", brazilian:"linear-gradient(90deg,var(--p1),var(--p3),var(--p4))" };
 
 function filteredRecipes() {
   const words = state.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
@@ -40,7 +40,7 @@ function render() {
         <span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
         <span class="meta"><span>${escapeHtml(recipe.categoryLabel)}</span><span>${recipe.steps.length} steps →</span></span>
       </button>
-      <button class="favorite-button ${state.favorites.has(recipe.id) ? "active" : ""}" type="button" data-favorite="${recipe.id}" aria-label="${state.favorites.has(recipe.id) ? "Remove from" : "Add to"} favorites" aria-pressed="${state.favorites.has(recipe.id)}">★</button>
+      <button class="favorite-button ${state.favorites.has(recipe.id) ? "active" : ""}" type="button" data-favorite="${recipe.id}" aria-label="${state.favorites.has(recipe.id) ? "Remove from" : "Add to"} favorites" aria-pressed="${state.favorites.has(recipe.id)}">${state.favorites.has(recipe.id) ? "♥" : "♡"}</button>
     </article>`).join("");
   const favoriteCount = $("#favorite-count");
   if (favoriteCount) favoriteCount.textContent = state.favorites.size;
@@ -76,7 +76,7 @@ function openRecipe(id, pushHash = true) {
       <div class="step-copy">${inline(step)}</div></li>`).join("")}</ol>
     ${recipe.note ? `<div class="recipe-note">${inline(recipe.note)}</div>` : ""}
     <div class="detail-actions">
-      <button class="button favorite-detail ${state.favorites.has(recipe.id) ? "primary" : ""}" type="button">${state.favorites.has(recipe.id) ? "★ Favorited" : "☆ Favorite"}</button>
+      <button class="button favorite-detail ${state.favorites.has(recipe.id) ? "primary" : ""}" type="button">${state.favorites.has(recipe.id) ? "♥ Favorited" : "♡ Favorite"}</button>
       <button class="button reset-progress" type="button">Reset steps</button>
     </div>`;
   elements.detail.classList.add("open");
@@ -109,7 +109,6 @@ elements.filters.addEventListener("click", (event) => {
   render();
 });
 $("#close").addEventListener("click", () => closeRecipe());
-$("#random").addEventListener("click", () => openRecipe(state.recipes[Math.floor(Math.random() * state.recipes.length)].id));
 elements.typeSelect.addEventListener("change", updatePicker);
 elements.versionSelect.addEventListener("change", () => { state.version = elements.versionSelect.value; render(); updatePicker(); });
 $("#open-selected").addEventListener("click", () => { if (elements.recipeSelect.value) openRecipe(elements.recipeSelect.value); });
@@ -142,13 +141,10 @@ function toggleFavorite(id) {
   updatePicker();
 }
 
-if (!("wakeLock" in navigator)) elements.wake.hidden = true;
-elements.wake.addEventListener("click", async () => {
-  try {
-    if (state.wakeLock) { await state.wakeLock.release(); state.wakeLock = null; }
-    else { state.wakeLock = await navigator.wakeLock.request("screen"); state.wakeLock.addEventListener("release", () => { state.wakeLock = null; elements.wake.classList.remove("active"); }); }
-    elements.wake.classList.toggle("active", Boolean(state.wakeLock));
-  } catch (_) { elements.wake.title = "Screen wake lock is unavailable in this browser"; }
+elements.inkSelect.value = document.documentElement.dataset.ink || "yellow";
+elements.inkSelect.addEventListener("change", () => {
+  document.documentElement.dataset.ink = elements.inkSelect.value;
+  localStorage.setItem("tessera-ink", elements.inkSelect.value);
 });
 
 window.addEventListener("popstate", () => {

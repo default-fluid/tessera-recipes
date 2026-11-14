@@ -1441,6 +1441,518 @@
       ],
       "note": "**Play it:** mute drums for four bars, then return with FILL held for the last beat.",
       "minVersion": "3.5"
+    },
+    {
+      "id": "tower-beyond-the-fog",
+      "title": "Tower Beyond the Fog",
+      "category": "dungeon-synth",
+      "categoryLabel": "Dungeon synth",
+      "description": "",
+      "steps": [
+        "Set **54 BPM**, D minor.",
+        "**T1:** STRING MACH, CHORD DRONE, HIT HOLD, open fifth-like voicing.",
+        "**T2:** FLUTE, SERIES LOOP 8, INTV 1, DIV 1/4, LENGTH HIT.",
+        "**T3:** BELLS, BOUNCE/FALL, SPEED 7, DROP 55.",
+        "Route TIDE to pad cutoff and echo send; set PIECE to 12 minutes, SHAPE ARCH."
+      ],
+      "note": "**Rule:** the drone is the room; every other track is something moving inside it.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "crypt-procession",
+      "title": "Crypt Procession",
+      "category": "dungeon-synth",
+      "categoryLabel": "Dungeon synth",
+      "description": "",
+      "steps": [
+        "Set **68 BPM**, E minor.",
+        "**T1:** CHORD USER with Em–C–Am–B, BARS 2, HIT HOLD.",
+        "**T2:** low SERIES LOOP 4, INTV 1, DIV 1/4.",
+        "**T3:** FLUTE, FOLLOW T1, HOW CHORD, RHYTHM OWN, sparse EUCLID rhythm.",
+        "**T4:** slow tom and rim procession with no hats."
+      ],
+      "note": "**Change it:** FORM AABA on percussion only, with a heavier fourth-bar return.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "moss-covered-throne",
+      "title": "Moss-Covered Throne",
+      "category": "dungeon-synth",
+      "categoryLabel": "Dungeon synth",
+      "description": "",
+      "steps": [
+        "Set **46 BPM**, C minor pentatonic.",
+        "**T1:** GLASS PAD through FILTER, CHORD DRONE, HIT HOLD.",
+        "**T2:** CONSTL DENS 18, SIZE 3, LEN 4, LOCK 90.",
+        "**T3:** BOUNCE/FALL, SPEED 5, WIND slowly modulated by SWARM.",
+        "Use ENTRIES 40 so the high voices disappear for long stretches."
+      ],
+      "note": "**Listen for:** one bright note changing the apparent chord of the entire drone.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "march-of-the-hollow-guard",
+      "title": "March of the Hollow Guard",
+      "category": "dungeon-synth",
+      "categoryLabel": "Dungeon synth",
+      "description": "",
+      "steps": [
+        "Set **82 BPM**, G minor.",
+        "**T4:** STEP drums with low kick on 1/3 and toms answering on 2/4.",
+        "**T1:** TURING bass, PROB 0, LEN 5, DIV 1/8.",
+        "**T2:** CHORD USER, short minor stabs every two beats.",
+        "**T3:** FLUTE, SERIES LOOP OFF, DIV 1/4, QNT CHRD."
+      ],
+      "note": "**Play it:** mute the march for one bar before each new chord cycle.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "moonlit-ramparts",
+      "title": "Moonlit Ramparts",
+      "category": "dungeon-synth",
+      "categoryLabel": "Dungeon synth",
+      "description": "",
+      "steps": [
+        "Set **58 BPM**, A Dorian.",
+        "**T1:** KOTO WARM, TURING PROB 2, DIV 1/8, narrow range.",
+        "**T2:** STRING MACH, CHORD WALK, BARS 4, HIT HOLD.",
+        "**T3:** FOLLOW T1, HOW CANON4, RHYTHM SOURCE, DROP 60.",
+        "Pan the canon away from the lead and give it a longer echo."
+      ],
+      "note": "**Change it:** EVOLVE EVERY 8, AMOUNT 12, GRAVITY 90 keeps the theme ancient and stable.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "the-gate-opens-once",
+      "title": "The Gate Opens Once",
+      "category": "dungeon-synth",
+      "categoryLabel": "Dungeon synth",
+      "description": "",
+      "steps": [
+        "Set **60 BPM**, D minor.",
+        "**T1:** CHORD DRONE, HIT HOLD, FILTER closed low.",
+        "**T2:** POLY /3, /5, and /7 on bells, SPAN 2.",
+        "Set PIECE 10 minutes, SHAPE RISE, END STOP.",
+        "Map PERF 1 to drone cutoff, bell level, and FX send."
+      ],
+      "note": "**Play it:** turn PERF 1 only once—from closed to fully open over the whole piece.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "scribe-by-candlelight",
+      "title": "Scribe by Candlelight",
+      "category": "medieval-lofi",
+      "categoryLabel": "Medieval lo-fi",
+      "description": "",
+      "steps": [
+        "Set **72 BPM**, D Dorian.",
+        "**T1:** KOTO WARM, SERIES LOOP 8, INTV 1, DIV 1/8.",
+        "**T2:** STRING MACH, CHORD USER with Dm–C–F–Dm, HIT HOLD.",
+        "**T4:** sparse kick, rim, and shaker with HUMAN 20.",
+        "Add a small echo-time modulation to T1 for worn-tape movement."
+      ],
+      "note": "**Change it:** print the melody and nudge two notes late.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "tavern-after-closing",
+      "title": "Tavern After Closing",
+      "category": "medieval-lofi",
+      "categoryLabel": "Medieval lo-fi",
+      "description": "",
+      "steps": [
+        "Set **86 BPM**, G major pentatonic.",
+        "**T1:** FLUTE, TURING PROB 4, DIV 1/8.",
+        "**T2:** CHORD USER with G–C–Am–D, short HIT notes.",
+        "**T3:** bass follower, HOW BASS, RHYTHM SOURCE.",
+        "**T4:** loose hand-drum-like pattern with a fill every fourth bar."
+      ],
+      "note": "**Play it:** lower every track except flute for a quiet final round.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "rain-on-the-cloister",
+      "title": "Rain on the Cloister",
+      "category": "medieval-lofi",
+      "categoryLabel": "Medieval lo-fi",
+      "description": "",
+      "steps": [
+        "Set **62 BPM**, E KUMOI.",
+        "**T1:** BOUNCE/FALL, SPEED 9, LENGTH HIT.",
+        "**T2:** CHORD DRONE, open voicing, FILTER cutoff low.",
+        "**T3:** BELLS, CONSTL DENS 15, LEN 4, LOCK 85.",
+        "Route TIDE to cutoff and SWARM to the bell pan."
+      ],
+      "note": "**Rule:** keep drums out; falling notes are the percussion.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "worn-minstrel-tape",
+      "title": "Worn Minstrel Tape",
+      "category": "medieval-lofi",
+      "categoryLabel": "Medieval lo-fi",
+      "description": "",
+      "steps": [
+        "Set **76 BPM**, A minor pentatonic.",
+        "**T1:** FLUTE, SERIES LOOP 8, INTV 2, DIV 1/8.",
+        "**T2:** KOTO WARM, FOLLOW T1, SHIFT -2, DROP 55.",
+        "**T3:** low CHORD DRONE, HIT HOLD.",
+        "Route a tiny slow LFO to echo time and another to pan."
+      ],
+      "note": "**Change it:** FORM AABA on T1 with CONTR 10—almost the same tale each time.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "castle-kitchen-beat",
+      "title": "Castle Kitchen Beat",
+      "category": "medieval-lofi",
+      "categoryLabel": "Medieval lo-fi",
+      "description": "",
+      "steps": [
+        "Set **92 BPM**, C major.",
+        "**T4:** ATLAS DENS 40, kick full, rim as fourth part, hats near 15.",
+        "**T1:** KOTO WARM, TURING PROB 3, DIV 1/8.",
+        "**T2:** CHORD USER with C–Am–F–G, BARS 2, HIT HOLD.",
+        "Add HUMAN 18 to drums and a short echo to T1."
+      ],
+      "note": "**Play it:** mute chords for eight bars and let the melody imply the feast hall.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "herald-at-dusk",
+      "title": "Herald at Dusk",
+      "category": "medieval-lofi",
+      "categoryLabel": "Medieval lo-fi",
+      "description": "",
+      "steps": [
+        "Set **70 BPM**, F major pentatonic.",
+        "**T1:** FLUTE, MARKOV DENS 24, LEAP 18, LENGTH HIT.",
+        "**T2:** STRING MACH, CHORD WALK, BARS 4, open voicing.",
+        "**T3:** FOLLOW T1, HOW CANON2, RHYTHM SOURCE, DROP 70.",
+        "Use PIECE 6 minutes, SHAPE FALL, END STOP."
+      ],
+      "note": "**Listen for:** the canon fading like a call crossing a valley.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "four-note-earworm",
+      "title": "Four-Note Earworm",
+      "category": "hooky",
+      "categoryLabel": "Catchy hooks",
+      "description": "",
+      "steps": [
+        "Set **118 BPM**, C major pentatonic.",
+        "**T1:** TURING PROB 0, LEN 4, DIV 1/8.",
+        "Find a seed with one leap and three nearby notes.",
+        "**T2:** FOLLOW T1, SHIFT +2, DROP 65, using a contrasting sound.",
+        "**T4:** simple kick, clap, and offbeat hat pattern."
+      ],
+      "note": "**Rule:** change the sound before changing the four notes.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "answer-on-the-fourth-bar",
+      "title": "Answer on the Fourth Bar",
+      "category": "hooky",
+      "categoryLabel": "Catchy hooks",
+      "description": "",
+      "steps": [
+        "Set **110 BPM**, A minor pentatonic.",
+        "**T1:** write a short STEP call in bars 1–3.",
+        "**T2:** ANSWER using T1 as SOURCE, active on condition 4:4.",
+        "Keep the answer in a higher register with a brighter sound.",
+        "**T4:** repeat one stable two-bar groove under both."
+      ],
+      "note": "**Listen for:** the empty space teaching the listener when the answer belongs.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "chorus-before-the-verse",
+      "title": "Chorus Before the Verse",
+      "category": "hooky",
+      "categoryLabel": "Catchy hooks",
+      "description": "",
+      "steps": [
+        "Set **124 BPM**, G major.",
+        "**T2:** CHORD USER with G–D–Em–C, BARS 1.",
+        "**T1:** SERIES LOOP 8, INTV 2, DIV 1/8, QNT CHRD.",
+        "FORM AABA, EVERY 4, CONTR 18; begin playback on the brighter A hook.",
+        "**T4:** reduce density in B instead of adding more notes."
+      ],
+      "note": "**Change it:** raise only the last hook note an octave for the final return.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "two-notes-are-enough",
+      "title": "Two Notes Are Enough",
+      "category": "hooky",
+      "categoryLabel": "Catchy hooks",
+      "description": "",
+      "steps": [
+        "Set **126 BPM**, E minor.",
+        "**T1:** STEP pattern alternating two notes with rests and accents.",
+        "Add one ratchet and one early nudge, leaving pitches unchanged.",
+        "**T2:** CHORD DRONE, HIT HOLD, moving slowly with FILTER.",
+        "**T4:** energetic drums that make the two-note rhythm feel melodic."
+      ],
+      "note": "**Rule:** use arrangement, octave, and timbre—not extra pitches—to keep it moving.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "whistleable-constellation",
+      "title": "Whistleable Constellation",
+      "category": "hooky",
+      "categoryLabel": "Catchy hooks",
+      "description": "",
+      "steps": [
+        "Set **105 BPM**, D major pentatonic.",
+        "**T1:** CONSTL DENS 42, SIZE 1, LEN 6, LOCK 92.",
+        "FILL ARP off; keep the line simple enough to sing.",
+        "**T2:** CHORD WALK, BARS 2, HIT HOLD; set T1 QNT CHRD.",
+        "Print the first phrase you remember after playback stops."
+      ],
+      "note": "**Change it:** edit only the final printed note to create a second ending.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "hook-drop-return",
+      "title": "Hook, Drop, Return",
+      "category": "hooky",
+      "categoryLabel": "Catchy hooks",
+      "description": "",
+      "steps": [
+        "Set **128 BPM**, D minor.",
+        "**T1:** TURING PROB 0, LEN 8, DIV 1/8, bright short sound.",
+        "**T3:** bass follower using HOW BASS.",
+        "**T4:** full groove with a conditioned fill on 4:4.",
+        "Use MUTES BAR: remove T1 for eight bars, then return it immediately after the fill."
+      ],
+      "note": "**Play it:** the return makes the unchanged hook feel new.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "underpass-bassline",
+      "title": "Underpass Bassline",
+      "category": "funk-rock",
+      "categoryLabel": "Funk / alt rock",
+      "description": "",
+      "steps": [
+        "Set **96 BPM**, E minor pentatonic.",
+        "**T1:** choose a firm bass sound, TURING PROB 0, LEN 7, DIV 1/8.",
+        "Find a seed with rests and one octave-like leap; use short FIXED notes.",
+        "**T2:** clipped chord stabs on offbeats, QNT CHRD.",
+        "**T4:** dry kick/snare groove with HUMAN 10 and sparse hats."
+      ],
+      "note": "**Play it:** mute the chords and drums for one bar so the bass hook stands alone.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "clean-guitar-illusion",
+      "title": "Clean Guitar Illusion",
+      "category": "funk-rock",
+      "categoryLabel": "Funk / alt rock",
+      "description": "",
+      "steps": [
+        "Set **102 BPM**, A minor.",
+        "**T1:** use KOTO WARM or another pluck, STEP with short syncopated chords.",
+        "Pan alternating chord hits slightly left and right.",
+        "**T3:** bass follower on a separate rhythm, HOW BASS.",
+        "**T4:** snare on 2/4, kick around the bass accents."
+      ],
+      "note": "**Change it:** add a small FILTER sweep instead of distortion.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "rooftop-chorus",
+      "title": "Rooftop Chorus",
+      "category": "funk-rock",
+      "categoryLabel": "Funk / alt rock",
+      "description": "",
+      "steps": [
+        "Set **112 BPM**, G major.",
+        "**T2:** CHORD USER with G–D–Em–C, HIT BEAT, short notes.",
+        "**T1:** SERIES LOOP 8, INTV 2, DIV 1/8, QNT CHRD.",
+        "**T3:** strong bass follower, RHYTHM SOURCE.",
+        "FORM AABA; raise T1 an octave and open T2 cutoff in B."
+      ],
+      "note": "**Play it:** use the mute keys like band entrances before the chorus.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "sixteenth-note-engine",
+      "title": "Sixteenth-Note Engine",
+      "category": "funk-rock",
+      "categoryLabel": "Funk / alt rock",
+      "description": "",
+      "steps": [
+        "Set **108 BPM**, D minor pentatonic.",
+        "**T1:** TURING bass at DIV 1/16, LEN 5, PROB 0, DROP 35.",
+        "**T2:** short single-chord stabs on selected 1/16 steps.",
+        "**T4:** kick follows bass gaps; snare stays firm on 2/4.",
+        "Add TIMING SPLIT 8 to T1, keeping HUMAN low."
+      ],
+      "note": "**Rule:** the groove comes from missing notes, not nonstop sixteenths.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "bridge-with-no-drums",
+      "title": "Bridge With No Drums",
+      "category": "funk-rock",
+      "categoryLabel": "Funk / alt rock",
+      "description": "",
+      "steps": [
+        "Set **100 BPM**, C minor.",
+        "**T1:** melodic bass STEP pattern, LEN 8.",
+        "**T2:** CHORD USER, short stabs, BARS 2.",
+        "**T3:** FOLLOW T1, SHIFT +4, DROP 70, with a lead sound.",
+        "Arrange 16 bars full, 8 bars without T4, then return with FILL."
+      ],
+      "note": "**Change it:** let the bass carry the harmony through the drumless bridge.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "sunset-jam-room",
+      "title": "Sunset Jam Room",
+      "category": "funk-rock",
+      "categoryLabel": "Funk / alt rock",
+      "description": "",
+      "steps": [
+        "Set **94 BPM**, A major pentatonic.",
+        "**T1:** KOTO WARM as a clean pluck, TURING PROB 3, DIV 1/8.",
+        "**T2:** CHORD USER with A–D–F♯m–E, HIT HOLD.",
+        "**T3:** bass follower with notes on beats 1, the “and” of 2, and 4.",
+        "**T4:** relaxed rock groove, HUMAN 16, one fill every fourth bar."
+      ],
+      "note": "**Play it:** turn ROLL one click between sections as if another player suggested a variation.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "bossa-window",
+      "title": "Bossa Window",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **92 BPM**, D major.",
+        "**T2:** CHORD USER with Dmaj7–Bm7–Em7–A7 roots, BARS 2, short HIT notes.",
+        "Place chord attacks around the beat rather than on every downbeat.",
+        "**T1:** FLUTE or a soft pluck, MARKOV DENS 24, LEAP 10, QNT CHRD.",
+        "**T4:** low kick on 1/3 and light rim syncopation; keep hats sparse."
+      ],
+      "note": "**Play it:** lower every part until the spaces between attacks feel equal to the notes.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "mpb-afternoon",
+      "title": "MPB Afternoon",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **98 BPM**, E major.",
+        "**T2:** CHORD USER with E–G♯m–A–F♯m–B, one or two bars each.",
+        "**T1:** SERIES LOOP 8, INTV 2, DIV 1/8, QNT CHRD.",
+        "**T3:** bass follower with an independent syncopated rhythm.",
+        "**T4:** dry groove with rim, shaker, and a soft kick."
+      ],
+      "note": "**Change it:** FORM ABAC on melody and drums while harmony continues unchanged.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "baile-pulse",
+      "title": "Baile Pulse",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **130 BPM**, F minor.",
+        "**T4:** write a syncopated STEP kick pattern with sharp claps and rapid hats.",
+        "Add ratchet x2 to selected percussion and a 4:4 fill.",
+        "**T1:** short bass TURING loop, LEN 5, DIV 1/8.",
+        "**T2:** one-note or one-chord stab with strong rhythmic gaps."
+      ],
+      "note": "**Play it:** use MUTES BAR for hard one-bar drops and immediate returns.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "maracatu-night",
+      "title": "Maracatu Night",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **104 BPM**, D minor.",
+        "**T4:** build a heavy low-drum STEP pattern with layered accents and answering high hits.",
+        "**T1:** bass drone or two-note TURING loop, PROB 0.",
+        "**T2:** CHORD DRONE, open fifth-like voicing, HIT HOLD.",
+        "**T3:** FLUTE, sparse SERIES line, DIV 1/4."
+      ],
+      "note": "**Rule:** let the percussion carry the arrangement; melodic parts stay ceremonial and spare.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "samba-circuit",
+      "title": "Samba Circuit",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **112 BPM**, C major.",
+        "**T4:** STEP drums with steady shaker-like 1/16s, syncopated kick, and rim answers.",
+        "Use accents rather than higher density to create forward motion.",
+        "**T1:** KOTO WARM, TURING PROB 3, DIV 1/8, short notes.",
+        "**T2:** CHORD USER with C–Am–Dm–G, rhythmic HIT notes."
+      ],
+      "note": "**Change it:** condition a busier percussion phrase to 4:4.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "tropicalist-tape",
+      "title": "Tropicalist Tape",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **96 BPM**, A major pentatonic.",
+        "**T1:** CONSTL DENS 38, SIZE 2, LEN 8, LOCK 75.",
+        "**T2:** CHORD USER with A–D–C–E, mixing expected and borrowed-color movement.",
+        "Route a tiny LFO to echo time and SWARM to pan.",
+        "**T4:** loose kick, rim, and shaker with HUMAN 22."
+      ],
+      "note": "**Play it:** print the strangest good phrase and repeat it until it sounds intentional.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "minas-chords",
+      "title": "Minas Chords",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **78 BPM**, G major.",
+        "**T2:** CHORD WALK, BARS 2, open seventh voicing, HIT HOLD.",
+        "**T1:** FLUTE or BELLS, SERIES LOOP OFF, INTV 1, DIV 1/8, QNT CHRD.",
+        "**T3:** FOLLOW T1, HOW CHORD, RHYTHM SOURCE, DROP 70.",
+        "Skip drums or use only a soft pulse every two beats."
+      ],
+      "note": "**Listen for:** harmony doing more movement than rhythm.",
+      "minVersion": "3.4.1"
+    },
+    {
+      "id": "rio-dawn",
+      "title": "Rio Dawn",
+      "category": "brazilian",
+      "categoryLabel": "Brazilian",
+      "description": "",
+      "steps": [
+        "Set **108 BPM**, F major pentatonic.",
+        "**T1:** KOTO WARM, TURING PROB 2, DIV 1/8.",
+        "**T2:** CHORD USER with F–Gm–Am–B♭–C, short syncopated attacks.",
+        "**T3:** bass follower using HOW BASS and RHYTHM OWN.",
+        "**T4:** gradually raise shaker and rim density over eight bars."
+      ],
+      "note": "**Change it:** use PIECE 6 minutes, SHAPE RISE, END LOOP for a repeating sunrise.",
+      "minVersion": "3.4.1"
     }
   ]
 }

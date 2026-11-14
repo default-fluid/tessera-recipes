@@ -7,7 +7,7 @@ const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 
 const data = JSON.parse(await readFile(resolve(root, "site/recipes.json"), "utf8"));
-assert(data.recipes.length === 90, `Expected 90 site recipes, found ${data.recipes.length}`);
+assert(data.recipes.length === 122, `Expected 122 site recipes, found ${data.recipes.length}`);
 assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length, "Recipe IDs are not unique");
 for (const recipe of data.recipes) {
   assert(recipe.title && recipe.category, `Recipe is missing title/category: ${recipe.id || "unknown"}`);
@@ -15,7 +15,7 @@ for (const recipe of data.recipes) {
   assert(["3.4.1", "3.5"].includes(recipe.minVersion), `${recipe.title} has an invalid firmware version`);
 }
 
-for (const filename of ["README.md", ...["lofi", "rave", "ambient", "grooves", "experiments", "chord-jams", "chiptune", "anime", "shinobi-flute"].map((name) => `recipes/${name}.md`)]) {
+for (const filename of ["README.md", ...["lofi", "rave", "ambient", "grooves", "experiments", "chord-jams", "chiptune", "anime", "shinobi-flute", "dungeon-synth", "medieval-lofi", "hooky", "funk-rock", "brazilian"].map((name) => `recipes/${name}.md`)]) {
   const source = await readFile(resolve(root, filename), "utf8");
   for (const match of source.matchAll(/\[[^\]]+\]\(([^)#]+)(?:#[^)]+)?\)/g)) {
     const target = match[1];
@@ -44,4 +44,4 @@ if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
-console.log("Repository checks passed: 90 recipes, links, assets, and release pin are valid.");
+console.log("Repository checks passed: 122 recipes, links, assets, and release pin are valid.");

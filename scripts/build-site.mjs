@@ -12,6 +12,11 @@ const collections = [
   ["chiptune", "Chiptune", "recipes/chiptune.md"],
   ["anime", "Anime / cyberpunk", "recipes/anime.md"],
   ["shinobi-flute", "Shinobi flute", "recipes/shinobi-flute.md"],
+  ["dungeon-synth", "Dungeon synth", "recipes/dungeon-synth.md"],
+  ["medieval-lofi", "Medieval lo-fi", "recipes/medieval-lofi.md"],
+  ["hooky", "Catchy hooks", "recipes/hooky.md"],
+  ["funk-rock", "Funk / alt rock", "recipes/funk-rock.md"],
+  ["brazilian", "Brazilian", "recipes/brazilian.md"],
 ];
 
 const slugify = (value) => value
@@ -75,8 +80,8 @@ const duplicateIds = recipes.filter((recipe, index) =>
 if (duplicateIds.length) {
   throw new Error(`Duplicate recipe IDs: ${duplicateIds.map((item) => item.id).join(", ")}`);
 }
-if (recipes.length !== 90) {
-  throw new Error(`Expected 90 recipes, parsed ${recipes.length}`);
+if (recipes.length !== 122) {
+  throw new Error(`Expected 122 recipes, parsed ${recipes.length}`);
 }
 
 await writeFile(
