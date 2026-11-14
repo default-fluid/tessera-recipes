@@ -47,7 +47,7 @@ h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transfo
 .button.primary:hover { background:var(--bg); color:var(--ink); }
 .library { padding:24px 0 96px; }
 .count { display:block; color:var(--dim); white-space:nowrap; margin:0 0 14px; text-align:right; font-size:13px; }
-.quick-pick { display:grid; grid-template-columns:minmax(125px,.6fr) minmax(190px,1.2fr) minmax(150px,.75fr) minmax(105px,.55fr) auto auto; gap:6px; margin:0 0 14px; padding:12px; border:2px solid var(--line); background:var(--surf); }
+.quick-pick { display:grid; grid-template-columns:minmax(240px,1.5fr) minmax(130px,.7fr) auto auto; gap:6px; margin:0 0 14px; padding:12px; border:2px solid var(--line); background:var(--surf); }
 .quick-pick label { display:grid; grid-template-columns:auto 1fr; align-items:center; min-width:0; border:2px solid var(--line); }
 .quick-pick label > span { color:var(--bg); background:var(--ink); padding:9px 10px; text-transform:uppercase; font-size:11px; align-self:stretch; display:grid; place-items:center; }
 .quick-pick select { min-width:0; width:100%; border:0; border-radius:0; background:var(--bg); color:var(--text); padding:8px 28px 8px 9px; }
@@ -62,7 +62,7 @@ h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transfo
 .filter:hover, .filter.active { border-color:var(--ink); color:var(--bg); background:var(--ink); }
 .filter.active span, .filter:hover span { color:var(--bg); }
 .recipe-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(255px,1fr)); gap:6px; }
-.recipe-card { position:relative; border:2px solid var(--line); background:var(--bg); min-height:190px; display:flex; }
+.recipe-card { position:relative; border:2px solid var(--line); background:var(--bg); min-height:150px; display:flex; }
 .recipe-card::before { content:""; position:absolute; inset:0 0 auto; height:8px; background:var(--pattern,var(--p1)); }
 .recipe-card:hover { border-color:var(--ink); background:var(--raise); }
 .card-open { border:0; background:none; color:inherit; padding:24px 48px 18px 18px; width:100%; cursor:pointer; text-align:left; display:flex; flex-direction:column; }
@@ -70,7 +70,6 @@ h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transfo
 .favorite-button:hover, .favorite-button.active { border-color:#ff58b0; color:#ff58b0; background:color-mix(in srgb,#ff58b0 12%,var(--bg)); }
 .recipe-card .number { color:var(--dim); font-size:12px; }
 .recipe-card h3 { font-size:17px; margin:10px 0; }
-.recipe-card p { color:var(--mid); font-size:13px; line-height:1.45; margin:0 0 12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
 .recipe-card .meta { margin-top:auto; display:flex; justify-content:space-between; color:var(--dim); font-size:11px; text-transform:uppercase; }
 .version-badge { display:inline-block; border:1px solid var(--line); color:var(--mid); padding:2px 5px; font-size:10px; line-height:1.2; white-space:nowrap; text-transform:uppercase; }
 .recipe-card .version-badge { margin-top:10px; align-self:flex-start; }
@@ -110,13 +109,13 @@ h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transfo
 body.detail-open { overflow:hidden; }
 @media(max-width:760px){
   .nav-inner{height:auto;min-height:58px;align-items:flex-start;padding:10px 0}.ink-picker{max-width:220px;flex-wrap:wrap;justify-content:flex-end}.ink-picker>span{width:100%;text-align:right}
-  .recipe-grid{grid-template-columns:1fr 1fr}.recipe-card{min-height:180px}
+  .recipe-grid{grid-template-columns:1fr 1fr}.recipe-card{min-height:150px}
   .quick-pick{grid-template-columns:1fr 1fr}.quick-pick label{grid-column:1/-1}
 }
 @media(max-width:540px){
   .wrap{width:min(100% - 24px,var(--max))}.brand b{display:none}
   .library{padding:16px 0 72px}
-  .recipe-grid{grid-template-columns:1fr}.recipe-card{min-height:0}.recipe-card p{-webkit-line-clamp:2}
+  .recipe-grid{grid-template-columns:1fr}.recipe-card{min-height:0}
   .detail-content{width:min(100% - 24px,760px);padding-top:36px}.steps li{grid-template-columns:38px 1fr;gap:10px}.step-check{width:34px;height:34px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.detail{transition:none}}

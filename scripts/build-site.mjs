@@ -3,20 +3,7 @@ import { resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
 const collections = [
-  ["lofi", "Lo-fi", "recipes/lofi.md"],
-  ["rave", "Techno / trance / rave", "recipes/rave.md"],
-  ["ambient", "Ambient", "recipes/ambient.md"],
-  ["grooves", "Grooves", "recipes/grooves.md"],
-  ["experiments", "Experiments", "recipes/experiments.md"],
-  ["chord-jams", "Chord jams", "recipes/chord-jams.md"],
-  ["chiptune", "Chiptune", "recipes/chiptune.md"],
-  ["anime", "Anime / cyberpunk", "recipes/anime.md"],
-  ["shinobi-flute", "Shinobi flute", "recipes/shinobi-flute.md"],
-  ["dungeon-synth", "Dungeon synth", "recipes/dungeon-synth.md"],
-  ["medieval-lofi", "Medieval lo-fi", "recipes/medieval-lofi.md"],
-  ["hooky", "Catchy hooks", "recipes/hooky.md"],
-  ["funk-rock", "Funk / alt rock", "recipes/funk-rock.md"],
-  ["brazilian", "Brazilian", "recipes/brazilian.md"],
+  ["recipes", "Recipes", "recipes/calm.md"],
 ];
 
 const slugify = (value) => value
@@ -34,6 +21,7 @@ function parseCollection(source, category, categoryLabel) {
     if (!current || current.steps.length === 0) return;
     current.description = current.description.join(" ").trim();
     current.note = current.note.join(" ").trim();
+    if (![2, 3, 4].includes(current.tracks)) throw new Error(`${current.title} needs a **Tracks:** value from 2 to 4`);
     const recipeText = [current.description, ...current.steps, current.note].join(" ");
     current.minVersion = /\*\*3\.5\+\*\*|\bSTRUM\b|\bMOD DEPTH\b|\bDIR (?:BACK|PEND|FOLD|RAND|DRUNK)\b/i.test(recipeText) ? "3.5" : "3.4.1";
     recipes.push(current);
@@ -52,10 +40,16 @@ function parseCollection(source, category, categoryLabel) {
         description: [],
         steps: [],
         note: [],
+        tracks: null,
       };
       continue;
     }
     if (!current || !line || line.startsWith("#")) continue;
+    const tracks = line.match(/^\*\*Tracks:\*\*\s*([234])$/);
+    if (tracks) {
+      current.tracks = Number(tracks[1]);
+      continue;
+    }
     const step = line.match(/^\d+\.\s+(.+)$/);
     if (step) {
       current.steps.push(step[1]);
@@ -80,8 +74,8 @@ const duplicateIds = recipes.filter((recipe, index) =>
 if (duplicateIds.length) {
   throw new Error(`Duplicate recipe IDs: ${duplicateIds.map((item) => item.id).join(", ")}`);
 }
-if (recipes.length !== 122) {
-  throw new Error(`Expected 122 recipes, parsed ${recipes.length}`);
+if (recipes.length !== 30) {
+  throw new Error(`Expected 30 recipes, parsed ${recipes.length}`);
 }
 
 await writeFile(
