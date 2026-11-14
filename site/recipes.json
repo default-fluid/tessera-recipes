@@ -1,0 +1,846 @@
+{
+  "recipes": [
+    {
+      "id": "rain-on-the-study-window",
+      "title": "Rain on the Study Window",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "A complete 68 BPM beat with a stable hook and slowly breathing chords.",
+      "steps": [
+        "Set tempo to **68 BPM**, root **D**, and a minor scale.",
+        "**T1:** choose **KUGO HARP**. Set GEN to **TURING**, **PROB 8**, and PATTERN **DIV 1/8**. On EVOLVE, click **ROLL** until the four- or eight-note loop feels unhurried.",
+        "**T2:** choose **STRING MACH**. Set GEN to **CHORD**, **PROG 2-5-1**, **BARS 2**, **HIT HOLD**; in the GEN sheet choose an open seventh voicing. Lower T2 in the MIXER.",
+        "**T3:** choose a warm bass sound. Set GEN to **EUCLID**, low density, then TWEAK **FOLLOW T2**; hold **OCT-** on TWEAK and set **HOW BASS**, **RHYTHM OWN**.",
+        "**T4:** choose **808 KIT**, GEN **ATLAS**, **DENS 42**. Hold **OCT-** on GEN and thin **HAT** to about 25. Add TWEAK **HUMAN 18**.",
+        "Put **ECHO** on T1 with a low mix. Route a slow **TIDE** to T2 cutoff, about +20%. Let it play for two minutes before touching anything."
+      ],
+      "note": "**Play it:** mute T1 for eight bars, hold **FILL** for the last bar, then bring the hook back."
+    },
+    {
+      "id": "dust-on-the-needle",
+      "title": "Dust on the Needle",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **72 BPM**; choose a pentatonic or KUMOI scale.",
+        "**T1:** KOTO WARM, GEN **CONSTL**, **DENS 45**, **SPEED 1/16**. In the GEN sheet use **SIZE 2**; hold OCT- for **LEN 8**, **LOCK 80**.",
+        "Set LENGTH to **HIT**, then add TWEAK **DROP 20** so the gaps ring.",
+        "**T4:** ATLAS at **DENS 35**. Keep kick full, hats near 20, and set a rim as the fourth part at about 15.",
+        "Route a very slow **DRIFT** to T1 pan with a small amount and to FX send with an even smaller amount."
+      ],
+      "note": "**Change it:** move CONSTL **Y** by a few clicks when a new eight-bar section begins."
+    },
+    {
+      "id": "cassette-walk-home",
+      "title": "Cassette Walk Home",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **76 BPM**, minor scale.",
+        "**T1:** a soft tine sound, GEN **SERIES**, **INTV 1**, **LOOP 8**, PATTERN **DIV 1/8**.",
+        "EVOLVE **EVERY 8** with a small amount so SERIES chooses a new starting place only occasionally.",
+        "**T2:** GLASS PAD, CHORD **PROG WALK**, **BARS 2**, **HIT HOLD**. Use QNT **CHRD** on T1 so the line follows the pad.",
+        "**T4:** ATLAS, DENS about 45, TWEAK **HUMAN 24** and TIMING **SPLIT 12**, **HOW PUSH**."
+      ],
+      "note": "**Play it:** slowly raise T1 echo send during the walk, then cut it on the downbeat."
+    },
+    {
+      "id": "sleepy-bus-ride",
+      "title": "Sleepy Bus Ride",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **62 BPM**, E KUMOI.",
+        "**T1:** GEN **BOUNCE**, turn **BALLS** past four into **FALL**, **SPEED 12**. Keep WIND near the center.",
+        "Route **SWARM 3** to B ANGLE at about 20% so gusts arrive and fade.",
+        "**T2:** CHORD **PROG DRONE**, **HIT HOLD**, open voicing, one octave down; keep it very quiet.",
+        "**T4:** ATLAS at DENS 28, with sparse kick and rim, no busy hats."
+      ],
+      "note": "**Change it:** LENGTH **HIT** on T1 makes each falling note smear into the next."
+    },
+    {
+      "id": "bent-photograph",
+      "title": "Bent Photograph",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **70 BPM**. Pick a seven-note minor scale.",
+        "**T1:** TURING, **PROB 0**, PATTERN LEN 7. Find a seed with ROLL.",
+        "EVOLVE **EVERY 4**, **AMOUNT 25**; hold OCT- and set **GRAVITY 65** so changes keep returning to the original photo.",
+        "**T2:** FOLLOW T1, **SHIFT +2**, **DROP 55** for an incomplete upper harmony.",
+        "Pan the two voices apart and give only T2 a short echo."
+      ],
+      "note": "**Change it:** FORM **AABA**, CONTR 20 turns the memory into four repeating scenes."
+    },
+    {
+      "id": "coffee-shop-closing-time",
+      "title": "Coffee Shop Closing Time",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **74 BPM**, root C, major or major-pentatonic scale.",
+        "**T2:** CHORD **PROG POP**, **BARS 2**, **HIT BEAT**, with a soft electric-piano sound.",
+        "**T1:** MARKOV, **LEAP 20**, **DENS 48**, SCL **QNT CHRD**.",
+        "**T3:** FOLLOW T1 with HOW **BASS**, RHYTHM **SOURCE**, then DROP about 35.",
+        "**T4:** ATLAS around DENS 40; use FORM **ABAC**, CONTR 15, with EVOLVE EVERY 4."
+      ],
+      "note": "**Play it:** mute drums for the first pass of section C and unmute on its second chord."
+    },
+    {
+      "id": "vhs-sunset",
+      "title": "VHS Sunset",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **64 BPM** and choose a bright scale against dark sounds.",
+        "**T1:** GLASS PAD through the **FILTER** effect, cutoff below halfway and a little resonance.",
+        "GEN **CHORD**, PROG **CIRCLE**, BARS 4, HIT HOLD, open voicing.",
+        "Route **TIDE 2** to the filter cutoff (+30%) and **SWARM 2** to pan (+12%).",
+        "**T3:** SERIES, LOOP 4, INTV 3, DIV 1/4, QNT CHRD; keep its level just above silence."
+      ],
+      "note": "**Change it:** set PIECE to 8 minutes, **SHAPE FALL**, END LOOP for an endlessly fading sunset."
+    },
+    {
+      "id": "wobbly-piano-loop",
+      "title": "Wobbly Piano Loop",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **71 BPM**. Select the closest soft keys or tine preset.",
+        "**T1:** TURING, PROB 3, DIV 1/8, short eight-step phrase.",
+        "Put ECHO on FX 2. Route a slow LFO to echo time with a tiny amount; moving delay time supplies tape-like pitch bends.",
+        "Route another slow source to T1 pan at 8–12%.",
+        "**T4:** a dry ATLAS beat at DENS 38; the contrast makes the keys feel more unstable."
+      ],
+      "note": "**Change it:** print the phrase by holding REC, then nudge two notes late on their step sheets."
+    },
+    {
+      "id": "rooftop-homework",
+      "title": "Rooftop Homework",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **78 BPM**, minor pentatonic.",
+        "**T1:** ARP or TURING on a pluck, PATTERN DIV 1/16, TWEAK DROP 45 and HUMAN 15.",
+        "**T2:** CHORD PROG **2-5-1**, BARS 2, HIT HOLD, quiet and wide.",
+        "**T3:** a bass following T2 with HOW BASS; restrict it to beats 1 and 3.",
+        "**T4:** ATLAS DENS 52, hats 35, fourth part RIM 20. Add a last-bar fill with COND 4:4."
+      ],
+      "note": "**Play it:** use the four MIXER levels like a tiny desk—bring each part in over four bars."
+    },
+    {
+      "id": "library-after-dark",
+      "title": "Library After Dark",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **58 BPM**. Use a minor scale and low master levels.",
+        "**T1:** CONSTL, DENS 25, SPEED 1/16, SIZE 3, LEN 4, LOCK 90.",
+        "**T2:** a pad on CHORD DRONE, HIT HOLD. Route TIDE 3 to cutoff.",
+        "**T3:** BOUNCE/FALL at SPEED 8, WIND slightly low; set DROP 50.",
+        "Skip drums. Route a tiny amount of SWARM to each track's pan, using different SWARM speeds."
+      ],
+      "note": "**Change it:** add one isolated kick on every fourth bar; the silence around it is the groove."
+    },
+    {
+      "id": "cracked-sidewalk-cypher",
+      "title": "Cracked Sidewalk Cypher",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **82 BPM**, minor scale.",
+        "**T4:** ATLAS, DENS 58. Keep kick 100, snare about 70, hats 28; HUMAN 20.",
+        "Add TIMING SPLIT 18 with HOW **PUSH** for occasional half-division hits.",
+        "**T1:** TURING bass, PROB 6, DIV 1/8, narrow range and short fixed notes.",
+        "**T2:** a sparse MARKOV stab at DENS 22, LEAP 10, with echo."
+      ],
+      "note": "**Play it:** hold FILL at the end of every eight bars, but sometimes deliberately miss it."
+    },
+    {
+      "id": "sunday-morning-tape",
+      "title": "Sunday Morning Tape",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **66 BPM**, major pentatonic.",
+        "**T1:** KUGO HARP, SERIES, INTV 1, LOOP 8, DIV 1/8, LENGTH HIT.",
+        "**T2:** STRING MACH, CHORD USER. Enter a simple I–vi–IV–V progression; BARS 2 and HIT HOLD.",
+        "Set T1 QNT CHRD. Add an LFO to its FX send so only some phrases bloom into echo.",
+        "**T4:** ATLAS DENS 32, kick full, snare soft, hats sparse."
+      ],
+      "note": "**Change it:** FORM AABA on T1 with low contrast; leave the chords unchanged."
+    },
+    {
+      "id": "laundromat-fluorescence",
+      "title": "Laundromat Fluorescence",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **75 BPM**, Dorian scale.",
+        "**T1:** POLY with rhythms /4, /5, and /7; SPAN 1 for a tight repeating chord fragment.",
+        "**T2:** CHORD DRONE, HIT HOLD, low-pass it with FILTER.",
+        "**T4:** ATLAS DENS 46. Route a 4BAR triangle LFO to AT X and a 2BAR triangle from another track to AT Y.",
+        "Keep FORM off: the interlocking cycles create the repeating machine pattern."
+      ],
+      "note": "**Change it:** raise SPAN to 2 when you want the melody to escape the room."
+    },
+    {
+      "id": "polaroid-summer",
+      "title": "Polaroid Summer",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **80 BPM**, a major scale.",
+        "**T1:** CONSTL DENS 55, SIZE 2, LEN 8, LOCK 75, FILL ARP.",
+        "**T2:** CHORD PROG POP, BARS 1, STRUM around 35 ms (**3.5+**), open voicing.",
+        "**T4:** ATLAS DENS 48 with clap as its fourth part.",
+        "Put a modest echo on T1 and route TIDE to the echo mix, not the melody pitch."
+      ],
+      "note": "**Play it:** mute the chords for two bars and let the melody imply them."
+    },
+    {
+      "id": "apartment-heater-groove",
+      "title": "Apartment Heater Groove",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **69 BPM**, any minor scale.",
+        "**T4:** ATLAS DENS 38, FORM **AB**, EVERY 4, CONTR 10, LOCK 85.",
+        "Use the fourth part as RIM at about 18; thin hats to 15.",
+        "**T1:** TURING bass with a five-step pattern against the drums, PROB 0.",
+        "**T2:** a single CHORD DRONE with TIDE on cutoff, almost inaudible."
+      ],
+      "note": "**Change it:** the five-step bass slipping against the four-bar drum form supplies all the arrangement you need."
+    },
+    {
+      "id": "last-train-sketchbook",
+      "title": "Last Train Sketchbook",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **73 BPM**, harmonic-minor-like scale if available, otherwise minor.",
+        "**T1:** SERIES, INTV 3, LOOP OFF, DIV 1/8; use a bell or tine sound.",
+        "**T2:** CHORD WALK, BARS 2, HIT HOLD. Quantize T1 to CHRD.",
+        "**T3:** FOLLOW T1, HOW **CANON2**, RHYTHM SOURCE, DROP 60; pan it opposite T1.",
+        "**T4:** sparse ATLAS at DENS 30 with HUMAN 25."
+      ],
+      "note": "**Change it:** use CHAIN ABAC, PHRASE 8; the endless SERIES line still gains recognizable chapters."
+    },
+    {
+      "id": "notebook-margin-doodles",
+      "title": "Notebook Margin Doodles",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **77 BPM**, KUMOI.",
+        "**T1:** AWAKE. Edit a simple A/B state pattern by selecting white keys and setting contrasting values.",
+        "PATTERN DIV 1/8; keep notes short and add TWEAK HUMAN 12.",
+        "**T2:** FOLLOW T1 at SHIFT +4, DROP 70, so only occasional doodles gain an answer.",
+        "**T4:** ATLAS DENS 44, fourth part CLAP, hats low."
+      ],
+      "note": "**Change it:** print the generator, then use STEP EVOLVE with AMOUNT 20 and GRAVITY high."
+    },
+    {
+      "id": "fogged-cafe-glass",
+      "title": "Fogged Cafe Glass",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **60 BPM**, minor scale.",
+        "**T1:** GLASS PAD, CHORD DRONE, HIT HOLD, through FILTER with cutoff low and resonance modest.",
+        "**T2:** MARKOV on a flute-like sound, DENS 25, LEAP 15, LENGTH HIT.",
+        "Route TIDE 2 to pad cutoff and TIDE 3 to melody FX send.",
+        "**T4:** only a low kick and rim: ATLAS DENS about 20, hats at zero or near zero."
+      ],
+      "note": "**Play it:** turn the filter cutoff by hand once per minute; small movements feel enormous."
+    },
+    {
+      "id": "unsent-voicemail",
+      "title": "Unsent Voicemail",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **65 BPM**, a restrained minor scale.",
+        "Record a short melody into **T1 STEP**, leaving several empty steps.",
+        "**T2:** FOLLOW T1 with HOW **CANON4**, RHYTHM SOURCE, SHIFT 0, DROP 35. Use a thinner sound and more echo.",
+        "On T1 use STEP EVOLVE EVERY 8, AMOUNT 15, HOW DRIFT; keep the original pattern recoverable.",
+        "No drums at first. Later add a kick only on beats 1 and 3."
+      ],
+      "note": "**Change it:** mute T1; in 3.5+, the delayed follower continues and sounds like a message without its speaker."
+    },
+    {
+      "id": "dawn-through-blinds",
+      "title": "Dawn Through Blinds",
+      "category": "lofi",
+      "categoryLabel": "Lo-fi",
+      "description": "",
+      "steps": [
+        "Tempo **67 BPM**, root A, major pentatonic.",
+        "**T2:** CHORD USER with A–E–F♯m–D (enter roots in the active scale), BARS 2, STRUM 45 ms (**3.5+**).",
+        "**T1:** TURING, PROB 4, DIV 1/8, QNT CHRD; select a warm pluck.",
+        "**T3:** bass follower, HOW BASS, RHYTHM SOURCE, DROP 25.",
+        "**T4:** ATLAS DENS 36. On PIECE choose 6 minutes, SHAPE RISE, END STOP."
+      ],
+      "note": "**Play it:** assign a PERF macro to pad cutoff, drum density, and echo send; raise it as the light arrives."
+    },
+    {
+      "id": "midnight-warehouse",
+      "title": "Midnight Warehouse",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **132 BPM**, root F, minor scale.",
+        "**T4:** 808 KIT, GEN **ATLAS**, DENS 72. Keep kick at 100, snare around 55, hats 65. Find an X/Y position with a kick on every beat or print the pattern and place four kicks manually.",
+        "**T1:** a short bass sound, GEN **TURING**, PROB 0, DIV 1/16. Find a one- or two-note seed, then TWEAK DROP 30.",
+        "**T2:** a bright chord sound, GEN **CHORD**, PROG DRONE, BARS 1, HIT BEAT, with short LENGTH. Use a minor chord and offbeat rhythm.",
+        "Put FORM AB on drums, EVERY 8, CONTR 12. Keep section A dry; during B raise hats and echo send by hand."
+      ],
+      "note": "**Drop:** mute T1 and T4 for one bar, let the chord echo hang, then unmute both on beat one."
+    },
+    {
+      "id": "sandstorm-runner",
+      "title": "Sandstorm Runner",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "A fast minor-key trance sketch built around motion, not a transcription of any existing song.",
+      "steps": [
+        "Set **136 BPM**, E minor.",
+        "**T1:** choose a sharp lead, GEN **SERIES**, INTV 1, LOOP 8, PATTERN DIV 1/16. Use short fixed notes.",
+        "**T2:** a bass sound, GEN **EUCLID**, dense 1/16 rhythm; TWEAK FOLLOW T1, HOW BASS, RHYTHM OWN. Keep the range low.",
+        "**T3:** CHORD PROG DRONE, HIT BEAT, short notes on the offbeats; add a modest echo.",
+        "**T4:** four-on-the-floor kick, clap on 2 and 4, closed hats on offbeats. STEP is easiest; ATLAS is livelier.",
+        "Route a slow rising source or PERF macro to T1 cutoff, T1 FX send, and drum density. Use MOD DEPTH as the build brake (**3.5+**)."
+      ],
+      "note": "**Build:** over 16 bars open the lead, increase note density, hold FILL in bar 16, then snap the macro back on the drop."
+    },
+    {
+      "id": "neon-tunnel-trance",
+      "title": "Neon Tunnel Trance",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **138 BPM**, A minor.",
+        "**T2:** CHORD USER; enter Am–F–C–G, BARS 1, STRUM 20 ms, HIT BEAT (**3.5+**).",
+        "**T1:** ARP or CONSTL, DIV 1/16, SCL QNT CHRD, tight range. Add echo with dotted-feeling repeats by ear.",
+        "**T3:** FOLLOW T2, HOW BASS, RHYTHM OWN; use a repeating offbeat pattern.",
+        "**T4:** solid kick each beat, clap on 2 and 4, open hat between beats."
+      ],
+      "note": "**Change it:** CHAIN AABA, PHRASE 8. In B, shift the lead up one octave and thin the kick for four bars."
+    },
+    {
+      "id": "acid-tile",
+      "title": "Acid Tile",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **128 BPM**, C minor.",
+        "**T1:** a resonant, bright sound through FILTER; GEN TURING, PROB 12, DIV 1/16, pattern length 7.",
+        "Use per-step accents and a few ties after printing the generator to STEP. Nudge one note early.",
+        "Route a 1BAR triangle LFO to FILTER cutoff and a slower TIDE to resonance with conservative amounts.",
+        "**T4:** dry four-on-the-floor drums. Add a clap fill with condition 4:4."
+      ],
+      "note": "**Play it:** move the base cutoff by hand while modulation keeps the phrase alive."
+    },
+    {
+      "id": "piano-rave-sunrise",
+      "title": "Piano Rave Sunrise",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **126 BPM**, C major.",
+        "**T2:** a piano-like sound, CHORD USER; enter C–Am–F–G, BARS 1, HIT BEAT, open voicing.",
+        "**T1:** a bright pluck on FOLLOW T2, HOW CHORD, RHYTHM OWN; use a syncopated EUCLID rhythm.",
+        "**T3:** bass follower using HOW BASS, notes on the offbeats.",
+        "**T4:** kick every beat, clap on 2/4, bright open hat offbeat. Add HUMAN only to clap and hats, not the kick."
+      ],
+      "note": "**Breakdown:** mute T3/T4, change chords to HIT HOLD, then restore HIT BEAT with the drums."
+    },
+    {
+      "id": "detroit-night-drive",
+      "title": "Detroit Night Drive",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **124 BPM**, D Dorian.",
+        "**T1:** POLY with /4, /5, and /7 rhythms, SPAN 1, using a muted synth sound.",
+        "**T2:** CHORD DRONE with a seventh, HIT HOLD; FILTER cutoff low, TIDE modulation subtle.",
+        "**T3:** SERIES bass, INTV 1, LOOP 4, DIV 1/8.",
+        "**T4:** minimal kick, clap, and shuffled hat pattern. Use TIMING SPLIT at 10–15 rather than heavy HUMAN."
+      ],
+      "note": "**Change it:** route a 4BAR LFO to T1 pan and an 8BAR LFO to its FX send."
+    },
+    {
+      "id": "breakbeat-basement",
+      "title": "Breakbeat Basement",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **134 BPM**, minor scale.",
+        "**T4:** write a STEP drum pattern: broken kicks, snare on 2 and 4, 1/16 hats. Add one ghost snare with low chance.",
+        "Put ratchet x2 on two hats and nudge the last snare late.",
+        "**T1:** TURING bass, PROB 4, pattern LEN 5, DIV 1/8.",
+        "**T2:** short MARKOV stabs, DENS 25, LEAP 30, echo send high."
+      ],
+      "note": "**Fill:** duplicate the drum pattern, rearrange the last four steps, and switch patterns for the final bar of a phrase."
+    },
+    {
+      "id": "hypnotic-concrete",
+      "title": "Hypnotic Concrete",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **130 BPM**, one dark minor chord.",
+        "**T1:** TURING, PROB 0, LEN 5, one-octave range, DIV 1/16.",
+        "FORM AABA, EVERY 4, CONTR 8, DEVELOP 10. The motif changes less than the listener expects.",
+        "**T4:** four-on-the-floor ATLAS, DENS 60. Route a 4BAR triangle LFO to AT Y.",
+        "Use a PERF macro for FILTER cutoff, hat density, and FX send; never turn it past about two-thirds."
+      ],
+      "note": "**Rule:** do not add a new part for five minutes. Arrange timbre and silence instead."
+    },
+    {
+      "id": "eurodance-balcony",
+      "title": "Eurodance Balcony",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **140 BPM**, G minor.",
+        "**T2:** CHORD USER with Gm–E♭–B♭–F, BARS 1, HIT BEAT, bright chord sound.",
+        "**T1:** SERIES lead, LOOP 8, INTV 2, DIV 1/8, QNT CHRD.",
+        "**T3:** bass follower, HOW BASS, RHYTHM OWN, offbeat pattern.",
+        "**T4:** kick each beat, clap on 2/4, open hats offbeat. Keep everything unapologetically bright."
+      ],
+      "note": "**Change it:** shift T1 up an octave in section B and use ANSWER on a second lead for call-and-response."
+    },
+    {
+      "id": "strobe-polyrhythm",
+      "title": "Strobe Polyrhythm",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **128 BPM**, minor pentatonic.",
+        "**T1:** POLY rhythms /3, /4, /5, SPAN 2; short metallic notes.",
+        "**T2:** QUAD at DIV 8T while T1 runs 1/16; use a low percussive sound.",
+        "**T4:** straight four-on-the-floor kick anchors the conflicting cycles.",
+        "Route a square 2BAR LFO to T1 FX send, creating alternating dry/wet flashes."
+      ],
+      "note": "**Change it:** Mute T1 for four bars. When it returns, the ear hears a new downbeat even though nothing moved."
+    },
+    {
+      "id": "goa-constellation",
+      "title": "Goa Constellation",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **142 BPM**, E KUMOI or another narrow exotic scale.",
+        "**T1:** CONSTL, DENS 75, SPEED 1/16, SIZE 3, LEN 8, LOCK 70, FILL ARP.",
+        "Set AUTO steering with a constant MODS offset around the middle; route SWARM to C Y.",
+        "**T2:** a low TURING line, PROB 5, DIV 1/16.",
+        "**T4:** driving kick and rolling hats. Use PIECE 8 min, SHAPE ARCH, END STOP."
+      ],
+      "note": "**Build:** raise CONSTL SIZE and FILTER cutoff together; reduce both immediately before the peak kick returns."
+    },
+    {
+      "id": "afterhours-dub-techno",
+      "title": "Afterhours Dub Techno",
+      "category": "rave",
+      "categoryLabel": "Techno / trance / rave",
+      "description": "",
+      "steps": [
+        "Set **122 BPM**, D minor.",
+        "**T2:** CHORD DRONE, seventh chord, HIT BEAT with short fixed length.",
+        "Put ECHO on the chord with a high feedback feel but moderate mix. Route TIDE 3 to FX send.",
+        "**T1:** bass on beats 1 and 3, following the chord with HOW BASS.",
+        "**T4:** deep kick each beat, rim on occasional offbeats, almost no hats."
+      ],
+      "note": "**Play it:** mute the chord itself while leaving its echo tail; bring in a new stab only after the old tail clears."
+    },
+    {
+      "id": "tidal-glass",
+      "title": "Tidal Glass",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **48 BPM**, E KUMOI.",
+        "**T1:** GLASS PAD, CHORD DRONE, HIT HOLD, open seventh voicing.",
+        "Route TIDE 1 to cutoff (+25%), TIDE 2 to pan (+12%), and TIDE 3 to FX send (+18%).",
+        "**T3:** BOUNCE in FALL mode, SPEED 8, WIND centered, LENGTH HIT.",
+        "Set PIECE to 12 minutes, SHAPE ARCH, END LOOP."
+      ],
+      "note": "**Listen for:** the point where the falling notes briefly imply a new chord over the unmoving drone."
+    },
+    {
+      "id": "paper-lanterns",
+      "title": "Paper Lanterns",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **54 BPM**, major pentatonic.",
+        "**T1:** CONSTL, DENS 28, SPEED 1/16, SIZE 3, LEN 4, LOCK 80.",
+        "**T2:** FOLLOW T1, HOW CANON4, RHYTHM SOURCE, DROP 45; use a softer sound.",
+        "Give both voices long LENGTH HIT notes and pan them apart.",
+        "Route different SWARM sources to their FX sends so their echoes rarely bloom together."
+      ],
+      "note": "**Change it:** move CONSTL Y one click every few minutes."
+    },
+    {
+      "id": "moss-radio",
+      "title": "Moss Radio",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **40 BPM**, a minor pentatonic scale.",
+        "**T1:** TURING, PROB 0, DIV 1/4. Find a three-note seed.",
+        "EVOLVE EVERY 8, AMOUNT 18, GRAVITY 80.",
+        "**T2:** a quiet CHORD DRONE one octave down; route TIDE to cutoff.",
+        "Add FILTER and ECHO to T1, both mostly dry."
+      ],
+      "note": "**Rule:** if a modulation is immediately obvious, halve its amount."
+    },
+    {
+      "id": "cloud-atlas",
+      "title": "Cloud Atlas",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **52 BPM**, D major.",
+        "**T1:** CHORD WALK, BARS 4, HIT HOLD, open voicing.",
+        "**T2:** MARKOV, DENS 20, LEAP 10, QNT CHRD, LENGTH HIT.",
+        "**T3:** SERIES, INTV 1, LOOP OFF, DIV 1/2, QNT CHRD.",
+        "Use ENTRIES around 35 so voices arrive and leave over long spans."
+      ],
+      "note": "**Change it:** PIECE 20 minutes, SHAPE RISE, END LOOP makes each cycle return to open sky."
+    },
+    {
+      "id": "frozen-lake-canon",
+      "title": "Frozen Lake Canon",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **45 BPM**, root C, suspended-feeling scale.",
+        "Record a sparse eight-note STEP melody on T1 with long notes.",
+        "**T2:** FOLLOW T1, HOW CANON2, RHYTHM SOURCE, SHIFT +4.",
+        "**T3:** FOLLOW T1, HOW CANON8, RHYTHM SOURCE, SHIFT -7.",
+        "Pan T2/T3 apart and use progressively more echo on each delay."
+      ],
+      "note": "**Play it:** mute T1 after one pass and let only its reflections remain."
+    },
+    {
+      "id": "breathing-stone",
+      "title": "Breathing Stone",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **35 BPM**, any minor scale.",
+        "**T1:** low CHORD DRONE, HIT HOLD, FILTER cutoff low.",
+        "**T2:** high CHORD DRONE, same root, a more open voicing, level very low.",
+        "Route one slow LFO upward to T1 cutoff and the inverted direction to T2 level.",
+        "Add SWARM to pan on both at less than 10%."
+      ],
+      "note": "**Change it:** use a PERF macro as a manual breath, raising one layer while lowering the other."
+    },
+    {
+      "id": "distant-weather",
+      "title": "Distant Weather",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **50 BPM**, KUMOI.",
+        "**T1:** BOUNCE/FALL, SPEED 6, WIND slowly modulated by SWARM 3.",
+        "**T2:** CONSTL, DENS 15, SIZE 4, LOCK 40, LENGTH HIT.",
+        "**T3:** CHORD DRONE, HIT HOLD, almost silent.",
+        "Route TIDE 2 to global-feeling FX sends and let the dry gaps remain long."
+      ],
+      "note": "**Listen for:** accidental clusters. Do not fix the first dissonance; wait for its release."
+    },
+    {
+      "id": "hour-hand",
+      "title": "Hour Hand",
+      "category": "ambient",
+      "categoryLabel": "Ambient",
+      "description": "",
+      "steps": [
+        "Set **30 BPM**, one consonant scale.",
+        "**T1:** SERIES, INTV 1, LOOP OFF, DIV 1/2.",
+        "**T2:** POLY using /3 and /5 only, SPAN 1, very long notes.",
+        "**T3:** CHORD WALK, BARS 8, HIT HOLD.",
+        "Set PIECE to 60 minutes, SHAPE USER, with eight gently alternating energy points; END STOP."
+      ],
+      "note": "**Rule:** save it, press PLAY, and leave the controls alone for the first ten minutes."
+    },
+    {
+      "id": "crooked-pocket",
+      "title": "Crooked Pocket",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Set **92 BPM**, minor scale.",
+        "**T4:** ATLAS DENS 58, kick 100, snare 65, hats 38.",
+        "Add TWEAK HUMAN 22 and TIMING SPLIT 14, HOW MIX.",
+        "**T1:** TURING bass, DIV 1/8, LEN 5, PROB 3.",
+        "**T2:** short chord stab only on condition 2:4 and 4:4."
+      ],
+      "note": "**Change it:** remove one kick rather than adding more percussion."
+    },
+    {
+      "id": "dub-courtyard",
+      "title": "Dub Courtyard",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Set **84 BPM**, D minor.",
+        "Write a sparse STEP kick/rim pattern on T4.",
+        "**T1:** bass on a short TURING loop, PROB 0, long enough notes to overlap the empty space.",
+        "**T2:** CHORD DRONE with short HIT length; send selected stabs into ECHO.",
+        "Route a slow LFO to echo time with a small amount and perform FX send by hand."
+      ],
+      "note": "**Play it:** the echo is an instrument—send one stab, then leave room for its answer."
+    },
+    {
+      "id": "five-against-four",
+      "title": "Five Against Four",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Set **100 BPM**, pentatonic scale.",
+        "**T1:** POLY with /4 and /5, SPAN 1.",
+        "**T2:** a bass STEP pattern of five steps at DIV 1/8.",
+        "**T4:** a conventional four-beat drum pattern.",
+        "FORM AB on drums only, EVERY 4, CONTR 12."
+      ],
+      "note": "**Listen for:** where the bass appears to change even though its five steps never do."
+    },
+    {
+      "id": "broken-robot",
+      "title": "Broken Robot",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Set **110 BPM**, minor scale.",
+        "**T4:** STEP drums with LEN 15. Put kicks on uneven gaps and snare near the expected backbeat.",
+        "Give two hats ratchet x2 and one hit a 50% chance.",
+        "**T1:** AWAKE with a rigid short sound; DIV 1/16.",
+        "**T2:** FOLLOW T1 at SHIFT +2, DROP 75, for occasional sparks."
+      ],
+      "note": "**Change it:** DIR PEND on one melodic pattern makes the robot retrace its steps."
+    },
+    {
+      "id": "atlas-cartographer",
+      "title": "Atlas Cartographer",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Set **105 BPM**.",
+        "**T4:** ATLAS, DENS 62. Sync its LFO to 4BAR, WAVE TRI, TRIG FREE.",
+        "Route that LFO to AT X at 25%.",
+        "Use another track's 2BAR LFO routed to AT Y at 18%.",
+        "Set FORM AABA, EVERY 4, CONTR 20, LOCK 90."
+      ],
+      "note": "**Listen for:** the repeating LFO route drawing a recognizable path across each different section."
+    },
+    {
+      "id": "rim-and-air",
+      "title": "Rim and Air",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Set **88 BPM**, no melodic tracks at first.",
+        "**T4:** ATLAS DENS 30, kick full, hats 12, fourth part RIM 45.",
+        "TWEAK HUMAN 28; pan modestly.",
+        "**T1:** one low note on a five-step STEP pattern.",
+        "**T2:** one chord every fourth bar with a long echo."
+      ],
+      "note": "**Rule:** add no more than one event per listening pass."
+    },
+    {
+      "id": "interlocking-koto",
+      "title": "Interlocking Koto",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Set **96 BPM**, E KUMOI.",
+        "**T1** and **T2:** QUAD, with DIV 1/16 and 8T respectively.",
+        "Hold OCT- on GEN and set one column MOVE DOWN every four steps, another MOVE UP every three.",
+        "Use RANGE 1 OCT in the GEN sheet.",
+        "**T4:** simple kick and shaker pattern to reveal the shifting accents."
+      ],
+      "note": "**Change it:** LINK the faster QUAD row, then set DIR PEND on the slower one."
+    },
+    {
+      "id": "one-knob-block-party",
+      "title": "One-Knob Block Party",
+      "category": "grooves",
+      "categoryLabel": "Grooves",
+      "description": "",
+      "steps": [
+        "Start with any beat containing bass, chords, lead, and drums.",
+        "Map PERF MACRO 1 positively to drum density and filter cutoff.",
+        "Map it positively to chord FX send and negatively to lead DROP.",
+        "Add a modest positive route to MOD DEPTH (**3.5+**).",
+        "Keep every amount small enough that MACRO 1 at maximum remains musical."
+      ],
+      "note": "**Play it:** spend an entire arrangement using only MACRO 1 and the four mute keys."
+    },
+    {
+      "id": "mosaic-telephone",
+      "title": "Mosaic Telephone",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "Put T1, T2, and T3 in QUAD with contrasting sounds.",
+        "Give them divisions 1/16, 8T, and 1/8.",
+        "Set QUAD columns to MOVE DOWN, UP, RAND, and HOLD at different EVERY values.",
+        "Use RANGE 1 OCT so the traveling notes remain related.",
+        "Leave T4 silent and listen to the voices exchange fragments."
+      ],
+      "note": "**Change it:** add a kick only after the note traffic has established its own pulse."
+    },
+    {
+      "id": "gravity-well",
+      "title": "Gravity Well",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "**T1:** TURING, PROB 0; find a clear eight-note seed.",
+        "EVOLVE EVERY 1, AMOUNT 70, GRAVITY 15.",
+        "**T2:** FOLLOW T1, HOW CONTRA, RHYTHM SOURCE.",
+        "FORM ABAC, EVERY 4, CONTR 45, DEVELOP 30.",
+        "Route a slow SWARM to EVOLVE amount."
+      ],
+      "note": "**Listen for:** identity surviving heavy mutation, then disappearing."
+    },
+    {
+      "id": "conditional-orchestra",
+      "title": "Conditional Orchestra",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "Give all four tracks the same four-bar phrase length.",
+        "T1 condition 1:4, T2 condition 2:4, T3 condition 3:4, T4 condition 4:4.",
+        "Make each track a different register and sound family.",
+        "Turn FORM AABA on all tracks but vary CONTR by track.",
+        "Use CHAIN FOLLOW so the orchestra changes section together."
+      ],
+      "note": "**Change it:** replace one condition with !FIRST and hear the form lose symmetry."
+    },
+    {
+      "id": "pendulum-canon",
+      "title": "Pendulum Canon",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "Write a seven-step STEP melody on T1, DIR PEND (**3.5+**).",
+        "**T2:** FOLLOW T1, HOW CANON2, RHYTHM SOURCE, SHIFT +2.",
+        "**T3:** FOLLOW T1, HOW CANON4, RHYTHM SOURCE, SHIFT -2.",
+        "Give each track a different note length.",
+        "Slowly pan the canon voices with independent LFOs."
+      ],
+      "note": "**Listen for:** the moment forward and backward passes overlap into a third melody."
+    },
+    {
+      "id": "clockwork-garden",
+      "title": "Clockwork Garden",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "**T1:** CONSTL with AUTO steering at a low setting.",
+        "**T2:** BOUNCE/FALL with SWARM controlling WIND.",
+        "**T3:** SERIES LOOP OFF, DIV 1/4.",
+        "**T4:** POLY /3, /5, /7 on percussive sounds rather than a drum kit.",
+        "Set PIECE 15 minutes, SHAPE ARCH, and ENTRIES 65."
+      ],
+      "note": "**Rule:** do not synchronize the organic movement; synchronize only the beginning with PLAY."
+    },
+    {
+      "id": "logic-rain",
+      "title": "Logic Rain",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "Create two sparse generator rhythms on T1 and T2.",
+        "On T3 use TWEAK 2 logic combining the other tracks; audition its different combine behaviors.",
+        "Give T3 a bright droplet sound with LENGTH HIT.",
+        "Route TIDE to T1 density and a different TIDE to T2 density.",
+        "Keep T1/T2 quiet so T3 reveals the changing logical overlap."
+      ],
+      "note": "**Change it:** bring the source tracks into the mix one at a time to expose the mechanism."
+    },
+    {
+      "id": "seed-museum",
+      "title": "Seed Museum",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "Pick one generator and sound; TURING on a pluck works well.",
+        "Write down eight neighboring ROLL values.",
+        "Present each seed for four bars, changing nothing else.",
+        "Note which seeds feel stable, surprising, or unfinished.",
+        "At the end, return to the first seed."
+      ],
+      "note": "**Purpose:** hear how much composition lives in the seed rather than the controls."
+    },
+    {
+      "id": "machine-that-dreams-of-silence",
+      "title": "Machine That Dreams of Silence",
+      "category": "experiments",
+      "categoryLabel": "Experiments",
+      "description": "",
+      "steps": [
+        "Build four busy generator tracks, then lower all MIXER levels.",
+        "Set ENTRIES high with roles BASS, RHYTHM, HARMONY, and MELODY.",
+        "On each track add different DROP amounts between 40 and 80.",
+        "Set PIECE 10 minutes, SHAPE FALL, END STOP.",
+        "Start with the full mix, then let PIECE and ENTRIES dismantle it."
+      ],
+      "note": "**Listen for:** the last surviving event. Save a second version where that track has a different role."
+    }
+  ]
+}

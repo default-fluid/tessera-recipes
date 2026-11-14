@@ -1,0 +1,28 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  cookbook:
+    name: Cookbook and site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Fetch Tessera release tags
+        run: git -C vendor/tessera fetch --tags --force --depth=1
+      - name: Build recipe site data
+        run: node scripts/build-site.mjs
+      - name: Check generated data is committed
+        run: git diff --exit-code -- site/recipes.json
+      - name: Check JavaScript syntax
+        run: node --check site/app.js
+      - name: Validate recipes, links, assets, and submodule release
+        run: node scripts/check-repo.mjs
