@@ -75,7 +75,7 @@ function openRecipe(id, pushHash = true) {
       <div class="step-copy">${inline(step)}</div></li>`).join("")}</ol>
     ${recipe.note ? `<div class="recipe-note">${inline(recipe.note)}</div>` : ""}
     <div class="detail-actions">
-      <button class="button favorite-detail ${state.favorites.has(recipe.id) ? "primary" : ""}" type="button">${state.favorites.has(recipe.id) ? "♥ Favorited" : "♡ Favorite"}</button>
+      <button class="button favorite-detail ${state.favorites.has(recipe.id) ? "primary" : ""}" type="button"><span class="favorite-heart">${state.favorites.has(recipe.id) ? "♥" : "♡"}</span> ${state.favorites.has(recipe.id) ? "Favorited" : "Favorite"}</button>
       <button class="button reset-progress" type="button">Reset steps</button>
     </div>`;
   elements.detail.classList.add("open");
