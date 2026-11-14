@@ -1,10 +1,10 @@
-const state = { recipes: [], category: "all", version: "all", query: "", current: null, favorites: new Set() };
+const state = { recipes: [], category: "all", version: "all", steps: "all", query: "", current: null, favorites: new Set() };
 const $ = (selector) => document.querySelector(selector);
 const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"), search: $("#search"),
   filters: $("#filters"), detail: $("#detail"), detailContent: $("#detail-content"),
   progress: $("#progress-label"), inkPicker: $("#ink-picker"),
-  typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"), versionSelect: $("#version-select"),
+  typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"), versionSelect: $("#version-select"), stepsSelect: $("#steps-select"),
 };
 
 const escapeHtml = (value = "") => value.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
@@ -22,6 +22,7 @@ function filteredRecipes() {
     if (state.category === "favorites" && !state.favorites.has(recipe.id)) return false;
     if (state.category !== "all" && state.category !== "favorites" && recipe.category !== state.category) return false;
     if (state.version !== "all" && recipe.minVersion !== state.version) return false;
+    if (state.steps !== "all" && recipe.steps.length !== Number(state.steps)) return false;
     const haystack = [recipe.title, recipe.categoryLabel, recipe.description, ...recipe.steps, recipe.note].join(" ").toLowerCase();
     return words.every((word) => haystack.includes(word));
   });
@@ -49,9 +50,11 @@ function render() {
 function updatePicker() {
   const category = elements.typeSelect.value;
   const version = elements.versionSelect.value;
+  const steps = elements.stepsSelect.value;
   const recipes = state.recipes.filter((recipe) =>
     (category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category)) &&
-    (version === "all" || recipe.minVersion === version));
+    (version === "all" || recipe.minVersion === version) &&
+    (steps === "all" || recipe.steps.length === Number(steps)));
   elements.recipeSelect.innerHTML = recipes.map((recipe) => `<option value="${recipe.id}">${escapeHtml(recipe.title)}</option>`).join("");
 }
 
@@ -72,8 +75,8 @@ function openRecipe(id, pushHash = true) {
     ${recipe.description ? `<p class="detail-lede">${inline(recipe.description)}</p>` : ""}
     <aside class="recipe-setup">
       <strong>How to read the steps</strong>
-      <p><b>ALGORITHM</b> selects T1–T4 and <b>PRESETS</b> loads the exact sound. To reach a named page, tap its section button and turn <b>SELECT</b> until the page name appears. Turn the numbered knob shown in the instruction; keep <b>OCT-</b> held only where a step says so.</p>
-      <p>Every value, generator seed, effect, modulation cord, section, entrance, duration, and ending is specified. After the final single press of <b>PLAY</b>, no live performance is required.</p>
+      <p>A path such as <b>T1 &gt; SEQ &gt; GEN</b> means: turn <b>ALGORITHM</b> to T1, tap <b>SEQ</b>, then turn <b>SELECT</b> until GEN appears. <b>PRESETS</b> loads the named sound. Turn the numbered knob shown; keep <b>OCT-</b> held only where a step says so.</p>
+      <p>Every control the recipe uses is specified. Short recipes intentionally use fewer tracks and layers; they are not incomplete. After the final single press of <b>PLAY</b>, no live performance is required.</p>
     </aside>
     <ol class="steps">${recipe.steps.map((step, index) => `
       <li><input id="step-${index}" data-step="${index}" type="checkbox" ${completed.has(index) ? "checked" : ""}>
@@ -116,13 +119,16 @@ elements.filters.addEventListener("click", (event) => {
 $("#close").addEventListener("click", () => closeRecipe());
 elements.typeSelect.addEventListener("change", updatePicker);
 elements.versionSelect.addEventListener("change", () => { state.version = elements.versionSelect.value; render(); updatePicker(); });
+elements.stepsSelect.addEventListener("change", () => { state.steps = elements.stepsSelect.value; render(); updatePicker(); });
 $("#open-selected").addEventListener("click", () => { if (elements.recipeSelect.value) openRecipe(elements.recipeSelect.value); });
 $("#random-picker").addEventListener("click", () => {
   const category = elements.typeSelect.value;
   const version = elements.versionSelect.value;
+  const steps = elements.stepsSelect.value;
   const choices = state.recipes.filter((recipe) =>
     (category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category)) &&
-    (version === "all" || recipe.minVersion === version));
+    (version === "all" || recipe.minVersion === version) &&
+    (steps === "all" || recipe.steps.length === Number(steps)));
   if (choices.length) openRecipe(choices[Math.floor(Math.random() * choices.length)].id);
 });
 elements.detailContent.addEventListener("change", (event) => {
@@ -147,6 +153,8 @@ function toggleFavorite(id) {
 }
 
 function setInk(ink) {
+  const singleInks = ["yellow", "white", "green", "blue", "red", "orange", "pink", "hot-pink", "lilac"];
+  if (!singleInks.includes(ink)) ink = "yellow";
   document.documentElement.dataset.ink = ink;
   localStorage.setItem("tessera-ink", ink);
   elements.inkPicker.querySelectorAll("[data-ink]").forEach((button) => {

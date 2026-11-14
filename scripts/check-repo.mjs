@@ -9,17 +9,24 @@ const assert = (condition, message) => { if (!condition) failures.push(message);
 const data = JSON.parse(await readFile(resolve(root, "site/recipes.json"), "utf8"));
 assert(data.recipes.length === 122, `Expected 122 site recipes, found ${data.recipes.length}`);
 assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length, "Recipe IDs are not unique");
+for (let count = 4; count <= 8; count++) assert(data.recipes.some((recipe) => recipe.steps.length === count), `No ${count}-step recipes were generated`);
 for (const recipe of data.recipes) {
   assert(recipe.title && recipe.category, `Recipe is missing title/category: ${recipe.id || "unknown"}`);
-  assert(recipe.steps.length >= 7 && recipe.steps.length <= 9, `${recipe.title} must have seven to nine beginner steps`);
+  assert(recipe.steps.length >= 4 && recipe.steps.length <= 8, `${recipe.title} must have four to eight beginner steps`);
   assert(["3.4.1", "3.5"].includes(recipe.minVersion), `${recipe.title} has an invalid firmware version`);
   const text = recipe.steps.join(" ");
-  for (const required of ["New song", "KNOB 1 ROOT", "KNOB 2 SCALE", "T1 **", "T2 **", "T3 **", "T4 **", "MODE", "ROLL", "MODS", "CHAIN", "ENTRIES", "PIECE", "END STOP", "Press **PLAY** once"]) {
+  for (const required of ["New song", "KNOB 1 ROOT", "KNOB 2 SCALE", "MODE", "ROLL", "PIECE", "END STOP", "Press **PLAY** once"]) {
     assert(text.includes(required), `${recipe.title} is missing required beginner detail: ${required}`);
+  }
+  if (recipe.steps.length === 4) {
+    for (const required of ["T1 **", "T4 **", "T2/T3 empty", "ENERGY"]) assert(text.includes(required), `${recipe.title} is missing compact-recipe detail: ${required}`);
+  } else {
+    for (const required of ["T1 **", "T2 **", "T3 **", "T4 **", "MODS", "CHAIN", "ENTRIES"]) assert(text.includes(required), `${recipe.title} is missing full-recipe detail: ${required}`);
   }
   assert(!/\*\*(?:Play it|Change it):|\b(?:to taste|low density|warm bass|choose a sound|about \d+|around \d+)\b/i.test(text), `${recipe.title} contains vague or live-performance wording`);
   assert(!/MODE EUCLID[^.]*\bDENS\b/i.test(text), `${recipe.title} incorrectly uses DENS with EUCLID`);
   assert(!/KNOB 1 EVERY/i.test(text), `${recipe.title} assigns EVOLVE EVERY to the wrong knob`);
+  assert(!/FORM[^.]*KNOB 4 EVERY/i.test(text), `${recipe.title} assigns FORM's timing to the wrong knob`);
 }
 
 for (const filename of ["README.md", "BEGINNER-GUIDE.md", ...["lofi", "rave", "ambient", "grooves", "experiments", "chord-jams", "chiptune", "anime", "shinobi-flute", "dungeon-synth", "medieval-lofi", "hooky", "funk-rock", "brazilian"].map((name) => `recipes/${name}.md`)]) {
@@ -34,7 +41,9 @@ for (const filename of ["README.md", "BEGINNER-GUIDE.md", ...["lofi", "rave", "a
 
 const html = await readFile(resolve(root, "site/index.html"), "utf8");
 assert(!html.includes('id="ink-select"'), "Ink colors must not use a dropdown");
-assert((html.match(/class="ink-swatch/g) || []).length === 13, "Expected all 13 Tessera inks as square buttons");
+assert(html.includes('id="steps-select"'), "The website is missing its step-count selector");
+assert((html.match(/class="ink-swatch/g) || []).length === 9, "Expected the nine single-color Tessera inks as square buttons");
+assert(!/data-ink="(?:mosaic|sunset|ocean|neon)"/.test(html), "Multi-color ink themes must not be offered");
 for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
   const target = match[1];
   if (/^(?:https?:|mailto:)/.test(target)) continue;
