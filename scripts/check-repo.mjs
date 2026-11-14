@@ -14,7 +14,7 @@ for (const recipe of data.recipes) {
   assert(recipe.steps.length >= 4, `${recipe.title} has fewer than four steps`);
 }
 
-for (const filename of ["README.md", ...["lofi", "rave", "ambient", "grooves", "experiments", "chord-jams", "chiptune", "anime", "ninja-flute"].map((name) => `recipes/${name}.md`)]) {
+for (const filename of ["README.md", ...["lofi", "rave", "ambient", "grooves", "experiments", "chord-jams", "chiptune", "anime", "shinobi-flute"].map((name) => `recipes/${name}.md`)]) {
   const source = await readFile(resolve(root, filename), "utf8");
   for (const match of source.matchAll(/\[[^\]]+\]\(([^)#]+)(?:#[^)]+)?\)/g)) {
     const target = match[1];

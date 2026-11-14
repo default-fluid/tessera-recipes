@@ -12,7 +12,7 @@ const inline = (value = "") => escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<str
 const plain = (value = "") => value.replace(/\*\*|`/g, "");
 const progressKey = (id) => `tessera-recipe:${id}`;
 const readProgress = (id) => { try { return JSON.parse(localStorage.getItem(progressKey(id)) || "[]"); } catch (_) { return []; } };
-const pattern = { lofi:"var(--p1)", rave:"var(--p2)", ambient:"var(--p3)", grooves:"var(--p4)", experiments:"linear-gradient(90deg,var(--p1) 0 25%,var(--p2) 25% 50%,var(--p3) 50% 75%,var(--p4) 75%)", "chord-jams":"var(--p1)", chiptune:"var(--p2)", anime:"var(--p3)", "ninja-flute":"var(--p4)" };
+const pattern = { lofi:"var(--p1)", rave:"var(--p2)", ambient:"var(--p3)", grooves:"var(--p4)", experiments:"linear-gradient(90deg,var(--p1) 0 25%,var(--p2) 25% 50%,var(--p3) 50% 75%,var(--p4) 75%)", "chord-jams":"var(--p1)", chiptune:"var(--p2)", anime:"var(--p3)", "shinobi-flute":"var(--p4)" };
 
 function filteredRecipes() {
   const words = state.query.toLowerCase().trim().split(/\s+/).filter(Boolean);

@@ -11,7 +11,7 @@ const collections = [
   ["chord-jams", "Chord jams", "recipes/chord-jams.md"],
   ["chiptune", "Chiptune", "recipes/chiptune.md"],
   ["anime", "Anime / cyberpunk", "recipes/anime.md"],
-  ["ninja-flute", "Ninja flute", "recipes/ninja-flute.md"],
+  ["shinobi-flute", "Shinobi flute", "recipes/shinobi-flute.md"],
 ];
 
 const slugify = (value) => value

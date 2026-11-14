@@ -1,4 +1,4 @@
-# Ninja flute recipes
+# Shinobi flute recipes
 
 Eight original flute-led patches for reflective journeys, forest light, training scenes, and quiet loss.
 

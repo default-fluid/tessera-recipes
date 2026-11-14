@@ -1235,8 +1235,8 @@
     {
       "id": "rain-on-the-headband",
       "title": "Rain on the Headband",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **62 BPM**, D minor pentatonic.",
@@ -1250,8 +1250,8 @@
     {
       "id": "hidden-leaf-morning",
       "title": "Hidden Leaf Morning",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **92 BPM**, G major pentatonic.",
@@ -1265,8 +1265,8 @@
     {
       "id": "path-through-cedars",
       "title": "Path Through Cedars",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **76 BPM**, E KUMOI.",
@@ -1280,8 +1280,8 @@
     {
       "id": "training-ground",
       "title": "Training Ground",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **118 BPM**, A minor pentatonic.",
@@ -1295,8 +1295,8 @@
     {
       "id": "moon-over-the-dojo",
       "title": "Moon Over the Dojo",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **55 BPM**, A minor.",
@@ -1310,8 +1310,8 @@
     {
       "id": "messenger-hawk",
       "title": "Messenger Hawk",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **104 BPM**, D major pentatonic.",
@@ -1325,8 +1325,8 @@
     {
       "id": "names-on-the-memorial-stone",
       "title": "Names on the Memorial Stone",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **48 BPM**, E minor pentatonic.",
@@ -1340,8 +1340,8 @@
     {
       "id": "festival-lantern-run",
       "title": "Festival Lantern Run",
-      "category": "ninja-flute",
-      "categoryLabel": "Ninja flute",
+      "category": "shinobi-flute",
+      "categoryLabel": "Shinobi flute",
       "description": "",
       "steps": [
         "Set **126 BPM**, C major pentatonic.",
