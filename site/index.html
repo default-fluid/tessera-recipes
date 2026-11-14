@@ -53,6 +53,7 @@
         <div class="quick-pick" aria-label="Quick recipe picker">
           <label><span>Type</span><select id="type-select">
             <option value="all">All types</option>
+            <option value="favorites">Favorites</option>
             <option value="lofi">Lo-fi</option>
             <option value="rave">Techno / trance / rave</option>
             <option value="ambient">Ambient</option>
@@ -73,6 +74,7 @@
         </label>
         <div class="filters" id="filters" aria-label="Recipe categories">
           <button class="filter active" data-category="all" type="button">All <span>90</span></button>
+          <button class="filter" data-category="favorites" type="button">Favorites <span id="favorite-count">0</span></button>
           <button class="filter" data-category="lofi" type="button">Lo-fi <span>20</span></button>
           <button class="filter" data-category="rave" type="button">Techno / rave <span>12</span></button>
           <button class="filter" data-category="ambient" type="button">Ambient <span>8</span></button>
