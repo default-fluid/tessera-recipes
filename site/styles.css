@@ -38,9 +38,17 @@ a:hover { background:var(--ink); color:var(--bg); text-decoration:none; }
 .mini-mark { display:grid; grid-template-columns:repeat(3,6px); gap:2px; }
 .mini-mark i { width:6px; height:6px; border:1px solid currentColor; }
 .mini-mark i:nth-child(3), .mini-mark i:nth-child(5), .mini-mark i:nth-child(7) { background:currentColor; }
-.ink-picker { display:grid; grid-template-columns:auto auto; align-items:center; border:1px solid var(--line); color:var(--mid); text-transform:uppercase; font-size:12px; }
-.ink-picker span { padding:5px 7px; color:var(--bg); background:var(--ink); }
-.ink-picker select { max-width:132px; border:0; border-radius:0; background:var(--bg); color:var(--text); padding:5px 24px 5px 7px; text-transform:uppercase; font-size:12px; }
+.ink-picker { display:flex; align-items:center; gap:4px; color:var(--mid); text-transform:uppercase; font-size:11px; }
+.ink-picker > span { margin-right:3px; }
+.ink-swatch { width:19px; height:19px; flex:none; padding:0; border:1px solid #777; background:var(--swatch); cursor:pointer; }
+.ink-swatch:hover, .ink-swatch[aria-pressed="true"] { outline:2px solid var(--text); outline-offset:2px; }
+.ink-swatch.yellow{--swatch:#ffd020}.ink-swatch.white{--swatch:#f0f0f0}.ink-swatch.green{--swatch:#60ff80}
+.ink-swatch.blue{--swatch:#88c0ff}.ink-swatch.red{--swatch:#ff7064}.ink-swatch.orange{--swatch:#ff9028}
+.ink-swatch.pink{--swatch:#ffb0d8}.ink-swatch.hot-pink{--swatch:#ff58b0}.ink-swatch.lilac{--swatch:#c096ff}
+.ink-swatch.mosaic{--swatch:linear-gradient(135deg,#ffd020 0 25%,#88c0ff 25% 50%,#ff58b0 50% 75%,#60ff80 75%)}
+.ink-swatch.sunset{--swatch:linear-gradient(135deg,#ff9028 0 25%,#ff58b0 25% 50%,#c096ff 50% 75%,#ffd020 75%)}
+.ink-swatch.ocean{--swatch:linear-gradient(135deg,#88c0ff 0 25%,#40e0d0 25% 50%,#60ff80 50% 75%,#c096ff 75%)}
+.ink-swatch.neon{--swatch:linear-gradient(135deg,#00e6ff 0 25%,#ff5ae6 25% 50%,#b4ff00 50% 75%,#ff8c00 75%)}
 h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transform:uppercase; }
 .button { border:2px solid var(--ink); background:var(--bg); color:var(--ink); padding:11px 15px 10px; text-transform:uppercase; text-decoration:none; cursor:pointer; line-height:1; }
 .button:hover, .button.primary { background:var(--ink); color:var(--bg); }
@@ -85,6 +93,10 @@ h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transfo
 .detail .version-badge { margin-left:8px; vertical-align:middle; }
 .detail h2 { font-size:clamp(34px,8vw,64px); margin:18px 0; }
 .detail-lede { color:var(--mid); font-size:17px; border-bottom:2px dotted var(--line); padding-bottom:26px; }
+.recipe-setup { margin:28px 0; border:2px solid var(--line); padding:18px; color:var(--mid); }
+.recipe-setup strong { display:block; color:var(--ink); text-transform:uppercase; margin-bottom:10px; }
+.recipe-setup p { margin:10px 0 0; }
+.recipe-setup b { color:var(--ink); }
 .steps { list-style:none; padding:0; margin:30px 0; counter-reset:steps; }
 .steps li { counter-increment:steps; display:grid; grid-template-columns:42px 1fr; gap:12px; padding:18px 0; border-bottom:2px dotted var(--line); }
 .steps input { position:absolute; opacity:0; pointer-events:none; }
@@ -105,6 +117,7 @@ h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transfo
 .noscript { position:fixed; inset:auto 0 0; background:var(--ink); color:var(--bg); padding:12px; margin:0; text-align:center; }
 body.detail-open { overflow:hidden; }
 @media(max-width:760px){
+  .nav-inner{height:auto;min-height:58px;align-items:flex-start;padding:10px 0}.ink-picker{max-width:220px;flex-wrap:wrap;justify-content:flex-end}.ink-picker>span{width:100%;text-align:right}
   .recipe-grid{grid-template-columns:1fr 1fr}.recipe-card{min-height:180px}
   .quick-pick{grid-template-columns:1fr 1fr}.quick-pick label{grid-column:1/-1}
 }

@@ -3,7 +3,7 @@ const $ = (selector) => document.querySelector(selector);
 const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"), search: $("#search"),
   filters: $("#filters"), detail: $("#detail"), detailContent: $("#detail-content"),
-  progress: $("#progress-label"), inkSelect: $("#ink-select"),
+  progress: $("#progress-label"), inkPicker: $("#ink-picker"),
   typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"), versionSelect: $("#version-select"),
 };
 
@@ -70,6 +70,11 @@ function openRecipe(id, pushHash = true) {
     <span class="detail-category">${escapeHtml(recipe.categoryLabel)}</span><span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
     <h2>${escapeHtml(recipe.title)}</h2>
     ${recipe.description ? `<p class="detail-lede">${inline(recipe.description)}</p>` : ""}
+    <aside class="recipe-setup">
+      <strong>How to read the steps</strong>
+      <p><b>ALGORITHM</b> selects T1–T4 and <b>PRESETS</b> loads the exact sound. To reach a named page, tap its section button and turn <b>SELECT</b> until the page name appears. Turn the numbered knob shown in the instruction; keep <b>OCT-</b> held only where a step says so.</p>
+      <p>Every value, generator seed, effect, modulation cord, section, entrance, duration, and ending is specified. After the final single press of <b>PLAY</b>, no live performance is required.</p>
+    </aside>
     <ol class="steps">${recipe.steps.map((step, index) => `
       <li><input id="step-${index}" data-step="${index}" type="checkbox" ${completed.has(index) ? "checked" : ""}>
       <label class="step-check" for="step-${index}" aria-label="Mark step ${index + 1} complete"></label>
@@ -141,10 +146,17 @@ function toggleFavorite(id) {
   updatePicker();
 }
 
-elements.inkSelect.value = document.documentElement.dataset.ink || "yellow";
-elements.inkSelect.addEventListener("change", () => {
-  document.documentElement.dataset.ink = elements.inkSelect.value;
-  localStorage.setItem("tessera-ink", elements.inkSelect.value);
+function setInk(ink) {
+  document.documentElement.dataset.ink = ink;
+  localStorage.setItem("tessera-ink", ink);
+  elements.inkPicker.querySelectorAll("[data-ink]").forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.ink === ink));
+  });
+}
+setInk(document.documentElement.dataset.ink || "yellow");
+elements.inkPicker.addEventListener("click", (event) => {
+  const swatch = event.target.closest("[data-ink]");
+  if (swatch) setInk(swatch.dataset.ink);
 });
 
 window.addEventListener("popstate", () => {
