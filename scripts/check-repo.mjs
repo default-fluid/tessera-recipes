@@ -12,6 +12,7 @@ assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length
 for (const recipe of data.recipes) {
   assert(recipe.title && recipe.category, `Recipe is missing title/category: ${recipe.id || "unknown"}`);
   assert(recipe.steps.length >= 4, `${recipe.title} has fewer than four steps`);
+  assert(["3.4.1", "3.5"].includes(recipe.minVersion), `${recipe.title} has an invalid firmware version`);
 }
 
 for (const filename of ["README.md", ...["lofi", "rave", "ambient", "grooves", "experiments", "chord-jams", "chiptune", "anime", "shinobi-flute"].map((name) => `recipes/${name}.md`)]) {

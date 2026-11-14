@@ -1,10 +1,10 @@
-const state = { recipes: [], category: "all", query: "", current: null, wakeLock: null, favorites: new Set() };
+const state = { recipes: [], category: "all", version: "all", query: "", current: null, wakeLock: null, favorites: new Set() };
 const $ = (selector) => document.querySelector(selector);
 const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"), search: $("#search"),
   filters: $("#filters"), detail: $("#detail"), detailContent: $("#detail-content"),
   progress: $("#progress-label"), wake: $("#wake"),
-  typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"),
+  typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"), versionSelect: $("#version-select"),
 };
 
 const escapeHtml = (value = "") => value.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
@@ -21,6 +21,7 @@ function filteredRecipes() {
   return state.recipes.filter((recipe) => {
     if (state.category === "favorites" && !state.favorites.has(recipe.id)) return false;
     if (state.category !== "all" && state.category !== "favorites" && recipe.category !== state.category) return false;
+    if (state.version !== "all" && recipe.minVersion !== state.version) return false;
     const haystack = [recipe.title, recipe.categoryLabel, recipe.description, ...recipe.steps, recipe.note].join(" ").toLowerCase();
     return words.every((word) => haystack.includes(word));
   });
@@ -36,6 +37,7 @@ function render() {
         <span class="number">${String(index + 1).padStart(2, "0")}</span>
         <h3>${escapeHtml(recipe.title)}</h3>
         <p>${escapeHtml(plain(recipe.description || recipe.steps[0]))}</p>
+        <span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
         <span class="meta"><span>${escapeHtml(recipe.categoryLabel)}</span><span>${recipe.steps.length} steps →</span></span>
       </button>
       <button class="favorite-button ${state.favorites.has(recipe.id) ? "active" : ""}" type="button" data-favorite="${recipe.id}" aria-label="${state.favorites.has(recipe.id) ? "Remove from" : "Add to"} favorites" aria-pressed="${state.favorites.has(recipe.id)}">★</button>
@@ -46,7 +48,10 @@ function render() {
 
 function updatePicker() {
   const category = elements.typeSelect.value;
-  const recipes = state.recipes.filter((recipe) => category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category));
+  const version = elements.versionSelect.value;
+  const recipes = state.recipes.filter((recipe) =>
+    (category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category)) &&
+    (version === "all" || recipe.minVersion === version));
   elements.recipeSelect.innerHTML = recipes.map((recipe) => `<option value="${recipe.id}">${escapeHtml(recipe.title)}</option>`).join("");
 }
 
@@ -62,7 +67,7 @@ function openRecipe(id, pushHash = true) {
   state.current = recipe;
   const completed = new Set(readProgress(id));
   elements.detailContent.innerHTML = `
-    <span class="detail-category">${escapeHtml(recipe.categoryLabel)}</span>
+    <span class="detail-category">${escapeHtml(recipe.categoryLabel)}</span><span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
     <h2>${escapeHtml(recipe.title)}</h2>
     ${recipe.description ? `<p class="detail-lede">${inline(recipe.description)}</p>` : ""}
     <ol class="steps">${recipe.steps.map((step, index) => `
@@ -106,10 +111,14 @@ elements.filters.addEventListener("click", (event) => {
 $("#close").addEventListener("click", () => closeRecipe());
 $("#random").addEventListener("click", () => openRecipe(state.recipes[Math.floor(Math.random() * state.recipes.length)].id));
 elements.typeSelect.addEventListener("change", updatePicker);
+elements.versionSelect.addEventListener("change", () => { state.version = elements.versionSelect.value; render(); updatePicker(); });
 $("#open-selected").addEventListener("click", () => { if (elements.recipeSelect.value) openRecipe(elements.recipeSelect.value); });
 $("#random-picker").addEventListener("click", () => {
   const category = elements.typeSelect.value;
-  const choices = state.recipes.filter((recipe) => category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category));
+  const version = elements.versionSelect.value;
+  const choices = state.recipes.filter((recipe) =>
+    (category === "all" || (category === "favorites" ? state.favorites.has(recipe.id) : recipe.category === category)) &&
+    (version === "all" || recipe.minVersion === version));
   if (choices.length) openRecipe(choices[Math.floor(Math.random() * choices.length)].id);
 });
 elements.detailContent.addEventListener("change", (event) => {

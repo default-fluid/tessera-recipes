@@ -29,6 +29,8 @@ function parseCollection(source, category, categoryLabel) {
     if (!current || current.steps.length === 0) return;
     current.description = current.description.join(" ").trim();
     current.note = current.note.join(" ").trim();
+    const recipeText = [current.description, ...current.steps, current.note].join(" ");
+    current.minVersion = /\*\*3\.5\+\*\*|\bSTRUM\b|\bMOD DEPTH\b|\bDIR (?:BACK|PEND|FOLD|RAND|DRUNK)\b/i.test(recipeText) ? "3.5" : "3.4.1";
     recipes.push(current);
   }
 
