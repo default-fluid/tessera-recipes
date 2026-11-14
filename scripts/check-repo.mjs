@@ -7,7 +7,7 @@ const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 
 const data = JSON.parse(await readFile(resolve(root, "site/recipes.json"), "utf8"));
-assert(data.recipes.length === 30, `Expected 30 site recipes, found ${data.recipes.length}`);
+assert(data.recipes.length === 40, `Expected 40 site recipes, found ${data.recipes.length}`);
 assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length, "Recipe IDs are not unique");
 for (const tracks of [2, 3, 4]) assert(data.recipes.some((recipe) => recipe.tracks === tracks), `No ${tracks}-track recipes were found`);
 for (const recipe of data.recipes) {
@@ -28,8 +28,8 @@ for (const recipe of data.recipes) {
 }
 
 const recipeFiles = await readdir(resolve(root, "recipes"));
-assert(recipeFiles.length === 1 && recipeFiles[0] === "calm.md", `Only recipes/calm.md should remain; found ${recipeFiles.join(", ")}`);
-for (const filename of ["README.md", "BEGINNER-GUIDE.md", "recipes/calm.md"]) {
+assert(recipeFiles.length === 1 && recipeFiles[0] === "lofi.md", `Only recipes/lofi.md should remain; found ${recipeFiles.join(", ")}`);
+for (const filename of ["README.md", "BEGINNER-GUIDE.md", "recipes/lofi.md"]) {
   const source = await readFile(resolve(root, filename), "utf8");
   for (const match of source.matchAll(/\[[^\]]+\]\(([^)#]+)(?:#[^)]+)?\)/g)) {
     const target = match[1];
@@ -46,7 +46,7 @@ assert(!/(?:type|version|steps)-select/.test(html), "Track count must be the onl
 assert((html.match(/class="ink-swatch/g) || []).length === 9, "Expected the nine single-color Tessera inks as square buttons");
 assert(!/data-ink="(?:mosaic|sunset|ocean|neon)"/.test(html), "Multi-color ink themes must not be offered");
 for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
-  const target = match[1];
+  const target = match[1].split("?")[0];
   if (/^(?:https?:|mailto:)/.test(target)) continue;
   try { await access(resolve(root, "site", target)); }
   catch { failures.push(`site/index.html references missing asset: ${target}`); }
@@ -67,4 +67,4 @@ if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
-console.log("Repository checks passed: 30 calm recipes, track counts, feature diversity, links, assets, and release pin are valid.");
+console.log("Repository checks passed: 40 lo-fi recipes, track counts, feature diversity, links, assets, and release pin are valid.");

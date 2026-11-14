@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
 const collections = [
-  ["recipes", "Recipes", "recipes/calm.md"],
+  ["recipes", "Lo-fi Recipes", "recipes/lofi.md"],
 ];
 
 const slugify = (value) => value
@@ -74,8 +74,8 @@ const duplicateIds = recipes.filter((recipe, index) =>
 if (duplicateIds.length) {
   throw new Error(`Duplicate recipe IDs: ${duplicateIds.map((item) => item.id).join(", ")}`);
 }
-if (recipes.length !== 30) {
-  throw new Error(`Expected 30 recipes, parsed ${recipes.length}`);
+if (recipes.length !== 40) {
+  throw new Error(`Expected 40 recipes, parsed ${recipes.length}`);
 }
 
 await writeFile(
