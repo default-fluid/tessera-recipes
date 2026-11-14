@@ -8,6 +8,10 @@ const collections = [
   ["ambient", "Ambient", "recipes/ambient.md"],
   ["grooves", "Grooves", "recipes/grooves.md"],
   ["experiments", "Experiments", "recipes/experiments.md"],
+  ["chord-jams", "Chord jams", "recipes/chord-jams.md"],
+  ["chiptune", "Chiptune", "recipes/chiptune.md"],
+  ["anime", "Anime / cyberpunk", "recipes/anime.md"],
+  ["ninja-flute", "Ninja flute", "recipes/ninja-flute.md"],
 ];
 
 const slugify = (value) => value
@@ -69,8 +73,8 @@ const duplicateIds = recipes.filter((recipe, index) =>
 if (duplicateIds.length) {
   throw new Error(`Duplicate recipe IDs: ${duplicateIds.map((item) => item.id).join(", ")}`);
 }
-if (recipes.length !== 56) {
-  throw new Error(`Expected 56 recipes, parsed ${recipes.length}`);
+if (recipes.length !== 90) {
+  throw new Error(`Expected 90 recipes, parsed ${recipes.length}`);
 }
 
 await writeFile(

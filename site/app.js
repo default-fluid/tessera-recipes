@@ -3,7 +3,7 @@ const $ = (selector) => document.querySelector(selector);
 const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"), search: $("#search"),
   filters: $("#filters"), detail: $("#detail"), detailContent: $("#detail-content"),
-  progress: $("#progress-label"), theme: $("#theme"), wake: $("#wake"),
+  progress: $("#progress-label"), wake: $("#wake"),
   typeSelect: $("#type-select"), recipeSelect: $("#recipe-select"),
 };
 
@@ -12,7 +12,7 @@ const inline = (value = "") => escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<str
 const plain = (value = "") => value.replace(/\*\*|`/g, "");
 const progressKey = (id) => `tessera-recipe:${id}`;
 const readProgress = (id) => { try { return JSON.parse(localStorage.getItem(progressKey(id)) || "[]"); } catch (_) { return []; } };
-const pattern = { lofi:"var(--p1)", rave:"var(--p2)", ambient:"var(--p3)", grooves:"var(--p4)", experiments:"linear-gradient(90deg,var(--p1) 0 25%,var(--p2) 25% 50%,var(--p3) 50% 75%,var(--p4) 75%)" };
+const pattern = { lofi:"var(--p1)", rave:"var(--p2)", ambient:"var(--p3)", grooves:"var(--p4)", experiments:"linear-gradient(90deg,var(--p1) 0 25%,var(--p2) 25% 50%,var(--p3) 50% 75%,var(--p4) 75%)", "chord-jams":"var(--p1)", chiptune:"var(--p2)", anime:"var(--p3)", "ninja-flute":"var(--p4)" };
 
 function filteredRecipes() {
   const words = state.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
@@ -111,13 +111,6 @@ elements.detailContent.addEventListener("click", (event) => {
   elements.detailContent.querySelectorAll("input").forEach((input) => { input.checked = false; });
   updateProgress();
 });
-
-function setThemeLabel() { elements.theme.textContent = document.documentElement.dataset.theme === "light" ? "Dark" : "Light"; }
-elements.theme.addEventListener("click", () => {
-  const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
-  document.documentElement.dataset.theme = next; localStorage.setItem("tessera-theme", next); setThemeLabel();
-});
-setThemeLabel();
 
 if (!("wakeLock" in navigator)) elements.wake.hidden = true;
 elements.wake.addEventListener("click", async () => {

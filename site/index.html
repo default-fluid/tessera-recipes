@@ -4,12 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#111111">
-  <meta name="description" content="56 playable recipes for Tessera: lo-fi, techno, trance, ambient, grooves, and generative experiments.">
+  <meta name="description" content="90 patches and ideas for playing with Tessera on the M-Vave FM-1.">
   <title>Tessera Recipes</title>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    try { const theme = localStorage.getItem("tessera-theme"); if (theme) document.documentElement.dataset.theme = theme; } catch (_) {}
-  </script>
 </head>
 <body>
   <nav class="topbar">
@@ -20,7 +17,6 @@
       </a>
       <div class="nav-actions">
         <button id="wake" class="text-button optional" type="button" title="Keep the screen awake while following a recipe">Awake</button>
-        <button id="theme" class="text-button" type="button" aria-label="Switch light or dark theme"></button>
       </div>
     </div>
   </nav>
@@ -29,9 +25,9 @@
     <header class="hero">
       <div class="wrap hero-grid">
         <div>
-          <span class="kicker">A companion cookbook</span>
+          <span class="kicker">Patches for Tessera</span>
           <h1>Find a loop.<br>Follow it deeper.</h1>
-          <p>56 starting points for Tessera—dusty lo-fi beats, ’90s-inspired club patches, slow ambient systems, crooked grooves, and generative experiments.</p>
+          <p>90 patches to try: lo-fi, techno, chord jams, chiptune, anime moods, flute themes, ambient systems, grooves, and experiments.</p>
           <div class="hero-actions">
             <a class="button primary" href="#library">Browse recipes</a>
             <button class="button" id="random" type="button">Surprise me</button>
@@ -62,6 +58,10 @@
             <option value="ambient">Ambient</option>
             <option value="grooves">Grooves</option>
             <option value="experiments">Experiments</option>
+            <option value="chord-jams">Chord jams</option>
+            <option value="chiptune">Chiptune</option>
+            <option value="anime">Anime / cyberpunk</option>
+            <option value="ninja-flute">Ninja flute</option>
           </select></label>
           <label><span>Recipe</span><select id="recipe-select" aria-label="Recipe"></select></label>
           <button class="button primary" id="open-selected" type="button">Open</button>
@@ -72,12 +72,16 @@
           <input id="search" type="search" placeholder="Try “chord”, “rain”, “techno”…" autocomplete="off">
         </label>
         <div class="filters" id="filters" aria-label="Recipe categories">
-          <button class="filter active" data-category="all" type="button">All <span>56</span></button>
+          <button class="filter active" data-category="all" type="button">All <span>90</span></button>
           <button class="filter" data-category="lofi" type="button">Lo-fi <span>20</span></button>
           <button class="filter" data-category="rave" type="button">Techno / rave <span>12</span></button>
           <button class="filter" data-category="ambient" type="button">Ambient <span>8</span></button>
           <button class="filter" data-category="grooves" type="button">Grooves <span>8</span></button>
           <button class="filter" data-category="experiments" type="button">Experiments <span>8</span></button>
+          <button class="filter" data-category="chord-jams" type="button">Chord jams <span>10</span></button>
+          <button class="filter" data-category="chiptune" type="button">Chiptune <span>8</span></button>
+          <button class="filter" data-category="anime" type="button">Anime / cyberpunk <span>8</span></button>
+          <button class="filter" data-category="ninja-flute" type="button">Ninja flute <span>8</span></button>
         </div>
         <div id="recipes" class="recipe-grid" aria-live="polite"></div>
         <p id="empty" class="empty" hidden>No recipes match that search. Try a sound, generator, or mood.</p>
@@ -92,13 +96,6 @@
     </div>
     <article id="detail-content" class="detail-content"></article>
   </aside>
-
-  <footer>
-    <div class="wrap">
-      <div class="track-bar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <p>Unofficial companion recipes for <a href="https://github.com/Rastapopolix/tessera">Tessera</a>. Read the <a href="https://github.com/Rastapopolix/tessera/blob/main/MANUAL.md">manual</a> or edit this cookbook on <a href="https://github.com/default-fluid/tessera-recipes">GitHub</a>.</p>
-    </div>
-  </footer>
 
   <noscript><p class="noscript">This recipe browser needs JavaScript. The same recipes are available as Markdown in the GitHub repository.</p></noscript>
   <script src="app.js" defer></script>
