@@ -4,80 +4,112 @@ Eight systems for when a surprising process matters more than a familiar genre.
 
 ## Mosaic Telephone
 
-1. Put T1, T2, and T3 in QUAD with contrasting sounds.
-2. Give them divisions 1/16, 8T, and 1/8.
-3. Set QUAD columns to MOVE DOWN, UP, RAND, and HOLD at different EVERY values.
-4. Use RANGE 1 OCT so the traveling notes remain related.
-5. Leave T4 silent and listen to the voices exchange fragments.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Change it:** add a kick only after the note traffic has established its own pulse.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE MARKOV**, **KNOB 2 LEAP 34%**, **KNOB 3 DENS 36%**, and **KNOB 4 SPAN 1 octave**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/4**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 47**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG TWO**, **KNOB 3 BARS 2**, and **KNOB 4 HIT HOLD**. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 76**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 5**, and **KNOB 4 ROT 4**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 104**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 75**, **KNOB 3 Y 76**, and **KNOB 4 DENS 58%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 14%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 4**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 28**, **KNOB 3 TIME 53**, and **KNOB 4 REPEAT 29**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +15%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM AABA**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 6 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 65%**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.
 
 ## Gravity Well
 
-1. **T1:** TURING, PROB 0; find a clear eight-note seed.
-2. EVOLVE EVERY 1, AMOUNT 70, GRAVITY 15.
-3. **T2:** FOLLOW T1, HOW CONTRA, RHYTHM SOURCE.
-4. FORM ABAC, EVERY 4, CONTR 45, DEVELOP 30.
-5. Route a slow SWARM to EVOLVE amount.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Listen for:** identity surviving heavy mutation, then disappearing.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE CONSTL**, **KNOB 2 Y 7**, **KNOB 3 DENS 49%**, and **KNOB 4 SPEED 1/8**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 97**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG CIRCLE**, **KNOB 3 BARS 2**, and **KNOB 4 HIT HOLD**. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 126**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 5**, and **KNOB 4 ROT 6**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 26**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 72**, **KNOB 3 Y 73**, and **KNOB 4 DENS 54%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 14%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 54**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 25**, **KNOB 3 TIME 68**, and **KNOB 4 REPEAT 34**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +27%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM AB**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 6 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 65%**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.
 
 ## Conditional Orchestra
 
-1. Give all four tracks the same four-bar phrase length.
-2. T1 condition 1:4, T2 condition 2:4, T3 condition 3:4, T4 condition 4:4.
-3. Make each track a different register and sound family.
-4. Turn FORM AABA on all tracks but vary CONTR by track.
-5. Use CHAIN FOLLOW so the orchestra changes section together.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Change it:** replace one condition with !FIRST and hear the form lose symmetry.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE TURING**, **KNOB 2 LENGTH 9**, **KNOB 3 PROB 1%**, and **KNOB 4 SPAN 2 octaves**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 20**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG 50S**, **KNOB 3 BARS 1**, and **KNOB 4 HIT HOLD**. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 49**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 5**, and **KNOB 4 ROT 1**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 77**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 172**, **KNOB 3 Y 173**, and **KNOB 4 DENS 43%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 9%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 105**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 28**, **KNOB 3 TIME 44**, and **KNOB 4 REPEAT 50**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +12%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM ABCA**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 COUNT 3**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.
 
 ## Pendulum Canon
 
-1. Write a seven-step STEP melody on T1, DIR PEND (**3.5+**).
-2. **T2:** FOLLOW T1, HOW CANON2, RHYTHM SOURCE, SHIFT +2.
-3. **T3:** FOLLOW T1, HOW CANON4, RHYTHM SOURCE, SHIFT -2.
-4. Give each track a different note length.
-5. Slowly pan the canon voices with independent LFOs.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Listen for:** the moment forward and backward passes overlap into a third melody.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE TURING**, **KNOB 2 LENGTH 7**, **KNOB 3 PROB 8%**, and **KNOB 4 SPAN 2 octaves**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/16**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 42**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG DRONE**, **KNOB 3 BARS 1**, and **KNOB 4 HIT HOLD**. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 71**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 5**, and **KNOB 4 ROT 7**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 99**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 178**, **KNOB 3 Y 179**, and **KNOB 4 DENS 59%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 25%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 127**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 15**, **KNOB 3 TIME 66**, and **KNOB 4 REPEAT 53**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +13%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM ABAC**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 65%**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.
 
 ## Clockwork Garden
 
-1. **T1:** CONSTL with AUTO steering at a low setting.
-2. **T2:** BOUNCE/FALL with SWARM controlling WIND.
-3. **T3:** SERIES LOOP OFF, DIV 1/4.
-4. **T4:** POLY /3, /5, /7 on percussive sounds rather than a drum kit.
-5. Set PIECE 15 minutes, SHAPE ARCH, and ENTRIES 65.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Rule:** do not synchronize the organic movement; synchronize only the beginning with PLAY.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE SERIES**, **KNOB 2 START 22**, **KNOB 3 INTV 3**, and **KNOB 4 LOOP 8**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/4**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 87**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG POP**, **KNOB 3 BARS 2**, and **KNOB 4 HIT HOLD**. Keep **OCT-** held on GEN and set **KNOB 2 STRUM 25 ms** and **KNOB 3 DIR DOWN** (**Tessera 3.5+**), then release it. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 116**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 4**, and **KNOB 4 ROT 4**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 16**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 105**, **KNOB 3 Y 106**, and **KNOB 4 DENS 56%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 18%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 44**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 20**, **KNOB 3 TIME 70**, and **KNOB 4 REPEAT 29**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +23%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM AABA**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 6 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 65%**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.
 
 ## Logic Rain
 
-1. Create two sparse generator rhythms on T1 and T2.
-2. On T3 use TWEAK 2 logic combining the other tracks; audition its different combine behaviors.
-3. Give T3 a bright droplet sound with LENGTH HIT.
-4. Route TIDE to T1 density and a different TIDE to T2 density.
-5. Keep T1/T2 quiet so T3 reveals the changing logical overlap.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Change it:** bring the source tracks into the mix one at a time to expose the mechanism.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE TURING**, **KNOB 2 LENGTH 6**, **KNOB 3 PROB 5%**, and **KNOB 4 SPAN 1 octave**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/4**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 23**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG CIRCLE**, **KNOB 3 BARS 2**, and **KNOB 4 HIT HOLD**. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 52**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 5**, and **KNOB 4 ROT 4**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 80**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 110**, **KNOB 3 Y 111**, and **KNOB 4 DENS 68%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 22%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 108**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 14**, **KNOB 3 TIME 56**, and **KNOB 4 REPEAT 47**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +30%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM AABA**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 65%**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.
 
 ## Seed Museum
 
-1. Pick one generator and sound; TURING on a pluck works well.
-2. Write down eight neighboring ROLL values.
-3. Present each seed for four bars, changing nothing else.
-4. Note which seeds feel stable, surprising, or unfinished.
-5. At the end, return to the first seed.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Purpose:** hear how much composition lives in the seed rather than the controls.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE BOUNCE**, **KNOB 2 SPEED 24**, **KNOB 3 ANGLE 38°**, and **KNOB 4 BALLS 2**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/16**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 98**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG POP**, **KNOB 3 BARS 1**, and **KNOB 4 HIT HOLD**. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 127**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 7**, and **KNOB 4 ROT 7**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 27**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 166**, **KNOB 3 Y 167**, and **KNOB 4 DENS 67%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 21%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 55**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 25**, **KNOB 3 TIME 43**, and **KNOB 4 REPEAT 35**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +11%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM ABAC**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 65%**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.
 
 ## Machine That Dreams of Silence
 
-1. Build four busy generator tracks, then lower all MIXER levels.
-2. Set ENTRIES high with roles BASS, RHYTHM, HARMONY, and MELODY.
-3. On each track add different DROP amounts between 40 and 80.
-4. Set PIECE 10 minutes, SHAPE FALL, END STOP.
-5. Start with the full mix, then let PIECE and ENTRIES dismantle it.
+A deterministic, self-playing experiments patch with seeded melody, harmony, bass, drums, and a complete automatic arrangement.
 
-**Listen for:** the last surviving event. Save a second version where that track has a different role.
+1. Start clean and set the project exactly. Tap **SAVE**, turn **SELECT** to **PROJECT**, turn **KNOB 1** to **New song**, and tap **OCT+**; tap **OCT+** again if Tessera asks. On the **NEW SONG** key screen set **KNOB 1 ROOT E**, **KNOB 2 SCALE KUMOI (Kumoi)**, and **KNOB 3 TEMPO 80 BPM**, then tap **OCT+**. On the roles screen set **KNOB 1–4** to **KEEP**, then tap **OCT+** to create the empty song.
+2. Load the four exact sounds from **HOME**. Turn **ALGORITHM** to each track, then turn **PRESETS**: T1 **KUGO HARP**, T2 **STRING MACH**, T3 **FLUTE**, T4 **808 KIT**.
+3. Program T1's melody. Turn **ALGORITHM** to **T1**, tap **SEQ**, and turn **SELECT** to **GEN**. Set **KNOB 1 MODE BOUNCE**, **KNOB 2 SPEED 22**, **KNOB 3 ANGLE 57°**, and **KNOB 4 BALLS 1**. Turn **SELECT** to **PATTERN** and set **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, and **KNOB 4 GATE 64**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 41**.
+4. Program T2's harmony. Turn **ALGORITHM** to **T2**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE CHORD**, **KNOB 2 PROG POP**, **KNOB 3 BARS 2**, and **KNOB 4 HIT HOLD**. Keep **OCT-** held on GEN and set **KNOB 2 STRUM 47 ms** and **KNOB 3 DIR ALT** (**Tessera 3.5+**), then release it. Tap **SCL**, turn **SELECT** to **CHORD**, then set **KNOB 1 CHRD DIA7** and **KNOB 2 VOIC OPEN**. Tap **ARP**, turn **SELECT** to **EVOLVE**, and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 70**.
+5. Program T3's bass. Turn **ALGORITHM** to **T3**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE EUCLID**, **KNOB 2 STEPS 16**, **KNOB 3 PULSE 6**, and **KNOB 4 ROT 6**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 4 FOLLOW T2**. Keep **OCT-** held while setting **KNOB 2 HOW BASS** and **KNOB 3 RHYTHM OWN**, then release it. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 98**.
+6. Program T4's drums. Turn **ALGORITHM** to **T4**, tap **SEQ**, turn **SELECT** to **GEN**, and set **KNOB 1 MODE ATLAS**, **KNOB 2 X 167**, **KNOB 3 Y 168**, and **KNOB 4 DENS 70%**. Tap **ARP**, turn **SELECT** to **TWEAK**, and set **KNOB 3 HUMAN 22%**. Turn **SELECT** to **EVOLVE** and set **KNOB 2 EVERY OFF** and **KNOB 4 ROLL 126**.
+7. Add exact space and motion. Turn **ALGORITHM** to **T1**, tap **FX**, turn **SELECT** to **FX 2**, and set **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 18**, **KNOB 3 TIME 48**, and **KNOB 4 REPEAT 27**. Turn **ALGORITHM** to **T2**, tap **LFO**, turn **SELECT** to **ORGANIC**, and set **KNOB 1 SPEED 50**. Turn **SELECT** to **MODS**, choose unused **M1** with **KNOB 2**, then set **KNOB 1 SOURCE T2 TIDE 1**, **KNOB 3 DESTINATION T2 CUTOFF**, and **KNOB 4 AMOUNT +28%**.
+8. Automate sections: tap **GLO**, turn **SELECT** to **CHAIN**, then set **KNOB 1 FORM AB**, **KNOB 2 PHRASE 8 bars**, and **KNOB 3 WANDER 0%**. Turn **SELECT** to **ENTRIES** and set **KNOB 1 ENTRIES 55%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, and **KNOB 4 FADE 2 bars**.
+9. Make it perform and finish by itself: still under **GLO**, turn **SELECT** to **PIECE**; set **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 65%**, and **KNOB 4 END STOP**. Press **PLAY** once. Tessera now runs the complete arrangement and stops at the end.

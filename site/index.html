@@ -16,13 +16,22 @@
         <span class="mini-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
         <span>Tessera <b>Recipes</b></span>
       </a>
-      <label class="ink-picker"><span>Ink</span><select id="ink-select" aria-label="Tessera ink color">
-        <option value="yellow">Yellow</option><option value="white">White</option><option value="green">Green</option>
-        <option value="blue">Blue</option><option value="red">Red</option><option value="orange">Orange</option>
-        <option value="pink">Pink</option><option value="hot-pink">Hot Pink</option><option value="lilac">Lilac</option>
-        <option value="mosaic">Mosaic</option><option value="sunset">Sunset</option><option value="ocean">Ocean</option>
-        <option value="neon">Neon</option>
-      </select></label>
+      <div class="ink-picker" id="ink-picker" role="group" aria-label="Tessera ink color">
+        <span>Ink</span>
+        <button class="ink-swatch yellow" data-ink="yellow" type="button" title="Yellow" aria-label="Yellow ink"></button>
+        <button class="ink-swatch white" data-ink="white" type="button" title="White" aria-label="White ink"></button>
+        <button class="ink-swatch green" data-ink="green" type="button" title="Green" aria-label="Green ink"></button>
+        <button class="ink-swatch blue" data-ink="blue" type="button" title="Blue" aria-label="Blue ink"></button>
+        <button class="ink-swatch red" data-ink="red" type="button" title="Red" aria-label="Red ink"></button>
+        <button class="ink-swatch orange" data-ink="orange" type="button" title="Orange" aria-label="Orange ink"></button>
+        <button class="ink-swatch pink" data-ink="pink" type="button" title="Pink" aria-label="Pink ink"></button>
+        <button class="ink-swatch hot-pink" data-ink="hot-pink" type="button" title="Hot pink" aria-label="Hot pink ink"></button>
+        <button class="ink-swatch lilac" data-ink="lilac" type="button" title="Lilac" aria-label="Lilac ink"></button>
+        <button class="ink-swatch mosaic" data-ink="mosaic" type="button" title="Mosaic" aria-label="Mosaic inks"></button>
+        <button class="ink-swatch sunset" data-ink="sunset" type="button" title="Sunset" aria-label="Sunset inks"></button>
+        <button class="ink-swatch ocean" data-ink="ocean" type="button" title="Ocean" aria-label="Ocean inks"></button>
+        <button class="ink-swatch neon" data-ink="neon" type="button" title="Neon" aria-label="Neon inks"></button>
+      </div>
     </div>
   </nav>
 
