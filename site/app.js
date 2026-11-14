@@ -9,10 +9,13 @@ const elements = {
 
 const escapeHtml = (value = "") => value.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
 const inline = (value = "") => escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`(.+?)`/g, "<code>$1</code>");
+const storageGet = (key, fallback = null) => { try { return localStorage.getItem(key) ?? fallback; } catch (_) { return fallback; } };
+const storageSet = (key, value) => { try { localStorage.setItem(key, value); } catch (_) {} };
+const storageRemove = (key) => { try { localStorage.removeItem(key); } catch (_) {} };
 const progressKey = (id) => `tessera-recipe:${id}`;
-const readProgress = (id) => { try { return JSON.parse(localStorage.getItem(progressKey(id)) || "[]"); } catch (_) { return []; } };
+const readProgress = (id) => { try { return JSON.parse(storageGet(progressKey(id), "[]")); } catch (_) { return []; } };
 const favoritesKey = "tessera-recipe-favorites";
-try { state.favorites = new Set(JSON.parse(localStorage.getItem(favoritesKey) || "[]")); } catch (_) {}
+try { state.favorites = new Set(JSON.parse(storageGet(favoritesKey, "[]"))); } catch (_) {}
 
 function filteredRecipes() {
   const words = state.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
@@ -40,7 +43,7 @@ function render() {
 }
 
 function updatePicker() {
-  const tracks = elements.tracksSelect.value;
+  const tracks = elements.tracksSelect?.value || "all";
   const recipes = state.recipes.filter((recipe) =>
     tracks === "all" || recipe.tracks === Number(tracks));
   elements.recipeSelect.innerHTML = recipes.map((recipe) => `<option value="${recipe.id}">${escapeHtml(recipe.title)}</option>`).join("");
@@ -92,38 +95,38 @@ function closeRecipe(updateHash = true) {
   if (updateHash) history.pushState({}, "", "#library");
 }
 
-elements.grid.addEventListener("click", (event) => {
+elements.grid?.addEventListener("click", (event) => {
   const favorite = event.target.closest("[data-favorite]");
   if (favorite) { toggleFavorite(favorite.dataset.favorite); return; }
   const card = event.target.closest("[data-id]"); if (card) openRecipe(card.dataset.id);
 });
-elements.search.addEventListener("input", () => { state.query = elements.search.value; render(); });
-$("#close").addEventListener("click", () => closeRecipe());
-elements.tracksSelect.addEventListener("change", () => { state.tracks = elements.tracksSelect.value; render(); updatePicker(); });
-$("#open-selected").addEventListener("click", () => { if (elements.recipeSelect.value) openRecipe(elements.recipeSelect.value); });
-$("#random-picker").addEventListener("click", () => {
-  const tracks = elements.tracksSelect.value;
+elements.search?.addEventListener("input", () => { state.query = elements.search.value; render(); });
+$("#close")?.addEventListener("click", () => closeRecipe());
+elements.tracksSelect?.addEventListener("change", () => { state.tracks = elements.tracksSelect.value; render(); updatePicker(); });
+$("#open-selected")?.addEventListener("click", () => { if (elements.recipeSelect?.value) openRecipe(elements.recipeSelect.value); });
+$("#random-picker")?.addEventListener("click", () => {
+  const tracks = elements.tracksSelect?.value || "all";
   const choices = state.recipes.filter((recipe) =>
     tracks === "all" || recipe.tracks === Number(tracks));
   if (choices.length) openRecipe(choices[Math.floor(Math.random() * choices.length)].id);
 });
-elements.detailContent.addEventListener("change", (event) => {
+elements.detailContent?.addEventListener("change", (event) => {
   if (!state.current || event.target.type !== "checkbox") return;
   const completed = [...elements.detailContent.querySelectorAll("input:checked")].map((input) => Number(input.dataset.step));
-  localStorage.setItem(progressKey(state.current.id), JSON.stringify(completed));
+  storageSet(progressKey(state.current.id), JSON.stringify(completed));
   updateProgress();
 });
-elements.detailContent.addEventListener("click", (event) => {
+elements.detailContent?.addEventListener("click", (event) => {
   if (event.target.closest(".favorite-detail") && state.current) { toggleFavorite(state.current.id); openRecipe(state.current.id, false); return; }
   if (!event.target.closest(".reset-progress") || !state.current) return;
-  localStorage.removeItem(progressKey(state.current.id));
+  storageRemove(progressKey(state.current.id));
   elements.detailContent.querySelectorAll("input").forEach((input) => { input.checked = false; });
   updateProgress();
 });
 
 function toggleFavorite(id) {
   if (state.favorites.has(id)) state.favorites.delete(id); else state.favorites.add(id);
-  localStorage.setItem(favoritesKey, JSON.stringify([...state.favorites]));
+  storageSet(favoritesKey, JSON.stringify([...state.favorites]));
   render();
   updatePicker();
 }
@@ -132,13 +135,13 @@ function setInk(ink) {
   const singleInks = ["yellow", "white", "green", "blue", "red", "orange", "pink", "hot-pink", "lilac"];
   if (!singleInks.includes(ink)) ink = "yellow";
   document.documentElement.dataset.ink = ink;
-  localStorage.setItem("tessera-ink", ink);
-  elements.inkPicker.querySelectorAll("[data-ink]").forEach((button) => {
+  storageSet("tessera-ink", ink);
+  elements.inkPicker?.querySelectorAll("[data-ink]").forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.ink === ink));
   });
 }
 setInk(document.documentElement.dataset.ink || "yellow");
-elements.inkPicker.addEventListener("click", (event) => {
+elements.inkPicker?.addEventListener("click", (event) => {
   const swatch = event.target.closest("[data-ink]");
   if (swatch) setInk(swatch.dataset.ink);
 });
@@ -149,7 +152,7 @@ window.addEventListener("popstate", () => {
 });
 document.addEventListener("keydown", (event) => { if (event.key === "Escape" && state.current) closeRecipe(); });
 
-fetch("recipes.json")
+fetch("recipes.json?v=2", { cache: "no-store" })
   .then((response) => { if (!response.ok) throw new Error("Could not load recipes"); return response.json(); })
   .then((data) => {
     state.recipes = data.recipes; render(); updatePicker();

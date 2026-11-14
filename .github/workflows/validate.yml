@@ -24,5 +24,7 @@ jobs:
         run: git diff --exit-code -- site/recipes.json
       - name: Check JavaScript syntax
         run: node --check site/app.js
+      - name: Smoke-test the recipe browser
+        run: node scripts/check-site-runtime.mjs
       - name: Validate recipes, links, assets, and submodule release
         run: node scripts/check-repo.mjs
