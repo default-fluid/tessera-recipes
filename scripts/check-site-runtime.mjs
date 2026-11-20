@@ -18,11 +18,11 @@ function element(value = "") {
 async function smokeTest({ cachedMarkup = false, blockedStorage = false } = {}) {
   const elements = new Map([
     ["#recipes", element()], ["#empty", element()], ["#count", element("Loading…")],
-    ["#search", element()], ["#detail", element()], ["#detail-content", element()],
-    ["#progress-label", element()], ["#ink-picker", element()], ["#recipe-select", element()],
-    ["#close", element()], ["#open-selected", element()], ["#random-picker", element()],
+    ["#detail", element()], ["#detail-content", element()],
+    ["#progress-label", element()], ["#ink-picker", element()],
+    ["#close", element()], ["#random-picker", element()],
   ]);
-  if (!cachedMarkup) elements.set("#tracks-select", element("all"));
+  if (!cachedMarkup) elements.set("#tracks-select", element("2"));
 
   const context = {
     console,
@@ -45,7 +45,8 @@ async function smokeTest({ cachedMarkup = false, blockedStorage = false } = {}) 
 
   vm.runInNewContext(app, context, { filename: "site/app.js" });
   await new Promise((resolvePromise) => setTimeout(resolvePromise, 0));
-  if (elements.get("#count").textContent !== `${data.recipes.length} recipes`) {
+  const visibleCount = data.recipes.filter((recipe) => recipe.tracks === 2).length;
+  if (elements.get("#count").textContent !== `${visibleCount} recipes`) {
     throw new Error(`Site did not render recipes${cachedMarkup ? " with cached markup" : ""}`);
   }
   if (!elements.get("#recipes").innerHTML.includes(data.recipes[0].title)) {

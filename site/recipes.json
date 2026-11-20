@@ -639,6 +639,486 @@
       "note": "",
       "tracks": 4,
       "minVersion": "3.4.1"
+    },
+    {
+      "id": "blue-static-study",
+      "title": "Blue Static Study",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT D**, **SCALE MIN (Natural minor)**, **TEMPO 61 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 TINE EP and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE TURING**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 13**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 80, KNOB 3 Y 100, KNOB 4 DENS 28%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 14.",
+        "**Motion — T1 > FX > FX 2:** set **KNOB 1 TYPE ROOM**, **KNOB 2 MIX 16**, **KNOB 3 SIZE 54**, **KNOB 4 DECAY 42**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "rain-map-in-mono",
+      "title": "Rain Map in Mono",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT E**, **SCALE PEN (Major pentatonic)**, **TEMPO 68 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KOTO WARM, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE EUCLID**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 30**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 32.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "late-bus-wet-pavement",
+      "title": "Late Bus, Wet Pavement",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT A**, **SCALE DOR (Dorian)**, **TEMPO 75 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KUGO HARP, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE BOUNCE**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 18%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 47**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 49. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 50.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "pressed-ferns",
+      "title": "Pressed Ferns",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT G**, **SCALE MAJ (Major)**, **TEMPO 63 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 MARIMBA, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE CHORD**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 21%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 64**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 83, KNOB 3 Y 103, KNOB 4 DENS 49%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 65.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "sleeve-noise",
+      "title": "Sleeve Noise",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT C**, **SCALE PEN (Major pentatonic)**, **TEMPO 70 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 FLUTE, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE MORPH**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 81**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 83.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "low-battery-bloom",
+      "title": "Low Battery Bloom",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT F**, **SCALE DOR (Dorian)**, **TEMPO 77 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 BELLS, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE BOUNCE**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 98**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 100. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 101.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "window-fog-loops",
+      "title": "Window Fog Loops",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT D**, **SCALE MAJ (Major)**, **TEMPO 65 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 TINE EP, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE CHORD**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 18%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 115**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 86, KNOB 3 Y 106, KNOB 4 DENS 42%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 116.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "afterimage-at-68-bpm",
+      "title": "Afterimage at 68 BPM",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT E**, **SCALE KUMOI**, **TEMPO 72 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KOTO WARM, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE MORPH**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 21%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 22**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 24.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "blue-hour-rewind",
+      "title": "Blue Hour Rewind",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT A**, **SCALE DOR (Dorian)**, **TEMPO 79 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KUGO HARP, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE SERIES**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 39**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 41. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 42.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "small-hours-side-a",
+      "title": "Small Hours, Side A",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT G**, **SCALE MAJ (Major)**, **TEMPO 67 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 MARIMBA, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE POLY**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 56**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 89, KNOB 3 Y 109, KNOB 4 DENS 35%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 57.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "soft-focus-polaroid",
+      "title": "Soft Focus Polaroid",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT C**, **SCALE KUMOI**, **TEMPO 74 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 FLUTE, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE MORPH**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 18%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 73**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 75.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "coffee-rings",
+      "title": "Coffee Rings",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT F**, **SCALE MIN (Natural minor)**, **TEMPO 62 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 BELLS, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE SERIES**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 21%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 90**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 92. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 93.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "vinyl-weather",
+      "title": "Vinyl Weather",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT D**, **SCALE MAJ (Major)**, **TEMPO 69 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 TINE EP, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE POLY**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 107**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 92, KNOB 3 Y 112, KNOB 4 DENS 28%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 108.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "streetlamp-halation",
+      "title": "Streetlamp Halation",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT E**, **SCALE KUMOI**, **TEMPO 76 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KOTO WARM, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE MARKOV**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 14**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 16.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "slow-elevator-home",
+      "title": "Slow Elevator Home",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT A**, **SCALE MIN (Natural minor)**, **TEMPO 64 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KUGO HARP, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE CONSTL**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 18%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 31**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 33. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 34.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "quiet-signal-drift",
+      "title": "Quiet Signal Drift",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT G**, **SCALE PEN (Major pentatonic)**, **TEMPO 71 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 MARIMBA, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE POLY**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 21%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 48**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 95, KNOB 3 Y 115, KNOB 4 DENS 49%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 49.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "tape-hiss-garden",
+      "title": "Tape Hiss Garden",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT C**, **SCALE KUMOI**, **TEMPO 78 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 FLUTE, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE MARKOV**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 65**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 67.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "night-train-interlude",
+      "title": "Night Train Interlude",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT F**, **SCALE MIN (Natural minor)**, **TEMPO 66 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 BELLS, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE CONSTL**, **KNOB 2 Y 7**, **KNOB 3 DENS 38%**, **KNOB 4 SPEED 1/8**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 82**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 84. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 85.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "dusty-chord-atlas",
+      "title": "Dusty Chord Atlas",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT D**, **SCALE PEN (Major pentatonic)**, **TEMPO 73 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 TINE EP, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE AWAKE**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 18%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 99**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 98, KNOB 3 Y 118, KNOB 4 DENS 42%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 100.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "melted-neon",
+      "title": "Melted Neon",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT E**, **SCALE DOR (Dorian)**, **TEMPO 61 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KOTO WARM, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE TURING**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 21%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 116**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 118.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "half-speed-postcard",
+      "title": "Half Speed Postcard",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT A**, **SCALE MIN (Natural minor)**, **TEMPO 68 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KUGO HARP, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE CONSTL**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 23**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 25. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 26.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "room-tone-reverie",
+      "title": "Room Tone Reverie",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT G**, **SCALE PEN (Major pentatonic)**, **TEMPO 75 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 MARIMBA, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE AWAKE**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 40**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 101, KNOB 3 Y 121, KNOB 4 DENS 35%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 41.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "sundays-in-grain",
+      "title": "Sundays in Grain",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT C**, **SCALE DOR (Dorian)**, **TEMPO 63 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 FLUTE, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE TURING**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 18%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 57**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 59.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "four-bars-of-sleep",
+      "title": "Four Bars of Sleep",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT F**, **SCALE MAJ (Major)**, **TEMPO 70 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 BELLS, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE EUCLID**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 21%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 74**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 76. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 77.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "worn-keys-in-d",
+      "title": "Worn Keys in D",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT D**, **SCALE PEN (Major pentatonic)**, **TEMPO 77 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 TINE EP, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE BOUNCE**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 91**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 104, KNOB 3 Y 124, KNOB 4 DENS 28%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 92.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "porchlight-variations",
+      "title": "Porchlight Variations",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT E**, **SCALE DOR (Dorian)**, **TEMPO 65 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KOTO WARM, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE TURING**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 108**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 110.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "grey-sky-sample",
+      "title": "Grey Sky Sample",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT A**, **SCALE MAJ (Major)**, **TEMPO 72 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 KUGO HARP, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE EUCLID**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 18%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 15**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 17. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 18.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "sidewalk-reflections",
+      "title": "Sidewalk Reflections",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT G**, **SCALE KUMOI**, **TEMPO 79 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 MARIMBA, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE BOUNCE**. Hold OCT- and set **KNOB 2 SOURCE KEYS**; play a two-bar phrase on T1's keys, then leave a full bar empty so the take closes. Set **KNOB 3 KEEP RHYTHM** and **KNOB 4 GRAVITY 35%**. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 21%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 32**.",
+        "**T4 drums — ALGORITHM T4 > SEQ > GEN:** KNOB 1 MODE ATLAS, KNOB 2 X 107, KNOB 3 Y 127, KNOB 4 DENS 49%. **ARP > TWEAK:** KNOB 3 HUMAN 10%. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 33.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 2,
+      "minVersion": "3.7"
+    },
+    {
+      "id": "the-last-record-shop",
+      "title": "The Last Record Shop",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT C**, **SCALE DOR (Dorian)**, **TEMPO 67 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 FLUTE, T2 GLASS PAD, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE CHORD**. Set **SCL > CHORD** KNOB 1 to **2NDS**, KNOB 2 to **VOIC OPEN**; this stacks neighboring scale degrees for a soft cluster. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 12%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 49**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD 2NDS, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 51.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 3,
+      "minVersion": "3.7.2"
+    },
+    {
+      "id": "distant-kitchen-radio",
+      "title": "Distant Kitchen Radio",
+      "category": "recipes",
+      "categoryLabel": "Lo-fi Recipes",
+      "description": "",
+      "steps": [
+        "**Start and sounds — SAVE > PROJECT:** choose **New song**; set **ROOT F**, **SCALE MAJ (Major)**, **TEMPO 74 BPM**. Keep the four track roles as **KEEP**. On **HOME**, load T1 BELLS, T2 GLASS PAD, T3 SUB BASS, and T4 808 KIT; leave unused tracks empty.",
+        "**ALGORITHM T1 > SEQ > GEN:** **KNOB 1 MODE MORPH**. On T1's **FX1 DRIVE** page set **DRIVE 28%, FOLD 8%, MIX 22%**; the gentle soft clip warms the attack. **SEQ > PATTERN:** **KNOB 1 LEN 16**, **KNOB 2 DIV 1/8**, **KNOB 3 SWING 15%**, **KNOB 4 GATE 56**. **ARP > EVOLVE:** **KNOB 2 EVERY OFF**, **KNOB 4 ROLL 66**.",
+        "**T2 chords — ALGORITHM T2 > SEQ > GEN:** KNOB 1 MODE CHORD, KNOB 2 PROG TWO, KNOB 3 BARS 2, KNOB 4 HIT HOLD. **SCL > CHORD:** KNOB 1 CHRD DIA7, KNOB 2 VOIC OPEN. **ARP > EVOLVE:** KNOB 2 EVERY OFF, KNOB 4 ROLL 68. **T3 bass — ALGORITHM T3 > SEQ > GEN:** MODE TURING, LEN 8, PROB 2%, SPAN 1 octave. **ARP > TWEAK:** KNOB 2 HOW BASS, KNOB 3 RHYTHM OWN; **EVOLVE:** EVERY OFF, ROLL 69.",
+        "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
+      ],
+      "note": "",
+      "tracks": 4,
+      "minVersion": "3.7.2"
     }
   ]
 }

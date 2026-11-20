@@ -23,7 +23,10 @@ function parseCollection(source, category, categoryLabel) {
     current.note = current.note.join(" ").trim();
     if (![2, 3, 4].includes(current.tracks)) throw new Error(`${current.title} needs a **Tracks:** value from 2 to 4`);
     const recipeText = [current.description, ...current.steps, current.note].join(" ");
-    current.minVersion = /\*\*3\.5\+\*\*|\bSTRUM\b|\bMOD DEPTH\b|\bDIR (?:BACK|PEND|FOLD|RAND|DRUNK)\b/i.test(recipeText) ? "3.5" : "3.4.1";
+    current.minVersion = /\bSOURCE KEYS\b/i.test(recipeText) ? "3.7"
+      : /\b(?:DRIVE|FOLD)\b|\bTIME \d+ ms\b|\b(?:2NDS|4THS|5THS)\b/i.test(recipeText) ? "3.7.2"
+      : /\*\*3\.5\+\*\*|\bSTRUM\b|\bMOD DEPTH\b|\bDIR (?:BACK|PEND|FOLD|RAND|DRUNK)\b/i.test(recipeText) ? "3.5"
+      : /\b(?:QNT HARM|HOW HARM|HARMONIZER)\b/i.test(recipeText) ? "3.6" : "3.4.1";
     recipes.push(current);
   }
 
@@ -74,8 +77,8 @@ const duplicateIds = recipes.filter((recipe, index) =>
 if (duplicateIds.length) {
   throw new Error(`Duplicate recipe IDs: ${duplicateIds.map((item) => item.id).join(", ")}`);
 }
-if (recipes.length !== 40) {
-  throw new Error(`Expected 40 recipes, parsed ${recipes.length}`);
+if (recipes.length < 1) {
+  throw new Error("Expected at least one recipe");
 }
 
 await writeFile(

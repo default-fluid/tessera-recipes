@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#111111">
-  <meta name="description" content="40 self-playing lo-fi recipes for Tessera on the M-Vave FM-1.">
+  <meta name="description" content="70 self-playing lo-fi recipes for Tessera on the M-Vave FM-1.">
   <title>Tessera Lo-fi Recipes</title>
   <link rel="stylesheet" href="styles.css?v=3">
   <script>try { const ink = localStorage.getItem("tessera-ink"); document.documentElement.dataset.ink = ["yellow","white","green","blue","red","orange","pink","hot-pink","lilac"].includes(ink) ? ink : "yellow"; } catch (_) {}</script>
@@ -34,22 +34,15 @@
   <main id="top">
     <section class="library" id="library">
       <div class="wrap">
-        <div class="quick-pick" aria-label="Quick recipe picker">
-          <label><span>Recipe</span><select id="recipe-select" aria-label="Recipe"></select></label>
-          <label><span>Tracks</span><select id="tracks-select" aria-label="Number of active tracks">
-            <option value="all">All tracks</option>
+        <div class="quick-pick" aria-label="Choose a recipe by track count">
+          <label><span>Tracks</span><select id="tracks-select" aria-label="Number of tracks">
             <option value="2">2 tracks</option><option value="3">3 tracks</option><option value="4">4 tracks</option>
           </select></label>
-          <button class="button primary" id="open-selected" type="button">Open</button>
-          <button class="button" id="random-picker" type="button">Random</button>
+          <button class="button primary" id="random-picker" type="button">Pick a recipe</button>
         </div>
-        <label class="search">
-          <span>Search</span>
-          <input id="search" type="search" placeholder="Try “rain”, “tape”, “harp”…" autocomplete="off">
-        </label>
         <span id="count" class="count" aria-live="polite">Loading…</span>
         <div id="recipes" class="recipe-grid" aria-live="polite"></div>
-        <p id="empty" class="empty" hidden>No recipes match that search. Try a sound, generator, or mood.</p>
+        <p id="empty" class="empty" hidden>No recipes available for this track count.</p>
       </div>
     </section>
   </main>
