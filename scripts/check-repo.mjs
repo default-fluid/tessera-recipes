@@ -7,9 +7,12 @@ const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 
 const data = JSON.parse(await readFile(resolve(root, "site/recipes.json"), "utf8"));
-assert(data.recipes.length === 70, `Expected 70 site recipes, found ${data.recipes.length}`);
+assert(data.recipes.length === 100, `Expected 100 site recipes, found ${data.recipes.length}`);
 assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length, "Recipe IDs are not unique");
-for (const tracks of [2, 3, 4]) assert(data.recipes.some((recipe) => recipe.tracks === tracks), `No ${tracks}-track recipes were found`);
+assert(new Set(data.recipes.map((item) => item.title.toLowerCase())).size === data.recipes.length, "Recipe titles are not unique");
+for (const tracks of [2, 3, 4]) {
+  assert(data.recipes.filter((recipe) => recipe.tracks === tracks).length >= 30, `Too few ${tracks}-track recipes were found`);
+}
 for (const recipe of data.recipes) {
   assert(recipe.title && recipe.category, `Recipe is missing title/category: ${recipe.id || "unknown"}`);
   assert(recipe.description === "", `${recipe.title} should not have a description`);
@@ -69,8 +72,16 @@ const allText = data.recipes.flatMap((recipe) => recipe.steps).join(" ");
 for (const feature of ["TURING", "MARKOV", "CONSTL", "SERIES", "BOUNCE", "AWAKE", "POLY", "MORPH", "EUCLID", "CHORD", "TIDE", "SWARM", "DRIFT", "ECHO", "TAPE", "FILTER", "CHORUS", "ROOM", "ENERGY", "FORM", "CHAIN", "ENTRIES", "SOURCE KEYS", "DRIVE", "2NDS"]) {
   assert(allText.includes(feature), `The recipe set does not exercise ${feature}`);
 }
+for (const sound of ["BELL TREE", "SINGING BOWL", "DULCIMER", "BOWED METAL", "HARP", "SITAR", "TIMPANI", "SYMPATHY", "CHIP CHOIR", "SYNC LEAD", "FAT BASS", "STRING MACH", "HAND DRUM", "TOMS", "VIBES", "GONG", "KALIMBA", "PLUCK", "DRONE STRING"]) {
+  assert(allText.includes(sound), `The recipe set does not use the ${sound} sound`);
+}
+for (const kit of ["808 KIT", "909 KIT"]) {
+  assert(data.recipes.filter((recipe) => (recipe.steps[0].includes(`T4 ${kit}`) || recipe.steps[0].includes(`T4 DRUM ${kit}`))).length >= 40, `The ${kit} is underrepresented`);
+}
+const distinctArrangements = new Set(data.recipes.map((recipe) => recipe.note).filter(Boolean));
+assert(distinctArrangements.size >= 30, `Expected at least 30 distinct arrangement notes, found ${distinctArrangements.size}`);
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
-console.log("Repository checks passed: 70 lo-fi recipes, track counts, feature diversity, links, assets, and release pin are valid.");
+console.log("Repository checks passed: 100 lo-fi recipes, balanced track counts and kits, sound diversity, links, assets, and release pin are valid.");
