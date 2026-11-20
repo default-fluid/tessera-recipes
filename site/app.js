@@ -18,7 +18,9 @@ const favoritesKey = "tessera-recipe-favorites";
 try { state.favorites = new Set(JSON.parse(storageGet(favoritesKey, "[]"))); } catch (_) {}
 
 function filteredRecipes() {
-  return state.recipes.filter((recipe) => recipe.tracks === Number(state.tracks));
+  return state.tracks === "all"
+    ? state.recipes
+    : state.recipes.filter((recipe) => recipe.tracks === Number(state.tracks));
 }
 
 function render() {
@@ -90,7 +92,7 @@ elements.grid?.addEventListener("click", (event) => {
 $("#close")?.addEventListener("click", () => closeRecipe());
 elements.tracksSelect?.addEventListener("change", () => { state.tracks = elements.tracksSelect.value; render(); });
 $("#random-picker")?.addEventListener("click", () => {
-  const choices = state.recipes.filter((recipe) => recipe.tracks === Number(state.tracks));
+  const choices = filteredRecipes();
   if (choices.length) openRecipe(choices[Math.floor(Math.random() * choices.length)].id);
 });
 elements.detailContent?.addEventListener("change", (event) => {
