@@ -83,6 +83,6 @@ if (recipes.length < 1) {
 
 await writeFile(
   resolve(root, "site/recipes.json"),
-  `${JSON.stringify({ recipes }, null, 2)}\n`,
+  `${JSON.stringify({ recipes: recipes.map(({ minVersion, ...recipe }) => recipe) }, null, 2)}\n`,
 );
 console.log(`Built site data for ${recipes.length} recipes.`);
