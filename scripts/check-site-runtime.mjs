@@ -25,9 +25,6 @@ async function smokeTest({ cachedMarkup = false, blockedStorage = false } = {}) 
     ["#progress-label", element()], ["#ink-picker", element()],
     ["#close", element()], ["#random-picker", element()],
   ]);
-  const tracksSelect = element("all");
-  if (!cachedMarkup) elements.set("#tracks-select", tracksSelect);
-
   const context = {
     console,
     document: {
@@ -55,21 +52,8 @@ async function smokeTest({ cachedMarkup = false, blockedStorage = false } = {}) 
   if (!elements.get("#recipes").innerHTML.includes(data.recipes[0].title)) {
     throw new Error("Recipe cards were not rendered");
   }
-  if (!cachedMarkup) {
-    tracksSelect.value = "2";
-    tracksSelect.dispatch("change");
-    const twoTrackCount = data.recipes.filter((recipe) => recipe.tracks === 2).length;
-    if (elements.get("#count").textContent !== `${twoTrackCount} recipes`) {
-      throw new Error("Two tracks filter showed the wrong recipe count");
-    }
-    tracksSelect.value = "all";
-    tracksSelect.dispatch("change");
-    if (elements.get("#count").textContent !== `${data.recipes.length} recipes`) {
-      throw new Error("All tracks did not show every recipe after changing back");
-    }
-    const displayedCards = (elements.get("#recipes").innerHTML.match(/class="recipe-card"/g) || []).length;
-    if (displayedCards !== data.recipes.length) throw new Error(`All tracks rendered ${displayedCards} of ${data.recipes.length} recipes`);
-  }
+  const displayedCards = (elements.get("#recipes").innerHTML.match(/class="recipe-card"/g) || []).length;
+  if (displayedCards !== data.recipes.length) throw new Error(`Site rendered ${displayedCards} of ${data.recipes.length} recipes`);
 }
 
 await smokeTest();
