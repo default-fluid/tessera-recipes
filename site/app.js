@@ -136,7 +136,7 @@ window.addEventListener("popstate", () => {
 });
 document.addEventListener("keydown", (event) => { if (event.key === "Escape" && state.current) closeRecipe(); });
 
-fetch("recipes.json?v=2", { cache: "no-store" })
+fetch("recipes.json?v=4", { cache: "no-store" })
   .then((response) => { if (!response.ok) throw new Error("Could not load recipes"); return response.json(); })
   .then((data) => {
     state.recipes = data.recipes; render();
