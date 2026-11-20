@@ -12,6 +12,7 @@ assert(new Set(data.recipes.map((item) => item.id)).size === data.recipes.length
 for (const tracks of [2, 3, 4]) assert(data.recipes.some((recipe) => recipe.tracks === tracks), `No ${tracks}-track recipes were found`);
 for (const recipe of data.recipes) {
   assert(recipe.title && recipe.category, `Recipe is missing title/category: ${recipe.id || "unknown"}`);
+  assert(recipe.minVersion, `${recipe.title} is missing its firmware compatibility metadata`);
   assert(recipe.description === "", `${recipe.title} should not have a description`);
   assert(recipe.category === "recipes", `${recipe.title} has an unexpected type category`);
   assert([2, 3, 4].includes(recipe.tracks), `${recipe.title} has an invalid active-track count`);
