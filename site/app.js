@@ -1,4 +1,3 @@
-const state = { recipes: [], tracks: "2", current: null, favorites: new Set() };
 const $ = (selector) => document.querySelector(selector);
 const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"),
@@ -6,6 +5,7 @@ const elements = {
   progress: $("#progress-label"), inkPicker: $("#ink-picker"),
   tracksSelect: $("#tracks-select"),
 };
+const state = { recipes: [], tracks: elements.tracksSelect?.value || "all", current: null, favorites: new Set() };
 
 const escapeHtml = (value = "") => value.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
 const inline = (value = "") => escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`(.+?)`/g, "<code>$1</code>");
