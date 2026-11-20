@@ -13,8 +13,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ECHO, KNOB 2 MIX 20, KNOB 3 TIME 63, KNOB 4 REPEAT 32. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +12%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "dust-on-the-needle",
@@ -29,8 +28,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE TAPE, KNOB 2 MIX 18, KNOB 3 RATE 42, KNOB 4 JITTER 24. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +16%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "cassette-walk-home",
@@ -45,8 +43,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE FILTER, KNOB 2 MIX 24, KNOB 3 CUT 58, KNOB 4 RES 18. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +20%. **GLO > CHAIN:** KNOB 1 FORM ABAC, KNOB 2 PHRASE 8 bars, KNOB 3 WANDER 0%. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "paper-lanterns",
@@ -61,8 +58,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE CHORUS, KNOB 2 MIX 16, KNOB 3 RATE 22, KNOB 4 DEPTH 28. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +24%. **GLO > ENTRIES:** KNOB 1 ENTRIES 35%, KNOB 2 DWELL 2 phrases, KNOB 3 STYLE FADE, KNOB 4 FADE 2 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "leaves-against-glass",
@@ -77,8 +73,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ROOM, KNOB 2 MIX 19, KNOB 3 SIZE 54, KNOB 4 DECAY 46. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +28%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "two-clocks-at-night",
@@ -93,8 +88,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE REVERB, KNOB 2 MIX 17, KNOB 3 SIZE 61, KNOB 4 DEPTH 52. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +12%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "bent-photograph",
@@ -109,8 +103,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ECHO, KNOB 2 MIX 20, KNOB 3 TIME 63, KNOB 4 REPEAT 32. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +16%. **GLO > CHAIN:** KNOB 1 FORM ABAC, KNOB 2 PHRASE 8 bars, KNOB 3 WANDER 0%. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "quiet-platform",
@@ -125,8 +118,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE TAPE, KNOB 2 MIX 18, KNOB 3 RATE 42, KNOB 4 JITTER 24. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +20%. **GLO > ENTRIES:** KNOB 1 ENTRIES 35%, KNOB 2 DWELL 2 phrases, KNOB 3 STYLE FADE, KNOB 4 FADE 2 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "ceiling-fan-afternoon",
@@ -141,8 +133,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE FILTER, KNOB 2 MIX 24, KNOB 3 CUT 58, KNOB 4 RES 18. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +24%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "worn-postcard",
@@ -157,8 +148,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE CHORUS, KNOB 2 MIX 16, KNOB 3 RATE 22, KNOB 4 DEPTH 28. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +28%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "coffee-shop-closing",
@@ -173,8 +163,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ROOM, KNOB 2 MIX 19, KNOB 3 SIZE 54, KNOB 4 DECAY 46. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +12%. **GLO > CHAIN:** KNOB 1 FORM ABAC, KNOB 2 PHRASE 8 bars, KNOB 3 WANDER 0%. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "library-heater",
@@ -189,8 +178,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE REVERB, KNOB 2 MIX 17, KNOB 3 SIZE 61, KNOB 4 DEPTH 52. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +16%. **GLO > ENTRIES:** KNOB 1 ENTRIES 35%, KNOB 2 DWELL 2 phrases, KNOB 3 STYLE FADE, KNOB 4 FADE 2 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "rooftop-homework",
@@ -205,8 +193,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ECHO, KNOB 2 MIX 20, KNOB 3 TIME 63, KNOB 4 REPEAT 32. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +20%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "sunday-morning-tape",
@@ -221,8 +208,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE TAPE, KNOB 2 MIX 18, KNOB 3 RATE 42, KNOB 4 JITTER 24. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +24%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "fogged-cafe-glass",
@@ -237,8 +223,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE FILTER, KNOB 2 MIX 24, KNOB 3 CUT 58, KNOB 4 RES 18. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +28%. **GLO > CHAIN:** KNOB 1 FORM ABAC, KNOB 2 PHRASE 8 bars, KNOB 3 WANDER 0%. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "notebook-margin",
@@ -253,8 +238,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE CHORUS, KNOB 2 MIX 16, KNOB 3 RATE 22, KNOB 4 DEPTH 28. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +12%. **GLO > ENTRIES:** KNOB 1 ENTRIES 35%, KNOB 2 DWELL 2 phrases, KNOB 3 STYLE FADE, KNOB 4 FADE 2 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "last-train-sketchbook",
@@ -269,8 +253,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ROOM, KNOB 2 MIX 19, KNOB 3 SIZE 54, KNOB 4 DECAY 46. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +16%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "dawn-through-blinds",
@@ -285,8 +268,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE REVERB, KNOB 2 MIX 17, KNOB 3 SIZE 61, KNOB 4 DEPTH 52. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +20%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "balcony-after-rain",
@@ -301,8 +283,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ECHO, KNOB 2 MIX 20, KNOB 3 TIME 63, KNOB 4 REPEAT 32. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +24%. **GLO > CHAIN:** KNOB 1 FORM ABAC, KNOB 2 PHRASE 8 bars, KNOB 3 WANDER 0%. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "half-finished-letter",
@@ -317,8 +298,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE TAPE, KNOB 2 MIX 18, KNOB 3 RATE 42, KNOB 4 JITTER 24. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +28%. **GLO > ENTRIES:** KNOB 1 ENTRIES 35%, KNOB 2 DWELL 2 phrases, KNOB 3 STYLE FADE, KNOB 4 FADE 2 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "polaroid-summer",
@@ -333,8 +313,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE FILTER, KNOB 2 MIX 24, KNOB 3 CUT 58, KNOB 4 RES 18. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +12%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "apartment-at-midnight",
@@ -349,8 +328,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE CHORUS, KNOB 2 MIX 16, KNOB 3 RATE 22, KNOB 4 DEPTH 28. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +16%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "streetlights-in-puddles",
@@ -365,8 +343,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ROOM, KNOB 2 MIX 19, KNOB 3 SIZE 54, KNOB 4 DECAY 46. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +20%. **GLO > CHAIN:** KNOB 1 FORM ABAC, KNOB 2 PHRASE 8 bars, KNOB 3 WANDER 0%. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "old-bookshop-radio",
@@ -381,8 +358,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE REVERB, KNOB 2 MIX 17, KNOB 3 SIZE 61, KNOB 4 DEPTH 52. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +24%. **GLO > ENTRIES:** KNOB 1 ENTRIES 35%, KNOB 2 DWELL 2 phrases, KNOB 3 STYLE FADE, KNOB 4 FADE 2 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "blue-hour-bus",
@@ -397,8 +373,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ECHO, KNOB 2 MIX 20, KNOB 3 TIME 63, KNOB 4 REPEAT 32. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +28%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "window-seat-clouds",
@@ -413,8 +388,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE TAPE, KNOB 2 MIX 18, KNOB 3 RATE 42, KNOB 4 JITTER 24. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +12%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "soft-neon-hallway",
@@ -429,8 +403,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE FILTER, KNOB 2 MIX 24, KNOB 3 CUT 58, KNOB 4 RES 18. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +16%. **GLO > CHAIN:** KNOB 1 FORM ABAC, KNOB 2 PHRASE 8 bars, KNOB 3 WANDER 0%. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "kitchen-light-at-two",
@@ -445,8 +418,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE CHORUS, KNOB 2 MIX 16, KNOB 3 RATE 22, KNOB 4 DEPTH 28. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 TIDE 1, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +20%. **GLO > ENTRIES:** KNOB 1 ENTRIES 35%, KNOB 2 DWELL 2 phrases, KNOB 3 STYLE FADE, KNOB 4 FADE 2 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 8 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "empty-classroom",
@@ -461,8 +433,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE ROOM, KNOB 2 MIX 19, KNOB 3 SIZE 54, KNOB 4 DECAY 46. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 SWARM 3, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +24%. **ARP > FORM:** KNOB 1 FORM AB, KNOB 2 CONTR 14%, KNOB 4 FLRSH 0. Hold OCT- and set KNOB 1 DEVELOP 8%, then return to **ARP > EVOLVE** and set KNOB 2 EVERY 8 bars. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "first-light-on-concrete",
@@ -477,8 +448,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** KNOB 1 TYPE REVERB, KNOB 2 MIX 17, KNOB 3 SIZE 61, KNOB 4 DEPTH 52. **LFO > MODS:** choose unused M1 with KNOB 2; set KNOB 1 SOURCE T1 DRIFT, KNOB 3 DESTINATION T1 CUTOFF, KNOB 4 AMOUNT +28%. **ARP > ENERGY:** KNOB 1 ARC 30%, KNOB 2 RESTS 4%, KNOB 3 LEVEL 0. **Ending — GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "midnight-aquarium",
@@ -493,8 +463,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE ROOM**, **KNOB 2 MIX 18**, **KNOB 3 SIZE 68**, **KNOB 4 DECAY 58**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 TIDE 2**, **KNOB 3 DESTINATION T1 CUTOFF**, **KNOB 4 AMOUNT +16%**. **ARP > ENERGY:** **KNOB 1 ARC 24%**, **KNOB 2 RESTS 3%**, **KNOB 3 LEVEL -8**. **GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 COUNT 3**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "pencil-shavings",
@@ -509,8 +478,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE TAPE**, **KNOB 2 MIX 14**, **KNOB 3 RATE 35**, **KNOB 4 JITTER 18**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 SWARM 4**, **KNOB 3 DESTINATION T1 PAN**, **KNOB 4 AMOUNT +14%**. **ARP > FORM:** **KNOB 1 FORM AABA**, **KNOB 2 CONTR 12%**, **KNOB 4 FLRSH 0**; hold **OCT-** and set **KNOB 1 DEVELOP 5%**. **GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 62%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "soft-train-brakes",
@@ -525,8 +493,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 17**, **KNOB 3 TIME 71**, **KNOB 4 REPEAT 29**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 DRIFT**, **KNOB 3 DESTINATION T1 FX SEND**, **KNOB 4 AMOUNT +18%**. **GLO > CHAIN:** **KNOB 1 FORM AB**, **KNOB 2 PHRASE 16 bars**, **KNOB 3 WANDER 0%**. **GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 55%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.4.1"
+      "tracks": 2
     },
     {
       "id": "winter-sun-on-desk",
@@ -541,8 +508,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE CHORUS**, **KNOB 2 MIX 15**, **KNOB 3 RATE 18**, **KNOB 4 DEPTH 24**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 TIDE 1**, **KNOB 3 DESTINATION T1 CUTOFF**, **KNOB 4 AMOUNT +12%**. **GLO > CHAIN:** **KNOB 1 FORM ABAC**, **KNOB 2 PHRASE 8 bars**, **KNOB 3 WANDER 0%**. **GLO > ENTRIES:** **KNOB 1 ENTRIES 30%**, **KNOB 2 DWELL 3 phrases**, **KNOB 3 STYLE FADE**, **KNOB 4 FADE 2 bars**. **GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 65%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "raincoat-pocket",
@@ -557,8 +523,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE FILTER**, **KNOB 2 MIX 22**, **KNOB 3 CUT 51**, **KNOB 4 RES 14**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 SWARM 2**, **KNOB 3 DESTINATION T1 CUTOFF**, **KNOB 4 AMOUNT +20%**. **ARP > ENERGY:** **KNOB 1 ARC 28%**, **KNOB 2 RESTS 2%**, **KNOB 3 LEVEL -5**. **GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE VALLEY**, **KNOB 3 PEAK 58%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "unread-book",
@@ -573,8 +538,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE ROOM**, **KNOB 2 MIX 16**, **KNOB 3 SIZE 59**, **KNOB 4 DECAY 62**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 DRIFT**, **KNOB 3 DESTINATION T1 PAN**, **KNOB 4 AMOUNT +12%**. **ARP > FORM:** **KNOB 1 FORM ABCA**, **KNOB 2 CONTR 10%**, **KNOB 4 FLRSH 0**; hold **OCT-** and set **KNOB 1 DEVELOP 4%**. **GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE FLAT**, **KNOB 3 PEAK 60%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.4.1"
+      "tracks": 3
     },
     {
       "id": "long-hallway-echo",
@@ -589,8 +553,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE ECHO**, **KNOB 2 MIX 19**, **KNOB 3 TIME 66**, **KNOB 4 REPEAT 36**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 TIDE 2**, **KNOB 3 DESTINATION T1 FX SEND**, **KNOB 4 AMOUNT +16%**. **GLO > CHAIN:** **KNOB 1 FORM ABAC**, **KNOB 2 PHRASE 8 bars**, **KNOB 3 WANDER 0%**. **GLO > ENTRIES:** **KNOB 1 ENTRIES 42%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, **KNOB 4 FADE 2 bars**. **GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE ARCH**, **KNOB 3 PEAK 62%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "warm-static-morning",
@@ -605,8 +568,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE TAPE**, **KNOB 2 MIX 16**, **KNOB 3 RATE 39**, **KNOB 4 JITTER 22**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 SWARM 5**, **KNOB 3 DESTINATION T1 CUTOFF**, **KNOB 4 AMOUNT +14%**. **ARP > ENERGY:** **KNOB 1 ARC 32%**, **KNOB 2 RESTS 3%**, **KNOB 3 LEVEL 0**. **GLO > PIECE:** **KNOB 1 LENGTH 10 MIN**, **KNOB 2 SHAPE PLATEAU**, **KNOB 3 PEAK 65%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "porch-light-moths",
@@ -621,8 +583,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE REVERB**, **KNOB 2 MIX 18**, **KNOB 3 SIZE 64**, **KNOB 4 DEPTH 48**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 DRIFT**, **KNOB 3 DESTINATION T1 PAN**, **KNOB 4 AMOUNT +16%**. **ARP > FORM:** **KNOB 1 FORM ABCA**, **KNOB 2 CONTR 13%**, **KNOB 4 FLRSH 0**. **GLO > CHAIN:** **KNOB 1 FORM ABCA**, **KNOB 2 PHRASE 8 bars**, **KNOB 3 WANDER 0%**. **GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE WAVES**, **KNOB 3 COUNT 4**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "city-before-sunrise",
@@ -637,8 +598,7 @@
         "**Motion — ALGORITHM T1 > FX > FX 2:** **KNOB 1 TYPE CHORUS**, **KNOB 2 MIX 14**, **KNOB 3 RATE 16**, **KNOB 4 DEPTH 26**. **LFO > MODS:** choose unused **M1** with **KNOB 2**; set **KNOB 1 SOURCE T1 TIDE 1**, **KNOB 3 DESTINATION T1 CUTOFF**, **KNOB 4 AMOUNT +18%**. **ARP > ENERGY:** **KNOB 1 ARC 30%**, **KNOB 2 RESTS 2%**, **KNOB 3 LEVEL -4**. **GLO > ENTRIES:** **KNOB 1 ENTRIES 38%**, **KNOB 2 DWELL 2 phrases**, **KNOB 3 STYLE FADE**, **KNOB 4 FADE 3 bars**. **GLO > PIECE:** **KNOB 1 LENGTH 12 MIN**, **KNOB 2 SHAPE RISE**, **KNOB 3 PEAK 68%**, **KNOB 4 END STOP**. Tap **PLAY** once; Tessera performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.4.1"
+      "tracks": 4
     },
     {
       "id": "blue-static-study",
@@ -653,8 +613,7 @@
         "**Motion — T1 > FX > FX 2:** set **KNOB 1 TYPE ROOM**, **KNOB 2 MIX 16**, **KNOB 3 SIZE 54**, **KNOB 4 DECAY 42**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "rain-map-in-mono",
@@ -669,8 +628,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "late-bus-wet-pavement",
@@ -685,8 +643,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "pressed-ferns",
@@ -701,8 +658,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "sleeve-noise",
@@ -717,8 +673,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "low-battery-bloom",
@@ -733,8 +688,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "window-fog-loops",
@@ -749,8 +703,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "afterimage-at-68-bpm",
@@ -765,8 +718,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "blue-hour-rewind",
@@ -781,8 +733,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "small-hours-side-a",
@@ -797,8 +748,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "soft-focus-polaroid",
@@ -813,8 +763,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "coffee-rings",
@@ -829,8 +778,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "vinyl-weather",
@@ -845,8 +793,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "streetlamp-halation",
@@ -861,8 +808,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "slow-elevator-home",
@@ -877,8 +823,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "quiet-signal-drift",
@@ -893,8 +838,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "tape-hiss-garden",
@@ -909,8 +853,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "night-train-interlude",
@@ -925,8 +868,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "dusty-chord-atlas",
@@ -941,8 +883,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "melted-neon",
@@ -957,8 +898,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "half-speed-postcard",
@@ -973,8 +913,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "room-tone-reverie",
@@ -989,8 +928,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "sundays-in-grain",
@@ -1005,8 +943,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "four-bars-of-sleep",
@@ -1021,8 +958,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "worn-keys-in-d",
@@ -1037,8 +973,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE DRIVE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "porchlight-variations",
@@ -1053,8 +988,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE TAPE** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "grey-sky-sample",
@@ -1069,8 +1003,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ECHO** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     },
     {
       "id": "sidewalk-reflections",
@@ -1085,8 +1018,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE ROOM** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 8 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 2,
-      "minVersion": "3.7"
+      "tracks": 2
     },
     {
       "id": "the-last-record-shop",
@@ -1101,8 +1033,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE FILTER** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 10 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 3,
-      "minVersion": "3.7.2"
+      "tracks": 3
     },
     {
       "id": "distant-kitchen-radio",
@@ -1117,8 +1048,7 @@
         "**Motion — T1 > FX > FX 2:** set **TYPE CHORUS** and a gentle mix of 16%; for ECHO set **TIME 210 ms**, **REPEAT 18%**. **LFO > MODS:** choose M1, SOURCE T1 DRIFT, DESTINATION T1 CUTOFF, AMOUNT +16%. **ARP > FORM:** AB, CONTR 12%, FLRSH 0%; hold OCT- and set DEVELOP 6%. **GLO > PIECE:** **LENGTH 12 MIN**, **SHAPE WAVES**, **PEAK 60%**, **END STOP**. Tap **PLAY** once; it performs and stops by itself."
       ],
       "note": "",
-      "tracks": 4,
-      "minVersion": "3.7.2"
+      "tracks": 4
     }
   ]
 }
