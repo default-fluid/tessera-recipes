@@ -47,15 +47,11 @@ h3 { margin:0; color:var(--ink); font-weight:700; line-height:1.08; text-transfo
 .button.primary:hover { background:var(--bg); color:var(--ink); }
 .library { padding:24px 0 96px; }
 .count { display:block; color:var(--dim); white-space:nowrap; margin:0 0 14px; text-align:right; font-size:13px; }
-.quick-pick { display:grid; grid-template-columns:minmax(240px,1.5fr) minmax(130px,.7fr) auto auto; gap:6px; margin:0 0 14px; padding:12px; border:2px solid var(--line); background:var(--surf); }
+.quick-pick { display:grid; grid-template-columns:minmax(160px,260px) auto; gap:6px; margin:0 0 14px; padding:12px; border:2px solid var(--line); background:var(--surf); }
 .quick-pick label { display:grid; grid-template-columns:auto 1fr; align-items:center; min-width:0; border:2px solid var(--line); }
 .quick-pick label > span { color:var(--bg); background:var(--ink); padding:9px 10px; text-transform:uppercase; font-size:11px; align-self:stretch; display:grid; place-items:center; }
 .quick-pick select { min-width:0; width:100%; border:0; border-radius:0; background:var(--bg); color:var(--text); padding:8px 28px 8px 9px; }
 .quick-pick .button { padding-inline:12px; }
-.search { display:grid; grid-template-columns:auto 1fr; border:2px solid var(--line); margin:0 0 14px; align-items:center; }
-.search span { color:var(--bg); background:var(--ink); padding:11px 12px; text-transform:uppercase; font-size:13px; align-self:stretch; display:grid; place-items:center; }
-.search input { width:100%; border:0; background:var(--surf); color:var(--text); padding:10px 12px; min-width:0; outline:0; }
-.search:focus-within { border-color:var(--ink); }
 .filters { display:flex; gap:6px; overflow-x:auto; padding:0 0 18px; scrollbar-width:thin; }
 .filter { flex:none; border:2px solid var(--line); background:var(--bg); padding:7px 9px; color:var(--mid); cursor:pointer; text-transform:uppercase; font-size:12px; }
 .filter span { color:var(--dim); }

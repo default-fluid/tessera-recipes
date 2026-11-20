@@ -1,10 +1,10 @@
-const state = { recipes: [], tracks: "all", query: "", current: null, favorites: new Set() };
+const state = { recipes: [], tracks: "2", current: null, favorites: new Set() };
 const $ = (selector) => document.querySelector(selector);
 const elements = {
-  grid: $("#recipes"), empty: $("#empty"), count: $("#count"), search: $("#search"),
+  grid: $("#recipes"), empty: $("#empty"), count: $("#count"),
   detail: $("#detail"), detailContent: $("#detail-content"),
   progress: $("#progress-label"), inkPicker: $("#ink-picker"),
-  recipeSelect: $("#recipe-select"), tracksSelect: $("#tracks-select"),
+  tracksSelect: $("#tracks-select"),
 };
 
 const escapeHtml = (value = "") => value.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
@@ -18,12 +18,7 @@ const favoritesKey = "tessera-recipe-favorites";
 try { state.favorites = new Set(JSON.parse(storageGet(favoritesKey, "[]"))); } catch (_) {}
 
 function filteredRecipes() {
-  const words = state.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
-  return state.recipes.filter((recipe) => {
-    if (state.tracks !== "all" && recipe.tracks !== Number(state.tracks)) return false;
-    const haystack = [recipe.title, recipe.categoryLabel, recipe.description, ...recipe.steps, recipe.note].join(" ").toLowerCase();
-    return words.every((word) => haystack.includes(word));
-  });
+  return state.recipes.filter((recipe) => recipe.tracks === Number(state.tracks));
 }
 
 function render() {
@@ -40,13 +35,6 @@ function render() {
       </button>
       <button class="favorite-button ${state.favorites.has(recipe.id) ? "active" : ""}" type="button" data-favorite="${recipe.id}" aria-label="${state.favorites.has(recipe.id) ? "Remove from" : "Add to"} favorites" aria-pressed="${state.favorites.has(recipe.id)}">${state.favorites.has(recipe.id) ? "♥" : "♡"}</button>
     </article>`).join("");
-}
-
-function updatePicker() {
-  const tracks = elements.tracksSelect?.value || "all";
-  const recipes = state.recipes.filter((recipe) =>
-    tracks === "all" || recipe.tracks === Number(tracks));
-  elements.recipeSelect.innerHTML = recipes.map((recipe) => `<option value="${recipe.id}">${escapeHtml(recipe.title)}</option>`).join("");
 }
 
 function updateProgress() {
@@ -100,14 +88,10 @@ elements.grid?.addEventListener("click", (event) => {
   if (favorite) { toggleFavorite(favorite.dataset.favorite); return; }
   const card = event.target.closest("[data-id]"); if (card) openRecipe(card.dataset.id);
 });
-elements.search?.addEventListener("input", () => { state.query = elements.search.value; render(); });
 $("#close")?.addEventListener("click", () => closeRecipe());
-elements.tracksSelect?.addEventListener("change", () => { state.tracks = elements.tracksSelect.value; render(); updatePicker(); });
-$("#open-selected")?.addEventListener("click", () => { if (elements.recipeSelect?.value) openRecipe(elements.recipeSelect.value); });
+elements.tracksSelect?.addEventListener("change", () => { state.tracks = elements.tracksSelect.value; render(); });
 $("#random-picker")?.addEventListener("click", () => {
-  const tracks = elements.tracksSelect?.value || "all";
-  const choices = state.recipes.filter((recipe) =>
-    tracks === "all" || recipe.tracks === Number(tracks));
+  const choices = state.recipes.filter((recipe) => recipe.tracks === Number(state.tracks));
   if (choices.length) openRecipe(choices[Math.floor(Math.random() * choices.length)].id);
 });
 elements.detailContent?.addEventListener("change", (event) => {
@@ -128,7 +112,6 @@ function toggleFavorite(id) {
   if (state.favorites.has(id)) state.favorites.delete(id); else state.favorites.add(id);
   storageSet(favoritesKey, JSON.stringify([...state.favorites]));
   render();
-  updatePicker();
 }
 
 function setInk(ink) {
@@ -155,7 +138,7 @@ document.addEventListener("keydown", (event) => { if (event.key === "Escape" && 
 fetch("recipes.json?v=2", { cache: "no-store" })
   .then((response) => { if (!response.ok) throw new Error("Could not load recipes"); return response.json(); })
   .then((data) => {
-    state.recipes = data.recipes; render(); updatePicker();
+    state.recipes = data.recipes; render();
     const match = location.hash.match(/^#recipe=(.+)$/); if (match) openRecipe(decodeURIComponent(match[1]), false);
   })
   .catch((error) => { elements.count.textContent = "Unavailable"; elements.grid.innerHTML = `<p class="empty">${escapeHtml(error.message)}. Try reloading the page.</p>`; });
