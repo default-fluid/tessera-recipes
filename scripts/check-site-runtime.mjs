@@ -7,10 +7,13 @@ const app = await readFile(resolve(root, "site/app.js"), "utf8");
 const data = JSON.parse(await readFile(resolve(root, "site/recipes.json"), "utf8"));
 
 function element(value = "") {
+  const listeners = new Map();
   return {
     value, innerHTML: "", textContent: "", hidden: false, scrollTop: 0,
     classList: { add() {}, remove() {}, toggle() {} },
-    addEventListener() {}, setAttribute() {}, focus() {},
+    addEventListener(type, listener) { listeners.set(type, listener); },
+    dispatch(type, event = {}) { listeners.get(type)?.(event); },
+    setAttribute() {}, focus() {},
     querySelectorAll() { return []; },
   };
 }
@@ -22,7 +25,8 @@ async function smokeTest({ cachedMarkup = false, blockedStorage = false } = {}) 
     ["#progress-label", element()], ["#ink-picker", element()],
     ["#close", element()], ["#random-picker", element()],
   ]);
-  if (!cachedMarkup) elements.set("#tracks-select", element("2"));
+  const tracksSelect = element("2");
+  if (!cachedMarkup) elements.set("#tracks-select", tracksSelect);
 
   const context = {
     console,
@@ -51,6 +55,17 @@ async function smokeTest({ cachedMarkup = false, blockedStorage = false } = {}) 
   }
   if (!elements.get("#recipes").innerHTML.includes(data.recipes[0].title)) {
     throw new Error("Recipe cards were not rendered");
+  }
+  if (!cachedMarkup) {
+    tracksSelect.value = "all";
+    tracksSelect.dispatch("change");
+    if (elements.get("#count").textContent !== `${data.recipes.length} recipes`) {
+      throw new Error("All tracks did not show every recipe");
+    }
+    const displayedCards = (elements.get("#recipes").innerHTML.match(/class="recipe-card"/g) || []).length;
+    if (displayedCards !== data.recipes.length) {
+      throw new Error(`All tracks rendered ${displayedCards} of ${data.recipes.length} recipes`);
+    }
   }
 }
 
