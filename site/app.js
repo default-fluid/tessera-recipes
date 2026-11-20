@@ -30,7 +30,6 @@ function render() {
       <button class="card-open" type="button" data-id="${recipe.id}">
         <span class="number">${String(index + 1).padStart(2, "0")}</span>
         <h3>${escapeHtml(recipe.title)}</h3>
-        <span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
         <span class="meta"><span>${recipe.tracks} active tracks</span><span>${recipe.steps.length} steps →</span></span>
       </button>
       <button class="favorite-button ${state.favorites.has(recipe.id) ? "active" : ""}" type="button" data-favorite="${recipe.id}" aria-label="${state.favorites.has(recipe.id) ? "Remove from" : "Add to"} favorites" aria-pressed="${state.favorites.has(recipe.id)}">${state.favorites.has(recipe.id) ? "♥" : "♡"}</button>
@@ -49,7 +48,7 @@ function openRecipe(id, pushHash = true) {
   state.current = recipe;
   const completed = new Set(readProgress(id));
   elements.detailContent.innerHTML = `
-    <span class="detail-category">${recipe.tracks} active tracks</span><span class="version-badge">${recipe.minVersion === "3.5" ? "Tessera 3.5+" : "Tessera 3.4.1+"}</span>
+    <span class="detail-category">${recipe.tracks} active tracks</span>
     <h2>${escapeHtml(recipe.title)}</h2>
     ${recipe.description ? `<p class="detail-lede">${inline(recipe.description)}</p>` : ""}
     <aside class="recipe-setup">
