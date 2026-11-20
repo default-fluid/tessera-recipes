@@ -42,7 +42,11 @@ for (const filename of ["README.md", "BEGINNER-GUIDE.md", "recipes/lofi.md"]) {
 
 const html = await readFile(resolve(root, "site/index.html"), "utf8");
 assert(!html.includes('id="ink-select"'), "Ink colors must not use a dropdown");
-assert(html.includes('id="tracks-select"'), "The website is missing its active-track selector");
+assert(!html.includes('id="tracks-select"'), "The track-count selector should be removed");
+assert(html.includes('id="random-picker"'), "The website is missing its random recipe button");
+assert(html.includes("Random recipe"), "The random recipe button should be clearly labeled");
+const app = await readFile(resolve(root, "site/app.js"), "utf8");
+assert(!app.includes("favorite-button") && !app.includes("favorite-detail") && !app.includes("tessera-recipe-favorites"), "Favorite controls and saved favorites should be removed");
 assert(!html.includes('id="recipe-select"') && !html.includes('id="search"'), "Recipe picker and text search should be removed");
 assert(!/(?:type|version|steps)-select/.test(html), "Track count must be the only recipe selector filter");
 assert((html.match(/class="ink-swatch/g) || []).length === 9, "Expected the nine single-color Tessera inks as square buttons");

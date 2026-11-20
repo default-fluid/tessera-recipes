@@ -3,9 +3,8 @@ const elements = {
   grid: $("#recipes"), empty: $("#empty"), count: $("#count"),
   detail: $("#detail"), detailContent: $("#detail-content"),
   progress: $("#progress-label"), inkPicker: $("#ink-picker"),
-  tracksSelect: $("#tracks-select"),
 };
-const state = { recipes: [], tracks: elements.tracksSelect?.value || "all", current: null, favorites: new Set() };
+const state = { recipes: [], current: null };
 
 const escapeHtml = (value = "") => value.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" })[char]);
 const inline = (value = "") => escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`(.+?)`/g, "<code>$1</code>");
@@ -14,17 +13,8 @@ const storageSet = (key, value) => { try { localStorage.setItem(key, value); } c
 const storageRemove = (key) => { try { localStorage.removeItem(key); } catch (_) {} };
 const progressKey = (id) => `tessera-recipe:${id}`;
 const readProgress = (id) => { try { return JSON.parse(storageGet(progressKey(id), "[]")); } catch (_) { return []; } };
-const favoritesKey = "tessera-recipe-favorites";
-try { state.favorites = new Set(JSON.parse(storageGet(favoritesKey, "[]"))); } catch (_) {}
-
-function filteredRecipes() {
-  return state.tracks === "all"
-    ? state.recipes
-    : state.recipes.filter((recipe) => recipe.tracks === Number(state.tracks));
-}
-
 function render() {
-  const recipes = filteredRecipes();
+  const recipes = state.recipes;
   elements.count.textContent = `${recipes.length} recipe${recipes.length === 1 ? "" : "s"}`;
   elements.empty.hidden = recipes.length > 0;
   elements.grid.innerHTML = recipes.map((recipe, index) => `
@@ -34,7 +24,6 @@ function render() {
         <h3>${escapeHtml(recipe.title)}</h3>
         <span class="meta"><span>${recipe.tracks} active tracks</span><span>${recipe.steps.length} steps →</span></span>
       </button>
-      <button class="favorite-button ${state.favorites.has(recipe.id) ? "active" : ""}" type="button" data-favorite="${recipe.id}" aria-label="${state.favorites.has(recipe.id) ? "Remove from" : "Add to"} favorites" aria-pressed="${state.favorites.has(recipe.id)}">${state.favorites.has(recipe.id) ? "♥" : "♡"}</button>
     </article>`).join("");
 }
 
@@ -64,7 +53,6 @@ function openRecipe(id, pushHash = true) {
       <div class="step-copy">${inline(step)}</div></li>`).join("")}</ol>
     ${recipe.note ? `<div class="recipe-note">${inline(recipe.note)}</div>` : ""}
     <div class="detail-actions">
-      <button class="button favorite-detail ${state.favorites.has(recipe.id) ? "primary" : ""}" type="button"><span class="favorite-heart">${state.favorites.has(recipe.id) ? "♥" : "♡"}</span> ${state.favorites.has(recipe.id) ? "Favorited" : "Favorite"}</button>
       <button class="button reset-progress" type="button">Reset steps</button>
     </div>`;
   elements.detail.classList.add("open");
@@ -85,15 +73,11 @@ function closeRecipe(updateHash = true) {
 }
 
 elements.grid?.addEventListener("click", (event) => {
-  const favorite = event.target.closest("[data-favorite]");
-  if (favorite) { toggleFavorite(favorite.dataset.favorite); return; }
   const card = event.target.closest("[data-id]"); if (card) openRecipe(card.dataset.id);
 });
 $("#close")?.addEventListener("click", () => closeRecipe());
-elements.tracksSelect?.addEventListener("change", () => { state.tracks = elements.tracksSelect.value; render(); });
 $("#random-picker")?.addEventListener("click", () => {
-  const choices = filteredRecipes();
-  if (choices.length) openRecipe(choices[Math.floor(Math.random() * choices.length)].id);
+  if (state.recipes.length) openRecipe(state.recipes[Math.floor(Math.random() * state.recipes.length)].id);
 });
 elements.detailContent?.addEventListener("change", (event) => {
   if (!state.current || event.target.type !== "checkbox") return;
@@ -102,18 +86,11 @@ elements.detailContent?.addEventListener("change", (event) => {
   updateProgress();
 });
 elements.detailContent?.addEventListener("click", (event) => {
-  if (event.target.closest(".favorite-detail") && state.current) { toggleFavorite(state.current.id); openRecipe(state.current.id, false); return; }
   if (!event.target.closest(".reset-progress") || !state.current) return;
   storageRemove(progressKey(state.current.id));
   elements.detailContent.querySelectorAll("input").forEach((input) => { input.checked = false; });
   updateProgress();
 });
-
-function toggleFavorite(id) {
-  if (state.favorites.has(id)) state.favorites.delete(id); else state.favorites.add(id);
-  storageSet(favoritesKey, JSON.stringify([...state.favorites]));
-  render();
-}
 
 function setInk(ink) {
   const singleInks = ["yellow", "white", "green", "blue", "red", "orange", "pink", "hot-pink", "lilac"];
